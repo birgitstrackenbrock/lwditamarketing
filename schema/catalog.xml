@@ -32,5 +32,17 @@
   <uri name="infopartDomain.xsd" uri="infopartDomain.xsd" />
   <uri name="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
   
+  <system systemId="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+  <system systemId="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+  
+  <uri name="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+  <uri name="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+  
+  <system systemId="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+  <system systemId="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+  
+  <uri name="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+  <uri name="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+  
   
 </catalog>

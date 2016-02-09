@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic vendorsection-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="legalinformation">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="legalinformation"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="vendorinformation">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="vendorinformation"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactinformation">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactinformation"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- ============================================================= -->
+  <!-- ELEMENT DECLARATIONS -->
+  <!-- ============================================================= -->
+   
+  <xs:element name="legalinformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="legalinformation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="legalinformation-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section vendorsection-d/legalinformation "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="vendorinformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded" >
+          <xs:group ref="all-blocks"/>
+          <xs:group ref="infopart"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="vendorinformation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="vendorinformation-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section vendorsection-d/vendorinformation "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactinformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="contactinformation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactinformation-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section vendorsection-d/contactinformation "/>
+  </xs:attributeGroup>
+   
+   
+</xs:schema>
