@@ -34,6 +34,14 @@
     </xs:sequence>
   </xs:group>
   
+  <xs:group name="productfig">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productfig"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
   
   <!-- ============================================================= -->
   <!-- ELEMENT DECLARATIONS -->
@@ -73,6 +81,7 @@
   <xs:element name="productbody">
     <xs:complexType>
       <xs:sequence>
+        <xs:group ref="productfig" minOccurs="0" maxOccurs="unbounded"/>
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:group ref="overview"/>
           <xs:group ref="highlights"/>
@@ -102,6 +111,23 @@
     <xs:attribute name="value"/>
     <xs:attributeGroup ref="variable-content"/>
     <xs:attribute name="class" default="- topic/data productspec/productname"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="productfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:element minOccurs="0" ref="desc"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="productfig-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productfig-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="- topic/fig productspec/productfig"/>
   </xs:attributeGroup>
   
 </xs:schema>
