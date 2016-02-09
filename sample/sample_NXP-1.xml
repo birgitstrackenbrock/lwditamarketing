@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productspec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:productspec.xsd" id="vv">
+    <title>LPC111xLV/LPC11xxLVUK</title>
+    <shortdesc>32-bit ARM Cortex-M0 MCU; up to 32 kB flash, 8 kB SRAM; 8-bit ADC</shortdesc>
+    <productprolog>
+        <productname name="product" value="XX"/>
+        <data name="documenttype" value="data sheet"/>
+    </productprolog>
+    <productbody>
+        <overview>
+            <title>General description</title>
+            <p>The LPC111xLV/LPC11xxLVUK is an ARM Cortex-M0-based, low-cost 32-bit MCU family,
+                designed for 8/16-bit microcontroller applications, offering performance, low power, simple
+                instruction set and memory addressing together with reduced code size compared to
+                existing 8/16-bit architectures.</p>
+        </overview>
+    </productbody>
+</productspec>
