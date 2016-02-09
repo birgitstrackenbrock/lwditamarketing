@@ -79,7 +79,14 @@
   <!-- LONG NAME: Description -->
   <xs:element name="componentdef">
     <xs:complexType>
-      <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="list-blocks"/>
+          <xs:group ref="components"/>
+          <xs:group ref="featurelist"/>
+          <xs:group ref="featuretable"/>
+        </xs:choice>
+      </xs:sequence>
       <xs:attributeGroup ref="componentdef-attlist"/>
     </xs:complexType>
   </xs:element>
