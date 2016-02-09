@@ -6,7 +6,62 @@
 <!-- EXTENSION POINTS -->
 <!-- ============================================================= -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="ditaarch.xsd"/>
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic feature-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="featurelist">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="featurelist"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="featuretable">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="featuretable"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+ 
+  
+  <!-- elements -->
+  <xs:element name="featurelist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="li"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="featurelist-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="featurelist-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/ul feature-d/featurelist "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="featuretable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="sthead"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="strow"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="featuretable-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="featuretable-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/simpletable feature-d/featuretable "/>
+  </xs:attributeGroup>
   
 </xs:schema>

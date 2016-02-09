@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic component-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="components">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="components"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="component">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="component"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+ 
+  
+  <!-- elements -->
+  <xs:element name="components">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="component"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="components-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="components-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/dl component-d/components "/>
+  </xs:attributeGroup>
+
+  <xs:element name="component">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="componentterm"/>
+        <xs:element ref="componentdef"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="component-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="component-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/dlentry component-d/component "/>
+  </xs:attributeGroup>
+  <!-- LONG NAME: Description term -->
+  <xs:element name="componentterm">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="componentterm-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="componentterm-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/dt component-d/componentterm "/>
+  </xs:attributeGroup>
+  <!-- LONG NAME: Description -->
+  <xs:element name="componentdef">
+    <xs:complexType>
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
+      <xs:attributeGroup ref="componentdef-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="componentdef-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/dd component-d/componentdef "/>
+  </xs:attributeGroup>
+  
+</xs:schema>
