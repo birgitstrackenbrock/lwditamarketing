@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-  <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:componentsDomain.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:featureDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:infopart.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:productspecMod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
   <xs:group name="ph">
@@ -13,6 +16,12 @@
       <xs:element ref="u"/>
       <xs:element ref="sup"/>
       <xs:element ref="sub"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="fig">
+    <xs:choice>
+      <xs:element ref="fig"/>
+      <xs:group ref="infopart"/>
     </xs:choice>
   </xs:group>
 </xs:schema>

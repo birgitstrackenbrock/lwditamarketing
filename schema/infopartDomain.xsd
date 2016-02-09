@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  
+  <xs:group name="infopart">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="infopart"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  
+  <xs:element name="infopart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="fig-blocks"/>
+          <xs:element ref="image"/>
+          <xs:element ref="data"/>
+          <xs:element ref="xref"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="infopart-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="infopart-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="+ topic/fig infopart-d/infopart"/>
+  </xs:attributeGroup>
+  
+</xs:schema>
