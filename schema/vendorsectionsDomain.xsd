@@ -40,7 +40,10 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" ref="title"/>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded" >
+          <xs:group ref="all-blocks"/>
+          <xs:group ref="infopart"/>
+        </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="legalinformation-attlist"/>
     </xs:complexType>
@@ -58,6 +61,7 @@
         <xs:element minOccurs="0" ref="title"/>
         <xs:choice minOccurs="0" maxOccurs="unbounded" >
           <xs:group ref="all-blocks"/>
+          <xs:group ref="infopart"/>
         </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="vendorinformation-attlist"/>
