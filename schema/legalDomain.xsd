@@ -23,10 +23,26 @@
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="">
+  <xs:group name="copyright">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref=""/>
+        <xs:element ref="copyright"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="copyrightyear">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="copyrightyear"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="copyrightholder">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="copyrightholder"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
@@ -53,4 +69,66 @@
     <xs:attribute name="outputclass"/>
     <xs:attribute name="class" default="- topic/fig legal-d/disclaimer "/>
   </xs:attributeGroup>
+  
+  <xs:element name="legalpart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="fig-blocks"/>
+          <xs:element ref="image"/>
+          <xs:element ref="data"/>
+          <xs:element ref="xref"/>
+          <xs:group ref="copyright"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="legalpart.attributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="legalpart.attributes">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="- topic/fig legal-d/legalpart "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="copyright">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="copyrightyear"/>
+        <xs:group ref="copyrightholder"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="copyright-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="copyright-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="variable-content"/>
+    <xs:attribute name="class" default="- topic/ph legal-d/copyright "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="copyrightyear">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="copyrightyear-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="copyrightyear-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="variable-content"/>
+    <xs:attribute name="class" default="- topic/ph legal-d/copyrightyear "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="copyrightholder">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="copyrightholder-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="copyrightholder-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="variable-content"/>
+    <xs:attribute name="class" default="- topic/ph legal-d/copyrightholder "/>
+  </xs:attributeGroup>
+  
+  
 </xs:schema>

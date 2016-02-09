@@ -42,7 +42,7 @@
         <xs:element minOccurs="0" ref="title"/>
         <xs:choice minOccurs="0" maxOccurs="unbounded" >
           <xs:group ref="all-blocks"/>
-          <xs:group ref="infopart"/>
+          <xs:group ref="legalpart"/>
           <xs:group ref="disclaimer"/>
         </xs:choice>
       </xs:sequence>
