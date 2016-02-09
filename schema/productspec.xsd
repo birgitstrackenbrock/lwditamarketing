@@ -3,9 +3,11 @@
   <xs:include schemaLocation="urn:lw:names:dita:xsd:componentsDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:featureDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
-  <xs:include schemaLocation="urn:lw:names:dita:xsd:infopart.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:infopartDomain.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:productsectionsDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:productspecMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd"/>
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
   <xs:group name="ph">
@@ -21,7 +23,7 @@
   <xs:group name="fig">
     <xs:choice>
       <xs:element ref="fig"/>
-      <xs:group ref="infopart"/>
+      <xs:element ref="infopart"/>
     </xs:choice>
   </xs:group>
 </xs:schema>
