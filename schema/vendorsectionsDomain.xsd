@@ -43,6 +43,7 @@
         <xs:choice minOccurs="0" maxOccurs="unbounded" >
           <xs:group ref="all-blocks"/>
           <xs:group ref="infopart"/>
+          <xs:group ref="disclaimer"/>
         </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="legalinformation-attlist"/>
