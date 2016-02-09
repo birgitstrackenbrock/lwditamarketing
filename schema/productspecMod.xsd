@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  
+  
+  <xs:group name="productspec">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productspec"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="productprolog">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productprolog"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="productbody">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productbody"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="productname">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productname"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- ============================================================= -->
+  <!-- ELEMENT DECLARATIONS -->
+  <!-- ============================================================= -->
+  <xs:element name="productspec">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="shortdesc"/>
+        <xs:group minOccurs="0" ref="productprolog"/>
+        <xs:group ref="productbody"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="productspec-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productspec-attlist">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute ref="ditaarch:DITAArchVersion" default="1.3"/>
+    <xs:attribute name="domains" default="(hi-d) (topic h5m-d)"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/topic productspec/productspec "/>
+  </xs:attributeGroup>
+
+  <xs:element name="productprolog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="productname" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="data"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="productprolog-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productprolog-attlist">
+    <xs:attribute name="class" default="- topic/prolog productspec/productprolog "/>
+  </xs:attributeGroup>
+
+  <xs:element name="productbody">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="overview"/>
+          <xs:group ref="highlights"/>
+          <xs:group ref="benefits"/>
+          <xs:group ref="specifications"/>
+          <xs:group ref="vendorinformation"/>
+          <xs:group ref="contactinformation"/>
+          <xs:group ref="legalinformation"/>
+          <xs:element ref="section"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="productbody-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productbody-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/body productspec/productbody"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="productname">
+    <xs:complexType>
+      <xs:attributeGroup ref="productname-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productname-attlist">
+    <xs:attribute name="name"/>
+    <xs:attribute name="value"/>
+    <xs:attributeGroup ref="variable-content"/>
+    <xs:attribute name="class" default="- topic/data productspec/productname"/>
+  </xs:attributeGroup>
+  
+</xs:schema>
