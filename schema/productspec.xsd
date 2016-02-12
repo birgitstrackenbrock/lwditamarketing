@@ -8,6 +8,7 @@
   <xs:include schemaLocation="urn:lw:names:dita:xsd:productspecMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:legalDomain.xsd"/>
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
   <xs:group name="ph">

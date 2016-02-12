@@ -23,6 +23,14 @@
     </xs:sequence>
   </xs:group>
   
+  <xs:group name="legalpart">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="legalpart"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
   <xs:group name="copyright">
     <xs:sequence>
       <xs:choice>
