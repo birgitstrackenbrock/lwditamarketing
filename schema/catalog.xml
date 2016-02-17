@@ -1,54 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="theddita13">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="lwm">
 
-  
-  <system systemId="productspec.xsd" uri="productspec.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:productspec.xsd" uri="productspec.xsd" />
-  
-  <uri name="productspec.xsd" uri="productspec.xsd" />
-  <uri name="urn:lw:names:dita:xsd:productspec.xsd" uri="productspec.xsd" />
-  
-  <system systemId="productspecMod.xsd" uri="productspecMod.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:productspecMod.xsd" uri="productspecMod.xsd" />
-  
-  <uri name="productspecMod.xsd" uri="productspecMod.xsd" />
-  <uri name="urn:lw:names:dita:xsd:productspecMod.xsd" uri="productspecMod.xsd" />
-  
-  <system systemId="featureDomain.xsd" uri="featureDomain.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
-  
-  <uri name="featureDomain.xsd" uri="featureDomain.xsd" />
-  <uri name="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
-  
-  <system systemId="componentsDomain.xsd" uri="componentsDomain.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:componentsDomain.xsd" uri="componentsDomain.xsd" />
-  
-  <uri name="componentsDomain.xsd" uri="componentsDomain.xsd" />
-  <uri name="urn:lw:names:dita:xsd:componentsDomain.xsd" uri="componentsDomain.xsd" />
-  
-  <system systemId="infopartDomain.xsd" uri="infopartDomain.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
-  
-  <uri name="infopartDomain.xsd" uri="infopartDomain.xsd" />
-  <uri name="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
-  
-  <system systemId="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
-  
-  <uri name="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
-  <uri name="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
-  
-  <system systemId="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
-  
-  <uri name="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
-  <uri name="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
-  
-  <system systemId="legalDomain.xsd" uri="legalDomain.xsd" />
-  <system systemId="urn:lw:names:dita:xsd:legalDomain.xsd" uri="legalDomain.xsd" />
-  
-  <uri name="legalDomain.xsd" uri="legalDomain.xsd" />
-  <uri name="urn:lw:names:dita:xsd:legalDomain.xsd" uri="legalDomain.xsd" />
+  <group xml:base="section-approach/">
+    <system systemId="productspec.xsd" uri="productspec.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:productspec.xsd" uri="productspec.xsd" />
+    
+    <uri name="productspec.xsd" uri="productspec.xsd" />
+    <uri name="urn:lw:names:dita:xsd:productspec.xsd" uri="productspec.xsd" />
+    
+    <system systemId="productspecMod.xsd" uri="productspecMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:productspecMod.xsd" uri="productspecMod.xsd" />
+    
+    <uri name="productspecMod.xsd" uri="productspecMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:productspecMod.xsd" uri="productspecMod.xsd" />
+    
+    <system systemId="featureDomain.xsd" uri="featureDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
+    
+    <uri name="featureDomain.xsd" uri="featureDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
+    
+    <system systemId="componentsDomain.xsd" uri="componentsDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:componentsDomain.xsd" uri="componentsDomain.xsd" />
+    
+    <uri name="componentsDomain.xsd" uri="componentsDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:componentsDomain.xsd" uri="componentsDomain.xsd" />
+    
+    <system systemId="infopartDomain.xsd" uri="infopartDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
+    
+    <uri name="infopartDomain.xsd" uri="infopartDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
+    
+    <system systemId="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+    
+    <uri name="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+    
+    <system systemId="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+    
+    <uri name="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+    
+    <system systemId="legalDomain.xsd" uri="legalDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legalDomain.xsd" uri="legalDomain.xsd" />
+    
+    <uri name="legalDomain.xsd" uri="legalDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legalDomain.xsd" uri="legalDomain.xsd" />
+ </group> 
   
   
 </catalog>
