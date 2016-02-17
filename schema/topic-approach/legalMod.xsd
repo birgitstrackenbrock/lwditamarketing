@@ -31,7 +31,7 @@
         <xs:element ref="title"/>
         <xs:element minOccurs="0" ref="shortdesc"/>
         <xs:element minOccurs="0" ref="prolog"/>
-        <xs:element ref="body"/>
+        <xs:element ref="legalbody"/>
       </xs:sequence>
       <xs:attributeGroup ref="legal-attlist"/>
     </xs:complexType>
@@ -51,6 +51,7 @@
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element ref="section"/>
           <xs:group ref="legalpart" />
+          <xs:group ref="disclaimer"/>
         </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="legalbody-attlist"/>
