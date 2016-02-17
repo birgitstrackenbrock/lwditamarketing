@@ -63,6 +63,24 @@
     
     <uri name="legalMod.xsd" uri="legalMod.xsd" />
     <uri name="urn:lw:names:dita:xsd:legalMod.xsd" uri="legalMod.xsd" />
+    
+    <system systemId="titletopic.xsd" uri="titletopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:titletopic.xsd" uri="titletopic.xsd" />
+    
+    <uri name="titletopic.xsd" uri="titletopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:titletopic.xsd" uri="titletopic.xsd" />
+    
+    <system systemId="titletopicMod.xsd" uri="titletopicMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:titletopicMod.xsd" uri="titletopicMod.xsd" />
+    
+    <uri name="titletopicMod.xsd" uri="titletopicMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:titletopicMod.xsd" uri="titletopicMod.xsd" />
+    
+    <system systemId="titletopicDomain.xsd" uri="titletopicDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:titletopicDomain.xsd" uri="titletopicDomain.xsd" />
+    
+    <uri name="titletopicDomain.xsd" uri="titletopicDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:titletopicDomain.xsd" uri="titletopicDomain.xsd" />
   </group> 
   
   

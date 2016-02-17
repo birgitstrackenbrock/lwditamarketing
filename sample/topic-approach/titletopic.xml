@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<titletopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:titletopic.xsd" id="tt1">
+    <title>Title of datasheet</title>
+    <titletopicbody>
+        <revision>0.2</revision>
+        <pubdate>16th Feb.</pubdate>
+    </titletopicbody>
+</titletopic>
