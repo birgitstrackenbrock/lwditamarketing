@@ -136,7 +136,7 @@
     <xs:attributeGroup ref="display-atts"/>
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
-    <xs:attribute name="class" default="- topic/fig psection-d/benefit"/>
+    <xs:attribute name="class" default="- topic/fig psection-d/benefit "/>
   </xs:attributeGroup>
 
 

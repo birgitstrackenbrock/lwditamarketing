@@ -29,7 +29,7 @@
     <xs:attributeGroup ref="display-atts"/>
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
-    <xs:attribute name="class" default="+ topic/fig infopart-d/infopart"/>
+    <xs:attribute name="class" default="+ topic/fig infopart-d/infopart "/>
   </xs:attributeGroup>
   
 </xs:schema>

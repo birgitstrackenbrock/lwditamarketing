@@ -99,7 +99,7 @@
   </xs:element>
   <xs:attributeGroup name="productbody-attlist">
     <xs:attributeGroup ref="localization"/>
-    <xs:attribute name="class" default="- topic/body productspec/productbody"/>
+    <xs:attribute name="class" default="- topic/body productspec/productbody "/>
   </xs:attributeGroup>
   
   <xs:element name="productname">
@@ -111,7 +111,7 @@
     <xs:attribute name="name"/>
     <xs:attribute name="value"/>
     <xs:attributeGroup ref="variable-content"/>
-    <xs:attribute name="class" default="- topic/data productspec/productname"/>
+    <xs:attribute name="class" default="- topic/data productspec/productname "/>
   </xs:attributeGroup>
   
   <xs:element name="productfig">
@@ -128,7 +128,7 @@
     <xs:attributeGroup ref="display-atts"/>
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
-    <xs:attribute name="class" default="- topic/fig productspec/productfig"/>
+    <xs:attribute name="class" default="- topic/fig productspec/productfig "/>
   </xs:attributeGroup>
   
 </xs:schema>
