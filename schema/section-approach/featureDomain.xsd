@@ -61,7 +61,12 @@
       <xs:sequence>
         <xs:element minOccurs="0" ref="title"/>
         <xs:element minOccurs="0" ref="desc"/>
-        <xs:group ref="featuretable"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="image"/>
+          <xs:element ref="audio"/>
+          <xs:element ref="video"/>
+          <xs:group ref="featuretable"/>
+        </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="featurefig-attlist"/>
     </xs:complexType>
