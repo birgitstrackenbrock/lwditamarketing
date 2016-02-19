@@ -148,6 +148,7 @@
           <xs:group ref="all-blocks"/>
           <xs:group ref="components"/>
           <xs:group ref="featurelist"/>
+          <xs:group ref="featurefig"/>
           <xs:group ref="featuretable"/>
         </xs:choice>
       </xs:sequence>

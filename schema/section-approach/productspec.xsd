@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
   <xs:include schemaLocation="urn:lw:names:dita:xsd:componentsDomain.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:contactDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:featureDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:infopartDomain.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:legalDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:productsectionsDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:productspecMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd"/>
-  <xs:include schemaLocation="urn:lw:names:dita:xsd:legalDomain.xsd"/>
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
   <xs:group name="ph">

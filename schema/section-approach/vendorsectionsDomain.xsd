@@ -78,7 +78,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" ref="title"/>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="contact"/>
       </xs:sequence>
       <xs:attributeGroup ref="contactinformation-attlist"/>
     </xs:complexType>

@@ -23,6 +23,14 @@
     </xs:sequence>
   </xs:group>
   
+  <xs:group name="featurefig">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="featurefig"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
   <xs:group name="featuretable">
     <xs:sequence>
       <xs:choice>
@@ -46,6 +54,23 @@
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
     <xs:attribute name="class" default="- topic/ul feature-d/featurelist "/>
+  </xs:attributeGroup>
+    
+  <xs:element name="featurefig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:element minOccurs="0" ref="desc"/>
+        <xs:group ref="featuretable"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="featurefig-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="featurefig-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="- topic/fig feature-d/featurefig "/>
   </xs:attributeGroup>
   
   <xs:element name="featuretable">
