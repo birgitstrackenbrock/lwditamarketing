@@ -49,7 +49,7 @@
       <xs:sequence>
         <xs:group ref="revision" minOccurs="0"/>
         <xs:group ref="pubdate" minOccurs="0"/>
-        <xs:group ref="frontmattersection"/>
+        <xs:group ref="frontmattersection" minOccurs="0"/>
       </xs:sequence>
       <xs:attributeGroup ref="titletopicbody-attlist"/>
     </xs:complexType>

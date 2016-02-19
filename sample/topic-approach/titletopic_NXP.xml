@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <titletopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:titletopic.xsd" id="tt1">
-    <title>Title of datasheet</title>
+    <title>SA58632</title>
+    <subtitle>2 × 2.2 W BTL audio amplifier</subtitle>
     <titletopicbody>
-        <revision>0.2</revision>
-        <pubdate>16th Feb.</pubdate>
+        <revision>Rev. 02</revision>
+        <pubdate>4 March 2010</pubdate>
     </titletopicbody>
 </titletopic>

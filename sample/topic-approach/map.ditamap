@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:map.xsd" id="m1">
-    <topicref href="titletopic.xml"/>
-    <topicref href="legaltopic.xml"/>
-</map>
