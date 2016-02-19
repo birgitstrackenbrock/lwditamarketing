@@ -32,5 +32,30 @@
                 </dlentry>
             </dl>
         </legal2section>
+        <disclaimer2>
+            <title>Disclaimer</title>
+            <dl>
+                <dlentry>
+                    <dt>Limited warranty and liability</dt>
+                    <dd>
+                        <p>Information in this document is believed to
+                            be accurate and reliable. However, NXP Semiconductors does not give any
+                            representations or warranties, expressed or implied, as to the accuracy or
+                            completeness of such information and shall have no liability for the
+                            consequences of use of such information.</p>
+                        <p>In no event shall NXP Semiconductors be liable for any indirect, incidental,
+                            punitive, special or consequential damages (including - without limitation - lost
+                            profits, lost savings, business interruption, costs related to the removal or
+                            replacement of any products or rework charges) whether or not such
+                            damages are based on tort (including negligence), warranty, breach of
+                            contract or any other legal theory.</p>
+                        <p>Notwithstanding any damages that customer might incur for any reason
+                            whatsoever, NXP Semiconductors’ aggregate and cumulative liability towards
+                            customer for the products described herein shall be limited in accordance
+                            with the <i>Terms and conditions of commercial</i> sale of NXP Semiconductors.</p>
+                    </dd>
+                </dlentry>
+            </dl>
+        </disclaimer2>
     </legal2body>
 </legal2topic>
