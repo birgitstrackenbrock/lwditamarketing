@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<legal2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:legal2topic.xsd" id="l1">
+    <title>Legal information</title>
+    <legal2body>
+        <legal2section>
+            <title>Data sheet status</title>
+            <simpletable>
+                <sthead>
+                    <stentry><p>Document status</p></stentry>
+                    <stentry><p>Product status</p></stentry>
+                    <stentry><p>Definition</p></stentry>
+                </sthead>
+                <strow>
+                    <stentry><p>Objective [short] data sheet</p></stentry>
+                    <stentry><p>Development</p></stentry>
+                    <stentry><p>This document contains data from the objective specification for product development.</p></stentry>
+                </strow>
+            </simpletable>
+        </legal2section>
+        <legal2section>
+            <title>Definitions</title>
+            <dl>
+                <dlentry>
+                    <dt>Draft</dt>
+                    <dd><p>The document is a draft version only. The content is still under
+                        internal review and subject to formal approval, which may result in
+                        modifications or additions. NXP Semiconductors does not give any
+                        representations or warranties as to the accuracy or completeness of
+                        information included herein and shall have no liability for the consequences of
+                        use of such information.</p></dd>
+                </dlentry>
+            </dl>
+        </legal2section>
+    </legal2body>
+</legal2topic>

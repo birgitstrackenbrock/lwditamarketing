@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:specification2topic.xsd" id="sp1">
+    <title>Functional description</title>
+    <specification2body>
+        <p>The SA58632 is a two-channel BTL audio amplifier capable of delivering 2 × 1.5 W output
+            power to an 8 Ω load at THD+N = 10 % using a 6 V power supply. It is also capable of
+            delivering 2 × 2.2 W output power to an 8 Ω load at THD+N = 10 % using a 9 V power
+            supply. Using the MODE pin, the device can be switched to standby and mute condition.
+            The device is protected by an internal thermal shutdown protection mechanism. The gain
+            can be set within a range of 6 dB to 30 dB by external feedback resistors.</p>
+        <specification2section>
+            <title>Power amplifier</title>
+            <p>The power amplifier is a Bridge-Tied Load (BTL) amplifier with a complementary
+                PNP-NPN output stage. The voltage loss on the positive supply line is the saturation
+                voltage of a PNP power transistor, on the negative side the saturation voltage of an
+                NPN power transistor. The total voltage loss is &lt; 1 V. With a supply voltage of 6
+                V and an 8 Ω loudspeaker, an output power of 1.5 W can be delivered to the load, and
+                with a 9 V supply voltage and an 8 Ω loudspeaker an output power of 2.2 W can be
+                delivered.</p>
+        </specification2section>
+        <specification2section>
+            <title>Mode select pin (MODE)</title>
+            <p>The device is in Standby mode (with a very low current consumption) if the voltage at the
+                MODE pin is greater than VCC − 0.5 V, or if this pin is floating. At a MODE voltage in the
+                range between 1.5 V and VCC − 1.5 V the amplifier is in a mute condition. The mute
+                condition is useful to suppress plop noise at the output, caused by charging of the input
+                capacitor. The device is in Active mode if the MODE pin is grounded or less than 0.5 V
+                (see Figure 6).</p>
+        </specification2section>
+        <specification2section>
+            <title>BTL/SE output configuration</title>
+            <p>To invoke the BTL configuration (see Figure 3), the BTL/SE pin is taken to logic HIGH or
+                not connected. The output differentially drives the speakers, so there is no need for
+                coupling capacitors. The headphone can be connected to the amplifier negative outputs
+                using a coupling capacitor for each channel. The headphone common ground is
+                connected to the amplifier ground.</p>
+            <p>To invoke the Single-Ended (SE) configuration (see Figure 15), the BTL/SE pin is taken to
+                logic LOW or connected to ground. The positive outputs are muted with a DC level of
+                0.5VCC. Using a coupling capacitor for each channel, speakers can be connected to the
+                amplifier negative outputs. The speaker common ground is connected to the amplifier
+                ground. Headphones can be connected to the negative outputs without using output
+                coupling capacitors. The headphone common ground pin is connected to one of the
+                amplifier positive output pins.</p>
+        </specification2section>
+    </specification2body>
+</specification2topic>
