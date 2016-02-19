@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="lwm">
 
+  <group mxl:base="general">
+    <system systemId="featureDomain.xsd" uri="featureDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
+    
+    <uri name="featureDomain.xsd" uri="featureDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />   
+  </group>
+  
   <group xml:base="section-approach/">
     <system systemId="componentsDomain.xsd" uri="componentsDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:componentsDomain.xsd" uri="componentsDomain.xsd" />
@@ -12,13 +20,7 @@
     <system systemId="urn:lw:names:dita:xsd:contactDomain.xsd" uri="contactDomain.xsd" />
     
     <uri name="contactDomain.xsd" uri="contactDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:contactDomain.xsd" uri="contactDomain.xsd" />
-    
-    <system systemId="featureDomain.xsd" uri="featureDomain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
-    
-    <uri name="featureDomain.xsd" uri="featureDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:contactDomain.xsd" uri="contactDomain.xsd" />  
     
     <system systemId="infopartDomain.xsd" uri="infopartDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
