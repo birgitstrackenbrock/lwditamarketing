@@ -58,23 +58,23 @@
  </group> 
   
   <group xml:base="topic-approach/">
-    <system systemId="legal.xsd" uri="legal.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legal.xsd" uri="legal.xsd" />
+    <system systemId="legal2.xsd" uri="legal2.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legal2.xsd" uri="legal2.xsd" />
     
-    <uri name="legal.xsd" uri="legal.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legal.xsd" uri="legal.xsd" />
+    <uri name="legal2.xsd" uri="legal2.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legal2.xsd" uri="legal2.xsd" />
     
-    <system systemId="legalMod.xsd" uri="legalMod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legalMod.xsd" uri="legalMod.xsd" />
+    <system systemId="legal2Mod.xsd" uri="legal2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legal2Mod.xsd" uri="legal2Mod.xsd" />
     
-    <uri name="legalMod.xsd" uri="legalMod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legalMod.xsd" uri="legalMod.xsd" />
+    <uri name="legal2Mod.xsd" uri="legal2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legal2Mod.xsd" uri="legal2Mod.xsd" />
     
-    <system systemId="legalDomain2.xsd" uri="legalDomain2.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legalDomain2.xsd" uri="legalDomain2.xsd" />
+    <system systemId="legal2Domain.xsd" uri="legal2Domain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
     
-    <uri name="legalDomain2.xsd" uri="legalDomain2.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legalDomain2.xsd" uri="legalDomain2.xsd" />
+    <uri name="legal2Domain.xsd" uri="legal2Domain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
     
     <system systemId="titletopic.xsd" uri="titletopic.xsd" />
     <system systemId="urn:lw:names:dita:xsd:titletopic.xsd" uri="titletopic.xsd" />

@@ -23,10 +23,10 @@
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="legalsection2">
+  <xs:group name="legal2section">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="legalsection2"/>
+        <xs:element ref="legal2section"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
@@ -73,7 +73,7 @@
     <xs:attribute name="class" default="- topic/section legal2/disclaimer2 "/>
   </xs:attributeGroup>
   
-  <xs:element name="legalsection2">
+  <xs:element name="legal2section">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" ref="title"/>
@@ -82,14 +82,14 @@
           <xs:group ref="copyright2"/>
         </xs:choice>
       </xs:sequence>
-      <xs:attributeGroup ref="legalsection2-attlist"/>
+      <xs:attributeGroup ref="legal2section-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="legalsection2-attlist">
+  <xs:attributeGroup name="legal2section-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="- topic/section legal2/legalsection2 "/>
+    <xs:attribute name="class" default="- topic/section legal2/legal2section "/>
   </xs:attributeGroup>
   
   <xs:element name="copyright2">

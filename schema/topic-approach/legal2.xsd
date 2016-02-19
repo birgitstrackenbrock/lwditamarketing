@@ -6,8 +6,8 @@
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
   
-  <xs:include schemaLocation="urn:lw:names:dita:xsd:legalMod.xsd"/>
-  <xs:include schemaLocation="urn:lw:names:dita:xsd:legalDomain2.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:legal2Mod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:legal2Domain.xsd"/>
   
   <xs:group name="ph">
     <xs:choice>
