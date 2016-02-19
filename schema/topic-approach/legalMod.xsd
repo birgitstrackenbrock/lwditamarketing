@@ -50,8 +50,8 @@
         <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element ref="section"/>
-          <xs:group ref="legalpart" />
-          <xs:group ref="disclaimer"/>
+          <xs:group ref="legalsection2" />
+          <xs:group ref="disclaimer2"/>
         </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="legalbody-attlist"/>

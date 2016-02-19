@@ -29,7 +29,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="title"/>
-        <xs:element minOccurs="0" ref="shortdesc"/>
+        <xs:element minOccurs="0" ref="subtitle"/>
         <xs:element minOccurs="0" ref="prolog"/>
         <xs:element ref="titletopicbody"/>
       </xs:sequence>
@@ -49,9 +49,7 @@
       <xs:sequence>
         <xs:group ref="revision" minOccurs="0"/>
         <xs:group ref="pubdate" minOccurs="0"/>
-        <xs:choice minOccurs="0" maxOccurs="unbounded" >
-          <xs:group ref="all-blocks"/>
-        </xs:choice>
+        <xs:group ref="frontmattersection"/>
       </xs:sequence>
       <xs:attributeGroup ref="titletopicbody-attlist"/>
     </xs:complexType>

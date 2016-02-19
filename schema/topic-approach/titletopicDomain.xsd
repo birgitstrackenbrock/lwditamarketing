@@ -15,6 +15,14 @@
     </xs:appinfo>
   </xs:annotation>
   
+  <xs:group name="subtile">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="subtitle"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
   <xs:group name="revision">
     <xs:sequence>
       <xs:choice>
@@ -31,8 +39,26 @@
     </xs:sequence>
   </xs:group>
   
+  <xs:group name="frontmattersection">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="frontmattersection"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
   <!-- elements -->
   
+  <xs:element name="subtitle">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="subtitle-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="subtitle-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/shortdesc titletopic-d/subtitle "/>
+  </xs:attributeGroup>
   
   <xs:element name="revision">
     <xs:complexType mixed="true">
@@ -60,7 +86,21 @@
     <xs:attribute name="class" default="- topic/p titletopic-d/pubdate "/>
   </xs:attributeGroup>
   
-  
+  <xs:element name="frontmattersection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="frontmattersection-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="frontmattersection-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section titletopic-d/frontmattersection "/>
+  </xs:attributeGroup>
   
   
 </xs:schema>
