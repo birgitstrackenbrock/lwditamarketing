@@ -58,11 +58,29 @@
  </group> 
   
   <group xml:base="topic-approach/">
-    <system systemId="legal2.xsd" uri="legal2.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legal2.xsd" uri="legal2.xsd" />
+    <system systemId="benefit2topic.xsd" uri="benefit2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:benefit2topic.xsd" uri="benefit2topic.xsd" />
     
-    <uri name="legal2.xsd" uri="legal2.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legal2.xsd" uri="legal2.xsd" />
+    <uri name="benefit2topic.xsd" uri="benefit2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:benefit2topic.xsd" uri="benefit2topic.xsd" />
+    
+    <system systemId="benefit2Mod.xsd" uri="benefit2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:benefit2Mod.xsd" uri="benefit2Mod.xsd" />
+    
+    <uri name="benefit2Mod.xsd" uri="benefit2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:benefit2Mod.xsd" uri="benefit2Mod.xsd" />
+    
+    <system systemId="legal2Domain.xsd" uri="legal2Domain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
+    
+    <uri name="benefit2Domain.xsd" uri="benefit2Domain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:benefit2Domain.xsd" uri="benefit2Domain.xsd" />
+    
+    <system systemId="legal2topic.xsd" uri="legal2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legal2topic.xsd" uri="legal2topic.xsd" />
+    
+    <uri name="legal2topic.xsd" uri="legal2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legal2topic.xsd" uri="legal2topic.xsd" />
     
     <system systemId="legal2Mod.xsd" uri="legal2Mod.xsd" />
     <system systemId="urn:lw:names:dita:xsd:legal2Mod.xsd" uri="legal2Mod.xsd" />

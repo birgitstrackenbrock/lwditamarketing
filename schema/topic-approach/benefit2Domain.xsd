@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic benefit2-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+ 
+  <xs:group name="benefit2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="benefit2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- elements -->
+  
+  
+  <xs:element name="benefit2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="fig-blocks"/>
+          <xs:element ref="image"/>
+          <xs:element ref="data"/>
+          <xs:element ref="xref"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="benefit2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="benefit2-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="- topic/fig benefit2-d/benefit2 "/>
+  </xs:attributeGroup>
+  
+  
+</xs:schema>
