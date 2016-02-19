@@ -2,5 +2,6 @@
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:map.xsd" id="m1">
     <topicref href="titletopic_NXP.xml"/>
-    <topicref href="spectopic7_NXP.xml"/>
+    <topicref href="spectopic2_features_NXP.xml"/>
+    <topicref href="spectopic7_functional_NXP.xml"/>
 </map>
