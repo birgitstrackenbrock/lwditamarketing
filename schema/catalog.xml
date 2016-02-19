@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="lwm">
 
-  <group mxl:base="general">
+  <group xml:base="general/">
     <system systemId="featureDomain.xsd" uri="featureDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />
     
@@ -95,6 +95,24 @@
     
     <uri name="legal2Domain.xsd" uri="legal2Domain.xsd" />
     <uri name="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
+    
+    <system systemId="specification2topic.xsd" uri="specification2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:specification2topic.xsd" uri="specification2topic.xsd" />
+    
+    <uri name="specification2topic.xsd" uri="specification2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:specification2topic.xsd" uri="specification2topic.xsd" />
+    
+    <system systemId="specification2Mod.xsd" uri="specification2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:specification2Mod.xsd" uri="specification2Mod.xsd" />
+    
+    <uri name="specification2Mod.xsd" uri="specification2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:specification2Mod.xsd" uri="specification2Mod.xsd" />
+    
+    <system systemId="specification2Domain.xsd" uri="specification2Domain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:specification2Domain.xsd" uri="specification2Domain.xsd" />
+    
+    <uri name="specification2Domain.xsd" uri="specification2Domain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:specification2Domain.xsd" uri="specification2Domain.xsd" />
     
     <system systemId="titletopic.xsd" uri="titletopic.xsd" />
     <system systemId="urn:lw:names:dita:xsd:titletopic.xsd" uri="titletopic.xsd" />
