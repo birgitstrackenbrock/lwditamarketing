@@ -72,8 +72,8 @@
     <uri name="benefit2Mod.xsd" uri="benefit2Mod.xsd" />
     <uri name="urn:lw:names:dita:xsd:benefit2Mod.xsd" uri="benefit2Mod.xsd" />
     
-    <system systemId="legal2Domain.xsd" uri="legal2Domain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
+    <system systemId="benefit2Domain.xsd" uri="benefit2Domain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:benefit2Domain.xsd" uri="benefit2Domain.xsd" />
     
     <uri name="benefit2Domain.xsd" uri="benefit2Domain.xsd" />
     <uri name="urn:lw:names:dita:xsd:benefit2Domain.xsd" uri="benefit2Domain.xsd" />
