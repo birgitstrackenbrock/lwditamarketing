@@ -19,18 +19,25 @@
         <section id="id-12de5fa2-677d-48f1-e9fb-627186e6cab7">
             <p id="id-c33f070b-2694-40c5-8bd5-204862d81be9">Whether configured for synchronous or asynchronous replication between data centers or centralized backup across multiple sites, the Brocade FX8-24 addresses the most demanding business continuity, compliance, and global data access requirements. Twelve 8 Gbps Fibre Channel ports, ten 1 GbE ports, and up to two optional 10 GbE ports provide unmatched Fibre Channel and FCIP bandwidth, port density, and throughput for maximum application performance over WAN links.</p>
         </section>
-        <benefits id="id-6c1ae9e5-654d-4de9-a452-87a1814a3063"><benefit>
-            <title>A Scalable, Flexible SAN Extension Platform</title>
-            <p id="id-81d8cec7-dbfb-4ff0-d6d9-31141248efa9">The Brocade FX8-24 is an ideal foundation for building or expanding a high-performance SAN extension infrastructure for disaster recovery and data protection solutions (see Figure 1). It leverages cost-effective IP WAN transport to extend open systems and mainframe disk and tape storage applications over distances that would otherwise be impossible, impractical, or too expensive with standard Fibre Channel connections.</p>
-            <p id="id-e6224371-812f-4224-cb6a-01f8514fa4dd">Organizations can install up to four Brocade FX8-24 blades in a Brocade DCX 8510-8, Brocade DCX 8510-4, Brocade DCX, or Brocade DCX-4S, providing scalable Fibre Channel and FCIP bandwidth for larger enterprise data centers and multisite environments. Activating the optional 10 GbE ports doubles the aggregate bandwidth to 20 Gbps and enables additional FCIP port configurations (ten 1 GbE ports and one 10 GbE port, or two 10 GbE ports).</p>
-            <p id="id-77c3022e-82b3-4fe2-e63f-5d7525325be6">The Brocade FX8-24 provides flexible deployment options within the Brocade DCX 8510 and Brocade DCX chassis, integrating seamlessly with Fibre Channel and application blades or providing standalone extension services. In addition, a broad range of optional advanced extension, FICON®, and SAN fabric services are available to address the most challenging extension and storage networking requirements. The Brocade FX8-24 is ideal for:</p>
-            <ul id="id-9319ce64-c8d3-406d-be8b-367235cc3c2e">
-                <li id="id-fd0c68a6-70d1-4a10-979e-8a8dddf69625"><p id="id-41028915-88f9-41f7-e93c-86a6f164f770">Open systems and mainframedisk and tape extension</p></li>
-                <li id="id-c512ebbe-c70a-4c4d-803f-7711c7153522"><p id="id-abca7c5c-b196-4f5d-c8ae-d0e8c7227c69">Multisite synchronous and asynchronous disk replication</p></li>
-                <li id="id-1623014f-1c48-4a80-ac53-790a4eed1964"><p id="id-1d9c22e5-f06e-4ff2-a7f3-4fe80455b130">Centralized SAN backup, recovery, and archiving</p></li>
-            </ul>
-            <p id="id-240eb10d-532f-4c8d-b88e-4ecb05b616ac">Organizations can deploy the Brocade FX8-24 and the Brocade 7840 or the Brocade 7800 Extension Switch in a data center-to-edge architecture as a cost-effective option for connecting primary data centers with remote data centers and offices. Both the Brocade 7840 with up to twenty-four 16 Gbps Fibre Channel ports, sixteen 1/10 Gigabit Ethernet (GbE) ports, and two 40 GbE ports and the Brocade 7800 with up to sixteen 8 Gbps Fibre Channel ports and six GbE ports provide the bandwidth, port density, and throughput required for maximum application performance over WAN connections.</p>
-        </benefit>
+        <benefits id="id-6c1ae9e5-654d-4de9-a452-87a1814a3063">
+            <benefit>
+                <title>A Scalable, Flexible SAN Extension Platform</title>
+                <p id="id-81d8cec7-dbfb-4ff0-d6d9-31141248efa9">The Brocade FX8-24 is an ideal foundation for building or expanding a high-performance SAN extension infrastructure for disaster recovery and data protection solutions (see Figure 1). It leverages cost-effective IP WAN transport to extend open systems and mainframe disk and tape storage applications over distances that would otherwise be impossible, impractical, or too expensive with standard Fibre Channel connections.</p>
+                <p id="id-e6224371-812f-4224-cb6a-01f8514fa4dd">Organizations can install up to four Brocade FX8-24 blades in a Brocade DCX 8510-8, Brocade DCX 8510-4, Brocade DCX, or Brocade DCX-4S, providing scalable Fibre Channel and FCIP bandwidth for larger enterprise data centers and multisite environments. Activating the optional 10 GbE ports doubles the aggregate bandwidth to 20 Gbps and enables additional FCIP port configurations (ten 1 GbE ports and one 10 GbE port, or two 10 GbE ports).</p>
+                <p id="id-77c3022e-82b3-4fe2-e63f-5d7525325be6">The Brocade FX8-24 provides flexible deployment options within the Brocade DCX 8510 and Brocade DCX chassis, integrating seamlessly with Fibre Channel and application blades or providing standalone extension services. In addition, a broad range of optional advanced extension, FICON®, and SAN fabric services are available to address the most challenging extension and storage networking requirements. The Brocade FX8-24 is ideal for:</p>
+                <ul id="id-9319ce64-c8d3-406d-be8b-367235cc3c2e">
+                    <li id="id-fd0c68a6-70d1-4a10-979e-8a8dddf69625">
+                        <p id="id-41028915-88f9-41f7-e93c-86a6f164f770">Open systems and mainframedisk and tape extension</p>
+                    </li>
+                    <li id="id-c512ebbe-c70a-4c4d-803f-7711c7153522">
+                        <p id="id-abca7c5c-b196-4f5d-c8ae-d0e8c7227c69">Multisite synchronous and asynchronous disk replication</p>
+                    </li>
+                    <li id="id-1623014f-1c48-4a80-ac53-790a4eed1964">
+                        <p id="id-1d9c22e5-f06e-4ff2-a7f3-4fe80455b130">Centralized SAN backup, recovery, and archiving</p>
+                    </li>
+                </ul>
+                <p id="id-240eb10d-532f-4c8d-b88e-4ecb05b616ac">Organizations can deploy the Brocade FX8-24 and the Brocade 7840 or the Brocade 7800 Extension Switch in a data center-to-edge architecture as a cost-effective option for connecting primary data centers with remote data centers and offices. Both the Brocade 7840 with up to twenty-four 16 Gbps Fibre Channel ports, sixteen 1/10 Gigabit Ethernet (GbE) ports, and two 40 GbE ports and the Brocade 7800 with up to sixteen 8 Gbps Fibre Channel ports and six GbE ports provide the bandwidth, port density, and throughput required for maximum application performance over WAN connections.</p>
+            </benefit>
             <fig>
                 <title>Figure 1</title>
                 <desc>The Brocade FX8-24 is a scalable SAN extension platform that extends disaster  recovery and data protection storage solutions across any distance.</desc>
@@ -48,28 +55,57 @@
                 <p id="id-f3d4a7b5-6e3d-4388-9ec4-2b12efff29ad">Best-in-class Fibre Channel and FCIPswitch port density, bandwidth, and throughput address today’s dynamic I/O and workload requirements, and are designed to meet the evolving requirements of highly virtualized data centers. Each Brocade FX8-24 provides aggregate bandwidth of up to 96 Gbps for Fibre Channel and up to 20 Gbps for FCIP. Supporting up to 350 ms Round-Trip Time (RTT) of latency, the Brocade FX8-24 enables cost-effective SAN extension solutions over distances up to 52,500 kilometers (33,000 miles).</p>
                 <p id="id-48aea677-4a40-4898-fbe5-f7ace69a8862">The Brocade FX8-24 maximizes replication and backup throughput over distance using advanced Fibre Channel frame compression, disk andtape protocol acceleration, and FCIP networking technology. Unique features and technologies include the following:</p>
                 <ul id="id-be9a9b16-a19e-443b-a7a4-bfa09a0801ae">
-                    <li id="id-efd3b107-af79-47e7-b794-d19c6570838e"><p id="id-89ba4b47-11cb-46f5-c8d2-75becf25fa12">FCIP Trunking combines multipleIP source and destination address pairs into a single logical high-bandwidth FCIP trunk spanning multiple physical ports—including 10 GbE ports—to provide load balancing and network failure resiliency.</p></li>
-                    <li id="id-5819fd62-0552-4cca-cf4a-a5bb5618a89e"><p id="id-02e654f4-7cdd-485f-89b8-9b8833451684">Adaptive Rate Limiting dynamically adjusts bandwidth between minimum and maximum rate limits to optimize bandwidth utilization and sharing.</p></li>
-                    <li id="id-44e3a95f-772a-4227-d8a2-9c715a54fb23"><p id="id-6e09b9ac-254c-4a23-9c55-a328135e60ec">FCIP Quality of Service (QoS) provides high-, medium-, and low-priority handling of initiator-target flows within the same FCIP tunnel for transmission over the WAN with individual TCP sessions per QoS class.</p></li>
-                    <li id="id-f0c0f83b-c1ef-4e9e-d16f-23c97194a9f1"><p id="id-1430a4ec-2d39-4e72-acfa-e5315c5aca19">IPsec support ensures secure transport over WAN links by encrypting data-in-flight with standard 256-bit AES algorithm.</p></li>
-                    <li id="id-6d06a408-3210-4a27-bcda-3af68574f722"><p id="id-9f3f0608-f1cf-4db3-9869-d92aeb496bad">Advanced compression architecture provides multiple modes to optimize compression ratios for various throughput requirements.</p></li>
-                    <li id="id-d58d1cef-9102-4e5b-e044-17bc394cbc60"><p id="id-14d27d06-d75b-4755-fca9-75e46cdb0f7b">FCIP Fast Write accelerates SCSI write processing, maximizing performance of synchronous and asynchronous replication applications across high-latency WAN connections.</p></li>
-                    <li id="id-a27e027a-37a0-4815-9c61-fef81cf6b8b5"><p id="id-845b4a05-2bb2-456f-b435-a22b8499ddaa">Open Systems Tape Pipelining accelerates read and write tape processing over distance, minimizing backup and restore windows.</p></li>
-                    <li id="id-fd629ed6-3242-4a07-c0c1-6cdd3a5bf8f3"><p id="id-a35e5036-a13d-4727-e186-3eac1eaf6a4f">Brocade Advanced Accelerator for FICON uses advanced networking technologies, data management techniques, and protocol intelligence to accelerate IBM zGM, mainframe tape read and write operations, and z/OS host connection to Teradata warehousing systems over distance.</p></li>
-                    <li id="id-0e8ff9f8-496b-4885-8356-0749260d6d9f"><p id="id-202f0d01-5f02-417c-81ac-c5c3c245879d">Storage-Optimized TCP optimizesTCP window size and flow control, accelerating TCP transport for storage applications.</p></li>
+                    <li id="id-efd3b107-af79-47e7-b794-d19c6570838e">
+                        <p id="id-89ba4b47-11cb-46f5-c8d2-75becf25fa12">FCIP Trunking combines multipleIP source and destination address pairs into a single logical high-bandwidth FCIP trunk spanning multiple physical ports—including 10 GbE ports—to provide load balancing and network failure resiliency.</p>
+                    </li>
+                    <li id="id-5819fd62-0552-4cca-cf4a-a5bb5618a89e">
+                        <p id="id-02e654f4-7cdd-485f-89b8-9b8833451684">Adaptive Rate Limiting dynamically adjusts bandwidth between minimum and maximum rate limits to optimize bandwidth utilization and sharing.</p>
+                    </li>
+                    <li id="id-44e3a95f-772a-4227-d8a2-9c715a54fb23">
+                        <p id="id-6e09b9ac-254c-4a23-9c55-a328135e60ec">FCIP Quality of Service (QoS) provides high-, medium-, and low-priority handling of initiator-target flows within the same FCIP tunnel for transmission over the WAN with individual TCP sessions per QoS class.</p>
+                    </li>
+                    <li id="id-f0c0f83b-c1ef-4e9e-d16f-23c97194a9f1">
+                        <p id="id-1430a4ec-2d39-4e72-acfa-e5315c5aca19">IPsec support ensures secure transport over WAN links by encrypting data-in-flight with standard 256-bit AES algorithm.</p>
+                    </li>
+                    <li id="id-6d06a408-3210-4a27-bcda-3af68574f722">
+                        <p id="id-9f3f0608-f1cf-4db3-9869-d92aeb496bad">Advanced compression architecture provides multiple modes to optimize compression ratios for various throughput requirements.</p>
+                    </li>
+                    <li id="id-d58d1cef-9102-4e5b-e044-17bc394cbc60">
+                        <p id="id-14d27d06-d75b-4755-fca9-75e46cdb0f7b">FCIP Fast Write accelerates SCSI write processing, maximizing performance of synchronous and asynchronous replication applications across high-latency WAN connections.</p>
+                    </li>
+                    <li id="id-a27e027a-37a0-4815-9c61-fef81cf6b8b5">
+                        <p id="id-845b4a05-2bb2-456f-b435-a22b8499ddaa">Open Systems Tape Pipelining accelerates read and write tape processing over distance, minimizing backup and restore windows.</p>
+                    </li>
+                    <li id="id-fd629ed6-3242-4a07-c0c1-6cdd3a5bf8f3">
+                        <p id="id-a35e5036-a13d-4727-e186-3eac1eaf6a4f">Brocade Advanced Accelerator for FICON uses advanced networking technologies, data management techniques, and protocol intelligence to accelerate IBM zGM, mainframe tape read and write operations, and z/OS host connection to Teradata warehousing systems over distance.</p>
+                    </li>
+                    <li id="id-0e8ff9f8-496b-4885-8356-0749260d6d9f">
+                        <p id="id-202f0d01-5f02-417c-81ac-c5c3c245879d">Storage-Optimized TCP optimizesTCP window size and flow control, accelerating TCP transport for storage applications.</p>
+                    </li>
                 </ul>
             </benefit>
             <benefit>
                 <title>Simplified Management and Robust Network Analytics</title>
                 <p id="id-e9e43996-de17-4d59-cc0a-0c8733723a9c">Brocade Fabric VisionTM technology provides a breakthrough hardware and software solution that helps simplify monitoring, maximize network availability, and dramatically reduce costs. Featuring innovative monitoring, management, and diagnostic capabilities, Fabric Vision technology enables administrators to avoid problems before they impact operations, helping their organizations meet Service Level Agreements (SLAs). The Brocade FX8-24 Extension Blade supports the following Brocade Fabric Vision technology features:</p>
                 <ul id="id-cd683968-1b63-4f86-aceb-b38afa0cb2f5">
-                    <li id="id-64be09b7-f5e5-48c5-d47c-9db6fcd54173"><p id="id-916209f9-bdcb-46f1-fc30-79f0e51d36cc"><b>Monitoring and Alerting Policy Suite(MAPS):</b> Provides a pre-built, policy-based threshold monitoring and alerting tool that proactively monitors storage extension network health based on a comprehensive set of metrics per circuit or QoS. Administrators can configure multiple fabrics at one time using pre-defined or customized rules and policies for specific ports or switch elements.</p></li>
-                    <li id="id-653980be-83c7-4e6b-f239-5a514cf7d76c"><p id="id-88b656a4-fd0d-49c8-f152-24b23a37db04"><b>Fabric Performance Impact (FPI) Monitoring:</b> Leverages pre-defined MAPS policies to automatically detect and alert administrators to different latency severity levels, and identifies slow drain devices that can impact the network. This feature uses advanced monitoring capabilities and intuitive MAPS dashboard reporting to indicate various latency severity levels, pinpointing exactly which devices are causing or are impacted by a bottlenecked port. This feature also provides automatic mitigation or recovery from the effects of slow drain devices.</p></li>
-                    <li id="id-c1370278-2cd1-409f-d89c-91679113dace"><p id="id-5c54ee37-a30a-4f99-f39b-e1084ebc2575"><b>Dashboards:</b> Provides integrateddashboards that display an overall SAN health view, along with details on out-of-range conditions, to help administrators easily identify trends and quickly pinpoint issues occurring on a switch or in a fabric.</p></li>
-                    <li id="id-c338caf3-f8c9-4286-d28e-b4be4ce76706"><p id="id-b1fe9f3a-eccb-46a3-c755-97160d9b3708"><b>Configuration and Operational Monitoring Policy Automation Services Suite (COMPASS):</b> Simplifies deployment, ensures consistency, and increases operational efficiencies of larger environments with automated switch and fabric configuration services. Administrators can configure a template or adopt an existing configuration as a template and seamlessly deploy the configuration across the fabric. In addition, they can ensure that settings do not drift over time with COMPASS configuration and policy violation monitoring within Brocade Network Advisor dashboards.</p></li>
-                    <li id="id-4bf39ade-d454-467a-833b-71bacd1428e9"><p id="id-a2453543-dc96-484a-fb5c-98c953a48d72"><<b>Flow Vision:</b> Enables administrators to identify, monitor, and analyze specific application flows in order to simplify troubleshooting, maximize performance, avoid congestion, and optimize resources. Flow Vision includes:</p>
+                    <li id="id-64be09b7-f5e5-48c5-d47c-9db6fcd54173">
+                        <p id="id-916209f9-bdcb-46f1-fc30-79f0e51d36cc"><b>Monitoring and Alerting Policy Suite(MAPS):</b> Provides a pre-built, policy-based threshold monitoring and alerting tool that proactively monitors storage extension network health based on a comprehensive set of metrics per circuit or QoS. Administrators can configure multiple fabrics at one time using pre-defined or customized rules and policies for specific ports or switch elements.</p>
+                    </li>
+                    <li id="id-653980be-83c7-4e6b-f239-5a514cf7d76c">
+                        <p id="id-88b656a4-fd0d-49c8-f152-24b23a37db04"><b>Fabric Performance Impact (FPI) Monitoring:</b> Leverages pre-defined MAPS policies to automatically detect and alert administrators to different latency severity levels, and identifies slow drain devices that can impact the network. This feature uses advanced monitoring capabilities and intuitive MAPS dashboard reporting to indicate various latency severity levels, pinpointing exactly which devices are causing or are impacted by a bottlenecked port. This feature also provides automatic mitigation or recovery from the effects of slow drain devices.</p>
+                    </li>
+                    <li id="id-c1370278-2cd1-409f-d89c-91679113dace">
+                        <p id="id-5c54ee37-a30a-4f99-f39b-e1084ebc2575"><b>Dashboards:</b> Provides integrateddashboards that display an overall SAN health view, along with details on out-of-range conditions, to help administrators easily identify trends and quickly pinpoint issues occurring on a switch or in a fabric.</p>
+                    </li>
+                    <li id="id-c338caf3-f8c9-4286-d28e-b4be4ce76706">
+                        <p id="id-b1fe9f3a-eccb-46a3-c755-97160d9b3708"><b>Configuration and Operational Monitoring Policy Automation Services Suite (COMPASS):</b> Simplifies deployment, ensures consistency, and increases operational efficiencies of larger environments with automated switch and fabric configuration services. Administrators can configure a template or adopt an existing configuration as a template and seamlessly deploy the configuration across the fabric. In addition, they can ensure that settings do not drift over time with COMPASS configuration and policy violation monitoring within Brocade Network Advisor dashboards.</p>
+                    </li>
+                    <li id="id-4bf39ade-d454-467a-833b-71bacd1428e9">
+                        <p id="id-a2453543-dc96-484a-fb5c-98c953a48d72"><b>Flow Vision:</b> Enables administrators to identify, monitor, and analyze specific application flows in order to simplify troubleshooting, maximize performance, avoid congestion, and optimize resources. Flow Vision includes:</p>
                         <ul id="id-e4e15ae8-57d1-4580-e752-1b3a9340751b">
-                            <li id="id-8f400b02-a243-4027-ed90-260c56e6f951"><p id="id-9cda75a7-f886-447d-d02a-ca3b1fba8778"><b>Flow Monitor:</b> Provides comprehensive visibility into flows across a storage extension network, including the ability to automatically learn flows and non-disruptively monitor flow performance. Administrators can monitor all flows from a specific storage device that is writing to or reading from a destination storage device/LUNs or across a storage extension network. Additionally, they can performLUN-level monitoring of specific frame types to identify resource contention or congestion that is impacting application performance.</p></li>
+                            <li id="id-8f400b02-a243-4027-ed90-260c56e6f951">
+                                <p id="id-9cda75a7-f886-447d-d02a-ca3b1fba8778"><b>Flow Monitor:</b> Provides comprehensive visibility into flows across a storage extension network, including the ability to automatically learn flows and non-disruptively monitor flow performance. Administrators can monitor all flows from a specific storage device that is writing to or reading from a destination storage device/LUNs or across a storage extension network. Additionally, they can performLUN-level monitoring of specific frame types to identify resource contention or congestion that is impacting application performance.</p>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -92,206 +128,313 @@
             <title>Maximizing Investments</title>
             <p id="id-2a97e3cc-dd06-4cf4-a575-b36be375a909">To help optimize technology investments,Brocade and its partners offer complete solutions that include professional services, technical support, and education. For more information, contact a Brocade sales partner or visit <xref href="http://www.brocade.com/en.html" format="html" scope="external">www.brocade.com</xref>.</p>
         </vendorinformation>
-        <specifications id="id-bd5a29b7-eda6-4c5b-e74e-9f5062064b2d">
-            <title>Brocade FX8-24 Specifications</title>
-            <p id="id-a350ec4c-bb85-41a3-c57f-899716204578"><b>System Architecture</b></p>
-            <featuretable id="id-23237108-454b-41dd-b636-8800fe6774ad">
-                <strow id="id-8f91b732-2265-43f5-9993-9464b986963b">
-                    <stentry id="id-4beb9fd1-61b5-402a-f9e1-3a7f6f2e326c"><p id="id-ac168421-014b-45d2-e14b-01d940c79a4f">Fibre Channel ports</p></stentry>
-                    <stentry id="id-e67c8621-c24d-4a05-9714-147e44ea19d3"><p id="id-bf292341-0f3c-48d4-c205-9778a929222a">12 ports; E, F, M, EX, and FL ports</p></stentry>
-                </strow>
-                <strow id="id-5bb89819-7ea7-476e-c994-46c565ebfc23">
-                    <stentry id="id-6c6e07cf-132a-4298-f7d5-76ef09eb9263"><p id="id-505dd9c8-6521-4f3d-d1b1-b9c1587630e7">FCIP ports</p></stentry>
-                    <stentry id="id-9f206fc8-ff15-4646-d69f-5aa1d6c12a11"><p id="id-44db5d04-94d6-446e-c505-fda52135a452">12 ports (VE, VEX): 10 1 GbE ports and twooptional 10 GbE ports</p></stentry>
-                </strow>
-                <strow id="id-6639da04-5b57-49ca-e7d9-47c92b6fc2cf">
-                    <stentry id="id-bb613122-b083-4779-fe87-9317cff3799b"><p id="id-44ab99bb-759b-4fce-a87d-00a43794e5af">Standard FCIP port configuration</p></stentry>
-                    <stentry id="id-d67fe97c-c86a-433f-c7b5-7cdde8dcef38"><p id="id-30ba1f40-22ac-410f-d920-898830a9f527">10 1 GbE ports</p></stentry>
-                </strow>
-                <strow id="id-23f24d93-f4f4-4159-d55e-ef99db3db4e7">
-                    <stentry id="id-f1d92cb4-bb77-4c8e-d196-a2101b1612ca"><p id="id-21bf2165-165d-4a1e-f67a-34237024c97f">Optional FCIP 10 GbE port configurations</p></stentry>
-                    <stentry id="id-a8418549-4184-49c5-d863-0b48de3985b6"><p id="id-1dd08c99-27b1-44d6-bca8-d8893102b767">10 1 GbE ports and one 10 GbE port; two 10 GbE ports</p></stentry>
-                </strow>
-                <strow id="id-c5a004c7-7a91-4c15-a9fc-71ce7a0d5d6e">
-                    <stentry id="id-cce92bd1-4ce1-4a4c-f653-d9f98c624090"><p id="id-e2664de6-84d4-437b-850a-ebba61104e63">Scalability</p></stentry>
-                    <stentry id="id-0cb7ab5e-7f75-407a-dee1-44dc42772cca"><p id="id-57d202af-94cf-4111-d1a4-28be63ebade9">Full fabric architecture with 239 switchesmaximum</p></stentry>
-                </strow>
-                <strow id="id-7ac23968-6465-4dca-906a-7203daa6bcc0">
-                    <stentry id="id-5a90cb01-606c-46ff-ae80-0c00f44a09b4"><p id="id-a28c94f1-e158-4b97-9ba7-ed5cca57eb4e">Certified maximum</p></stentry>
-                    <stentry id="id-15d13e81-c5d0-4a59-d775-09a19e101051"><p id="id-503e5acd-2f19-4235-b548-bdb8b25dc31b"><b>Single fabric:</b> 56 domains, 7 hops</p>
-                        <p id="id-8898719c-bd0c-4b67-bc8a-92723169f716"><b>Multiprotocol routing fabric:</b> 19 hops</p></stentry>
-                </strow>
-                <strow id="id-e28a0bd9-6649-4e47-bf48-7acd0b33a937">
-                    <stentry id="id-8d1c4288-b033-42bd-dabd-20c939c3774f"><p id="id-f7fcb5d7-88dd-4060-9494-ee4a7cdfd163">Fibre Channel performance</p></stentry>
-                    <stentry id="id-2c8c21f3-ce6d-4288-bdb9-7d9858bb166a"><p id="id-58d7a192-c0e0-4062-ef51-56ba1259effc">1.063 Gbps line speed, full duplex; 2.125 Gbps  line speed, full duplex; 4.25 Gbps line speed, full   duplex; 8.5 Gbps line speed, full duplex. Auto- sensing of 1 Gbps, 2 Gbps, 4 Gbps, and 8 Gbps   port speeds; optionally programmable to fixed   port speed. Speed matching between 1 Gbps, 2   Gbps, 4 Gbps, and 8 Gbps ports.</p></stentry>
-                </strow>
-                <strow id="id-23db134c-a2cf-42fe-d17e-2001be43858e">
-                    <stentry id="id-c80dd3c9-b180-482b-e769-20a64fa995a0"><p id="id-3ef73ef4-4add-49be-adcd-8f97805225c9">FCIP performance</p></stentry>
-                    <stentry id="id-81e3dea0-a581-45bb-b6d0-5a25de49446d"><p id="id-cf3f121e-7e14-4abb-bd74-a455a09b0295">1 Gbps line speed; 10 Gbps line speed</p></stentry>
-                </strow>
-                <strow id="id-79dda036-debe-4f36-fbef-af8913c3d613">
-                    <stentry id="id-a14dd040-8db6-487c-e88e-7217a378004b"><p id="id-273f758f-8f0b-4052-8897-96275a4e49b8">System scalability</p></stentry>
-                    <stentry id="id-cab49ab1-aec1-41e7-ecf6-1e24e1acd6fe"><p id="id-3a97b8a6-47c8-4c07-ce3c-21c32701f3ff">Up to four Brocade FX8-24 blades per BrocadeDCX Backbone family chassis</p></stentry>
-                </strow>
-                <strow id="id-f34626b2-4935-4b51-e957-0a9fef1bb041">
-                    <stentry id="id-18175abe-8770-4b80-b58c-439e74ef91e9"><p id="id-990a3544-148a-43da-81e2-86cf5b303ecf">ISL Trunking</p></stentry>
-                    <stentry id="id-aa929d8b-bda7-40d6-9e8c-bde5758149f0"><p id="id-67979e0b-1ea3-4d98-dd74-a8342a973148">Up to eight 8 Gbps ports per ISL trunk; up to64 Gbps per ISL trunk. There is no limit to how many trunk groups can be configured on the blade.</p></stentry>
-                </strow>
-                <strow id="id-31f9e406-cc39-4640-aa92-5090ae04d84a">
-                    <stentry id="id-64064e37-8788-431e-aa9d-adebb54d252c"><p id="id-9fde2042-8621-4389-b197-94a5b4341d4d">Fibre Channelaggregate bandwidth</p></stentry>
-                    <stentry id="id-188c094b-13e3-43ad-ef7b-687738c9254d"><p id="id-2cf42575-4e92-4d77-bc4b-a949ae891e9c">96 Gbps: 12 ports × 8 Gbps data rate</p></stentry>
-                </strow>
-                <strow id="id-6eb8f2b5-d907-47a9-c03f-ec147105de82">
-                    <stentry id="id-3b085f5a-946b-4148-9684-d85b8c508f9e"><p id="id-2a68842f-8cd6-4951-e93e-e2332c7b4616">FCIP aggregatebandwidth (supported port configurations)</p></stentry>
-                    <stentry id="id-0e331634-274e-43b6-d5bf-9eb420458793"><p id="id-9d408144-5bb9-442d-8d8c-bcc89ba3fcc6">10 Gbps: 10 ports × 1 Gbps data rate20 Gbps: 10 ports × 1 Gbps data rate and 1 port × 10 Gbps data rate 20 Gbps: 2 ports × 10 Gbps data rate</p></stentry>
-                </strow>
-                <strow id="id-520f85ce-aa48-4112-edc4-47101e0e06f5">
-                    <stentry id="id-9382b085-5beb-44aa-9b80-d63b3b829314"><p id="id-b07eda82-dc05-4ba9-e75b-ba1f563a2f5a">Fabric latency</p></stentry>
-                    <stentry id="id-dc8bded5-6057-45aa-d648-383f5160eb0e"><p id="id-f27841b4-989a-4563-e81e-fb0b93eb321c">700 ns with no contention, cut-through routingat 8 Gbps</p></stentry>
-                </strow>
-                <strow id="id-d16d4ac9-562b-40f4-d42a-c3a77a1a13a8">
-                    <stentry id="id-a49746d8-4c49-45e8-834a-b114a976fefc"><p id="id-c81487ca-8089-409d-c3cf-ff4d9d820d5d">Maximum frame size</p></stentry>
-                    <stentry id="id-99276b8c-6606-4c3a-fca3-a5a3b45a10ba"><p id="id-2f5e9001-b73e-407f-dfb6-5efefd5dedd6">2,112-byte payload</p></stentry>
-                </strow>
-                <strow id="id-a425bc71-a6c6-45fa-eae3-e4f54334b90a">
-                    <stentry id="id-45b8805d-5449-41d7-9151-4909a3b23813"><p id="id-e71018cf-6cea-4655-d259-bb867f29cd42">Maximum MTU size</p></stentry>
-                    <stentry id="id-f9ce681e-95a3-495a-bc29-49da38c29028"><p id="id-374086ba-a323-405c-de04-243007950f4f">1,500-byte Ethernet packets with FCIP</p></stentry>
-                </strow>
-                <strow id="id-f9b51183-ae8a-4263-8cc7-3a5a390cd7b7">
-                    <stentry id="id-65ae4901-91cd-421e-b4b5-91726f4a3d60"><p id="id-95616eb6-ea3d-4fed-f9ea-3f8d591d9d89">Classes of service</p></stentry>
-                    <stentry id="id-20e0843a-b91f-4e39-db5e-f780695d0ed8"><p id="id-a0138c0b-be71-4203-8959-cecec42ebe38">Class 2, Class 3, Class F (inter-switch frames)</p></stentry>
-                </strow>
-                <strow id="id-066de92f-fda3-4f7f-db6e-2c4af0a79db0">
-                    <stentry id="id-c7be6fed-6858-469e-cd31-87477e4a4c7a"><p id="id-6537e1bd-418e-4611-e361-567a1054fce9">Port types</p></stentry>
-                    <stentry id="id-bc180fee-ab45-4072-d47c-5288e439b478"><p id="id-6d639755-961d-4927-d577-18bc07327470">FL_Port, F_Port, E_Port, EX_Port, and M_Port(Mirror Port). For FCIP, VE_Port (Virtual E_Port), VEX_Port (Virtual EX_Port).</p></stentry>
-                </strow>
-                <strow id="id-d2aa7f89-83fc-4b65-88a4-e225e972f950">
-                    <stentry id="id-88df4af3-4b66-4b6c-d077-265babc2a9e8"><p id="id-4d4dc90f-1525-4eca-8338-27a0069e84d6">Data traffic types</p></stentry>
-                    <stentry id="id-37bcf019-284c-4c60-fc60-ab4b452974eb"><p id="id-100692b9-414d-49b0-c721-59181c46767e">Fabric switches supporting unicast,multicast (255 groups), and broadcast</p></stentry>
-                </strow>
-                <strow id="id-94564887-5dd2-4d5e-bbbe-e0851a5bfd72">
-                    <stentry id="id-da2330e7-afc4-49f8-9df4-29aca76c13fa"><p id="id-06bc7f9e-7102-495b-f0a0-c7df4c4eaf46">Media types</p></stentry>
-                    <stentry id="id-a037634b-c61a-4fa4-8977-68030d0267ea"><p id="id-8e3d1f34-cf4a-4eb7-8d85-915161857ab4"><b>Fibre Channel: </b>Brocade hot-pluggable SmallForm Factor Pluggable (SFP) and SFP+, LC connector; Short-Wave Laser (SWL) and Long-Wave Laser (LWL); distance depends on fiber-optic cable and port speed; supports SFP+ (2, 4, and 8 Gbps) and SFP (1, 2, and 4 Gbps) optical transceivers</p>
-                        <p id="id-d54426be-432a-4d6c-f37b-0cd6a01fc0b1"><b>1 GbE:</b> Brocade hot-pluggable optical SFP, Short-Wave Laser (SWL) and Long-Wave Laser (LWL); GbE Copper SFP; distance depends on fiber-optic or copper cable and port speed</p><p id="id-500a8d78-f504-4f27-c861-87ba13459404"><b>10 GbE:</b> Brocade hot-pluggable optical 10 GbE SFP+, Short-Reach (SR) and Long-Reach (LR); distance depends on fiber-optic cable and port speed</p></stentry>
-                </strow>
-            </featuretable>
+        <specifications id="id-bd5a29b7-eda6-4c5b-e74e-9f5062064b2d"><title>Brocade FX8-24 Specifications</title>
+            <featurefig>
+                <title>System Architecture</title>
+                <featuretable id="id-23237108-454b-41dd-b636-8800fe6774ad">
+                    <strow id="id-8f91b732-2265-43f5-9993-9464b986963b">
+                        <stentry id="id-4beb9fd1-61b5-402a-f9e1-3a7f6f2e326c">
+                            <p id="id-ac168421-014b-45d2-e14b-01d940c79a4f">Fibre Channel ports</p>
+                        </stentry>
+                        <stentry id="id-e67c8621-c24d-4a05-9714-147e44ea19d3">
+                            <p id="id-bf292341-0f3c-48d4-c205-9778a929222a">12 ports; E, F, M, EX, and FL ports</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-5bb89819-7ea7-476e-c994-46c565ebfc23">
+                        <stentry id="id-6c6e07cf-132a-4298-f7d5-76ef09eb9263">
+                            <p id="id-505dd9c8-6521-4f3d-d1b1-b9c1587630e7">FCIP ports</p>
+                        </stentry>
+                        <stentry id="id-9f206fc8-ff15-4646-d69f-5aa1d6c12a11">
+                            <p id="id-44db5d04-94d6-446e-c505-fda52135a452">12 ports (VE, VEX): 10 1 GbE ports and twooptional 10 GbE ports</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-6639da04-5b57-49ca-e7d9-47c92b6fc2cf">
+                        <stentry id="id-bb613122-b083-4779-fe87-9317cff3799b">
+                            <p id="id-44ab99bb-759b-4fce-a87d-00a43794e5af">Standard FCIP port configuration</p>
+                        </stentry>
+                        <stentry id="id-d67fe97c-c86a-433f-c7b5-7cdde8dcef38">
+                            <p id="id-30ba1f40-22ac-410f-d920-898830a9f527">10 1 GbE ports</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-23f24d93-f4f4-4159-d55e-ef99db3db4e7">
+                        <stentry id="id-f1d92cb4-bb77-4c8e-d196-a2101b1612ca">
+                            <p id="id-21bf2165-165d-4a1e-f67a-34237024c97f">Optional FCIP 10 GbE port configurations</p>
+                        </stentry>
+                        <stentry id="id-a8418549-4184-49c5-d863-0b48de3985b6"><p id="id-1dd08c99-27b1-44d6-bca8-d8893102b767">10 1 GbE ports and one 10 GbE port; two 10 GbE ports</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-c5a004c7-7a91-4c15-a9fc-71ce7a0d5d6e">
+                        <stentry id="id-cce92bd1-4ce1-4a4c-f653-d9f98c624090">
+                            <p id="id-e2664de6-84d4-437b-850a-ebba61104e63">Scalability</p>
+                        </stentry>
+                        <stentry id="id-0cb7ab5e-7f75-407a-dee1-44dc42772cca">
+                            <p id="id-57d202af-94cf-4111-d1a4-28be63ebade9">Full fabric architecture with 239 switchesmaximum</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-7ac23968-6465-4dca-906a-7203daa6bcc0">
+                        <stentry id="id-5a90cb01-606c-46ff-ae80-0c00f44a09b4">
+                            <p id="id-a28c94f1-e158-4b97-9ba7-ed5cca57eb4e">Certified maximum</p>
+                        </stentry>
+                        <stentry id="id-15d13e81-c5d0-4a59-d775-09a19e101051">
+                            <p id="id-503e5acd-2f19-4235-b548-bdb8b25dc31b"><b>Single fabric:</b> 56 domains, 7 hops</p>
+                            <p id="id-8898719c-bd0c-4b67-bc8a-92723169f716"><b>Multiprotocol routing fabric:</b> 19 hops</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-e28a0bd9-6649-4e47-bf48-7acd0b33a937">
+                        <stentry id="id-8d1c4288-b033-42bd-dabd-20c939c3774f">
+                            <p id="id-f7fcb5d7-88dd-4060-9494-ee4a7cdfd163">Fibre Channel performance</p>
+                        </stentry>
+                        <stentry id="id-2c8c21f3-ce6d-4288-bdb9-7d9858bb166a">
+                            <p id="id-58d7a192-c0e0-4062-ef51-56ba1259effc">1.063 Gbps line speed, full duplex; 2.125 Gbps  line speed, full duplex; 4.25 Gbps line speed, full   duplex; 8.5 Gbps line speed, full duplex. Auto- sensing of 1 Gbps, 2 Gbps, 4 Gbps, and 8 Gbps   port speeds; optionally programmable to fixed   port speed. Speed matching between 1 Gbps, 2   Gbps, 4 Gbps, and 8 Gbps ports.</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-23db134c-a2cf-42fe-d17e-2001be43858e">
+                        <stentry id="id-c80dd3c9-b180-482b-e769-20a64fa995a0">
+                            <p id="id-3ef73ef4-4add-49be-adcd-8f97805225c9">FCIP performance</p>
+                        </stentry>
+                        <stentry id="id-81e3dea0-a581-45bb-b6d0-5a25de49446d">
+                            <p id="id-cf3f121e-7e14-4abb-bd74-a455a09b0295">1 Gbps line speed; 10 Gbps line speed</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-79dda036-debe-4f36-fbef-af8913c3d613">
+                        <stentry id="id-a14dd040-8db6-487c-e88e-7217a378004b">
+                            <p id="id-273f758f-8f0b-4052-8897-96275a4e49b8">System scalability</p>
+                        </stentry>
+                        <stentry id="id-cab49ab1-aec1-41e7-ecf6-1e24e1acd6fe">
+                            <p id="id-3a97b8a6-47c8-4c07-ce3c-21c32701f3ff">Up to four Brocade FX8-24 blades per BrocadeDCX Backbone family chassis</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-f34626b2-4935-4b51-e957-0a9fef1bb041">
+                        <stentry id="id-18175abe-8770-4b80-b58c-439e74ef91e9">
+                            <p id="id-990a3544-148a-43da-81e2-86cf5b303ecf">ISL Trunking</p>
+                        </stentry>
+                        <stentry id="id-aa929d8b-bda7-40d6-9e8c-bde5758149f0">
+                            <p id="id-67979e0b-1ea3-4d98-dd74-a8342a973148">Up to eight 8 Gbps ports per ISL trunk; up to64 Gbps per ISL trunk. There is no limit to how many trunk groups can be configured on the blade.</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-31f9e406-cc39-4640-aa92-5090ae04d84a">
+                        <stentry id="id-64064e37-8788-431e-aa9d-adebb54d252c">
+                            <p id="id-9fde2042-8621-4389-b197-94a5b4341d4d">Fibre Channelaggregate bandwidth</p>
+                        </stentry>
+                        <stentry id="id-188c094b-13e3-43ad-ef7b-687738c9254d">
+                            <p id="id-2cf42575-4e92-4d77-bc4b-a949ae891e9c">96 Gbps: 12 ports × 8 Gbps data rate</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-6eb8f2b5-d907-47a9-c03f-ec147105de82">
+                        <stentry id="id-3b085f5a-946b-4148-9684-d85b8c508f9e">
+                            <p id="id-2a68842f-8cd6-4951-e93e-e2332c7b4616">FCIP aggregatebandwidth (supported port configurations)</p>
+                        </stentry>
+                        <stentry id="id-0e331634-274e-43b6-d5bf-9eb420458793">
+                            <p id="id-9d408144-5bb9-442d-8d8c-bcc89ba3fcc6">10 Gbps: 10 ports × 1 Gbps data rate20 Gbps: 10 ports × 1 Gbps data rate and 1 port × 10 Gbps data rate 20 Gbps: 2 ports × 10 Gbps data rate</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-520f85ce-aa48-4112-edc4-47101e0e06f5">
+                        <stentry id="id-9382b085-5beb-44aa-9b80-d63b3b829314">
+                            <p id="id-b07eda82-dc05-4ba9-e75b-ba1f563a2f5a">Fabric latency</p>
+                        </stentry>
+                        <stentry id="id-dc8bded5-6057-45aa-d648-383f5160eb0e">
+                            <p id="id-f27841b4-989a-4563-e81e-fb0b93eb321c">700 ns with no contention, cut-through routingat 8 Gbps</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-d16d4ac9-562b-40f4-d42a-c3a77a1a13a8">
+                        <stentry id="id-a49746d8-4c49-45e8-834a-b114a976fefc">
+                            <p id="id-c81487ca-8089-409d-c3cf-ff4d9d820d5d">Maximum frame size</p>
+                        </stentry>
+                        <stentry id="id-99276b8c-6606-4c3a-fca3-a5a3b45a10ba">
+                            <p id="id-2f5e9001-b73e-407f-dfb6-5efefd5dedd6">2,112-byte payload</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-a425bc71-a6c6-45fa-eae3-e4f54334b90a">
+                        <stentry id="id-45b8805d-5449-41d7-9151-4909a3b23813">
+                            <p id="id-e71018cf-6cea-4655-d259-bb867f29cd42">Maximum MTU size</p>
+                        </stentry>
+                        <stentry id="id-f9ce681e-95a3-495a-bc29-49da38c29028">
+                            <p id="id-374086ba-a323-405c-de04-243007950f4f">1,500-byte Ethernet packets with FCIP</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-f9b51183-ae8a-4263-8cc7-3a5a390cd7b7">
+                        <stentry id="id-65ae4901-91cd-421e-b4b5-91726f4a3d60">
+                            <p id="id-95616eb6-ea3d-4fed-f9ea-3f8d591d9d89">Classes of service</p>
+                        </stentry>
+                        <stentry id="id-20e0843a-b91f-4e39-db5e-f780695d0ed8">
+                            <p id="id-a0138c0b-be71-4203-8959-cecec42ebe38">Class 2, Class 3, Class F (inter-switch frames)</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-066de92f-fda3-4f7f-db6e-2c4af0a79db0">
+                        <stentry id="id-c7be6fed-6858-469e-cd31-87477e4a4c7a">
+                            <p id="id-6537e1bd-418e-4611-e361-567a1054fce9">Port types</p>
+                        </stentry>
+                        <stentry id="id-bc180fee-ab45-4072-d47c-5288e439b478">
+                            <p id="id-6d639755-961d-4927-d577-18bc07327470">FL_Port, F_Port, E_Port, EX_Port, and M_Port(Mirror Port). For FCIP, VE_Port (Virtual E_Port), VEX_Port (Virtual EX_Port).</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-d2aa7f89-83fc-4b65-88a4-e225e972f950">
+                        <stentry id="id-88df4af3-4b66-4b6c-d077-265babc2a9e8">
+                            <p id="id-4d4dc90f-1525-4eca-8338-27a0069e84d6">Data traffic types</p>
+                        </stentry>
+                        <stentry id="id-37bcf019-284c-4c60-fc60-ab4b452974eb">
+                            <p id="id-100692b9-414d-49b0-c721-59181c46767e">Fabric switches supporting unicast,multicast (255 groups), and broadcast</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-94564887-5dd2-4d5e-bbbe-e0851a5bfd72">
+                        <stentry id="id-da2330e7-afc4-49f8-9df4-29aca76c13fa">
+                            <p id="id-06bc7f9e-7102-495b-f0a0-c7df4c4eaf46">Media types</p>
+                        </stentry>
+                        <stentry id="id-a037634b-c61a-4fa4-8977-68030d0267ea">
+                            <p id="id-8e3d1f34-cf4a-4eb7-8d85-915161857ab4"><b>Fibre Channel: </b>Brocade hot-pluggable SmallForm Factor Pluggable (SFP) and SFP+, LC connector; Short-Wave Laser (SWL) and Long-Wave Laser (LWL); distance depends on fiber-optic cable and port speed; supports SFP+ (2, 4, and 8 Gbps) and SFP (1, 2, and 4 Gbps) optical transceivers</p>
+                            <p id="id-d54426be-432a-4d6c-f37b-0cd6a01fc0b1"><b>1 GbE:</b> Brocade hot-pluggable optical SFP, Short-Wave Laser (SWL) and Long-Wave Laser (LWL); GbE Copper SFP; distance depends on fiber-optic or copper cable and port speed</p>
+                            <p id="id-500a8d78-f504-4f27-c861-87ba13459404"><b>10 GbE:</b> Brocade hot-pluggable optical 10 GbE SFP+, Short-Reach (SR) and Long-Reach (LR); distance depends on fiber-optic cable and port speed</p>
+                        </stentry>
+                    </strow>
+                </featuretable>
+            </featurefig>
             <featuretable id="id-c185140b-f346-4bf8-bcd9-a9bc73ee22ec">
-                <strow id="id-79631528-d546-4fc7-d4c9-d676edd510c7"><stentry id="id-ce30146d-ac36-4819-88b6-361fc2838070"><p id="id-d0eeb33f-08de-49df-f687-e4a7410e65c4">Fabric services</p></stentry>
-                    <stentry id="id-986cc42a-c00e-4286-bc99-02196f6240f2"><p id="id-7ef3b93d-da7b-4b62-ac0f-1eaf59f1b352">Brocade Advanced Zoning, Dynamic PathSelection (DPS), FDMI, Enhanced Group Management (EGM), Frame Redirection, Registered State Change Notification (RSCN), Reliable Commit Service (RCS), Simple Name Server (SNS), Brocade Adaptive Networking, Brocade Server Application Optimization (SAO), and Bottleneck Detection</p>
-                        <p id="id-359429d2-cc4f-45f7-88e9-6e443478239d">Optional fabric services include: Monitoring and Alerting Policy Suite (MAPS), Flow Monitor, Brocade Advanced Performance Monitoring, Brocade Fabric Watch, Brocade Integrated Routing, Brocade Extended Fabrics, and Brocade ISL Trunking</p></stentry>
+                <strow id="id-79631528-d546-4fc7-d4c9-d676edd510c7">
+                    <stentry id="id-ce30146d-ac36-4819-88b6-361fc2838070">
+                        <p id="id-d0eeb33f-08de-49df-f687-e4a7410e65c4">Fabric services</p>
+                    </stentry>
+                    <stentry id="id-986cc42a-c00e-4286-bc99-02196f6240f2">
+                        <p id="id-7ef3b93d-da7b-4b62-ac0f-1eaf59f1b352">Brocade Advanced Zoning, Dynamic PathSelection (DPS), FDMI, Enhanced Group Management (EGM), Frame Redirection, Registered State Change Notification (RSCN), Reliable Commit Service (RCS), Simple Name Server (SNS), Brocade Adaptive Networking, Brocade Server Application Optimization (SAO), and Bottleneck Detection</p>
+                        <p id="id-359429d2-cc4f-45f7-88e9-6e443478239d">Optional fabric services include: Monitoring and Alerting Policy Suite (MAPS), Flow Monitor, Brocade Advanced Performance Monitoring, Brocade Fabric Watch, Brocade Integrated Routing, Brocade Extended Fabrics, and Brocade ISL Trunking</p>
+                    </stentry>
                 </strow>
                 <strow id="id-ea30062b-9bb3-43be-9fc3-47d69982ac5c">
-                    <stentry id="id-c818b0af-5a82-4739-d59d-6615261b175f"><p id="id-977808e5-e3a3-44e9-d736-63cf8bcc61e2">Licensing options</p></stentry>
-                    <stentry id="id-3a4842c5-a084-42df-ed1e-c049c6e44824"><p id="id-308a785d-bae2-449b-d1a2-0795430b7aea">The following optional extension features can beenabled via license keys:</p>
+                    <stentry id="id-c818b0af-5a82-4739-d59d-6615261b175f">
+                        <p id="id-977808e5-e3a3-44e9-d736-63cf8bcc61e2">Licensing options</p>
+                    </stentry>
+                    <stentry id="id-3a4842c5-a084-42df-ed1e-c049c6e44824">
+                        <p id="id-308a785d-bae2-449b-d1a2-0795430b7aea">The following optional extension features can beenabled via license keys:</p>
                         <ul id="id-8c333411-93b0-4dfb-dd42-7f681875cfe2">
-                            <li id="id-2bb71cfe-aa96-4861-f602-551a7349331f"><p id="id-6bbb272f-6fdc-41e6-8831-f0c99e8c3a93"><b>10 GbE License:</b> Enables the two 10 GbE ports and optional 10 GbE port configurations </p></li>
-                            <li id="id-62452ccc-743b-4495-d7dc-13e5131db0cd"><p id="id-3f09b1bd-84ca-430c-d117-7c3fda9b03a5"><b>Advanced Extension:</b> Enables FCIP Trunking and Adaptive Rate Limiting</p></li>
-                            <li id="id-6376707b-7e58-4b41-a29b-8794c3ca66d2"><p id="id-07307bc5-1bf9-4015-d949-d7034a344068"><b>FICON Management Server: </b>Control Unit Port (CUP) enables host control of switches in mainframe environments</p></li>
-                            <li id="id-9296855b-f100-46f9-89a3-eccd12594332"><p id="id-d5a81d01-94cb-446f-d926-6f4e4f280f2f"><b>Advanced Accelerator for FICON:</b> Accelerates IBM zGM, mainframe tapes, and z/OS connection to Teradata systems over distance</p></li>
+                            <li id="id-2bb71cfe-aa96-4861-f602-551a7349331f">
+                                <p id="id-6bbb272f-6fdc-41e6-8831-f0c99e8c3a93"><b>10 GbE License:</b> Enables the two 10 GbE ports and optional 10 GbE port configurations </p>
+                            </li>
+                            <li id="id-62452ccc-743b-4495-d7dc-13e5131db0cd">
+                                <p id="id-3f09b1bd-84ca-430c-d117-7c3fda9b03a5"><b>Advanced Extension:</b> Enables FCIP Trunking and Adaptive Rate Limiting</p>
+                            </li>
+                            <li id="id-6376707b-7e58-4b41-a29b-8794c3ca66d2">
+                                <p id="id-07307bc5-1bf9-4015-d949-d7034a344068"><b>FICON Management Server: </b>Control Unit Port (CUP) enables host control of switches in mainframe environments</p>
+                            </li>
+                            <li id="id-9296855b-f100-46f9-89a3-eccd12594332">
+                                <p id="id-d5a81d01-94cb-446f-d926-6f4e4f280f2f"><b>Advanced Accelerator for FICON:</b> Accelerates IBM zGM, mainframe tapes, and z/OS connection to Teradata systems over distance</p>
+                            </li>
                         </ul>
                     </stentry>
                 </strow>
             </featuretable>
-            <p id="id-3466b75a-89cd-4766-c3c6-41bb7eee5ecb"><b>Management</b></p>
-            <featuretable id="id-6ab3416c-ed99-4534-8196-9c699749a84b">
-                <strow id="id-9061ccd8-1bd7-4369-97b8-d3ca9ca6a3d6">
-                    <stentry id="id-337dc2c4-a908-42e5-f145-12cc21958213"><p id="id-86752b48-9990-41ea-ad9c-43ab962dc7ce">Supportedmanagement software</p></stentry>
-                    <stentry id="id-97bbd6b0-654a-4051-ff36-fbe9ab9b1677"><p id="id-1b354778-12a9-4f33-ff60-29f7eda2ed38">SSH v2, HTTP/HTTPS, SNMP v1/v3, Telnet; SNMP (FE MIB, FC Management MIB); Brocade Web Tools; Brocade Network Advisor SAN Enterprise or Brocade Network Advisor Professional/Professional Plus; Command Line Interface (CLI); SMI-S</p></stentry>
-                </strow>
-                <strow id="id-c784af8b-69d9-4a18-b860-6a79428b16e5">
-                    <stentry id="id-87b7f81c-a2b6-4254-ca18-92e648e2e44c"><p id="id-88db4e2d-d179-42db-cdd2-a9ba51867616">Security</p></stentry>
-                    <stentry id="id-a3bffbe0-6d9c-4999-ec37-4d98e48fd9e9"><p id="id-4c8a5a81-4634-44bb-c01b-e022b4c8dacf">DH-CHAP (between switches and end devices),HTTPS, IPsec, IP Filtering, LDAP, OpenLDAP, Port Binding, RADIUS, Role-Based Access Control (RBAC), TACACS+, Secure Copy (SCP), Secure RPC, SSH v2, SSL, Switch Binding, Trusted Switch</p></stentry>
-                </strow>
-                <strow id="id-f208feda-a230-4421-9461-0bd872baf2a8">
-                    <stentry id="id-a5c67f3f-ac49-4d17-93e1-0828a342b707"><p id="id-bb51451d-ff9b-402f-fa86-a778c52ba009">Diagnostics</p></stentry>
-                    <stentry id="id-6ea4d66e-8232-490b-8ec8-e0956373ba76"><p id="id-14394a08-0a79-4535-bf69-d702532f6f10">POST and embedded online/offline diagnostics,including FCping, Pathinfo (FCtraceroute)</p></stentry>
-                </strow>
-            </featuretable>
-            <p id="id-8eae9691-7927-46cf-b73e-b1141af3eda6"><b>Mechanical</b></p>
-            <featuretable id="id-65a1af7a-96c6-46c7-b3ed-884bac719f35"><strow id="id-64534c32-f4b2-4e25-ee20-6e090b235e6a">
-                <stentry id="id-243c92aa-ee15-4074-a2d6-700eeb78aef7"><p id="id-86502d58-64bd-4bdc-cf53-8469bca964e8">Size</p></stentry>
-                <stentry id="id-e997b53b-f00c-47fd-bd47-c94c63be7e32">
-                    <p id="id-94d1fc11-32b7-4260-e2aa-89dcd8b1187d">Width: 3.6 cm (1.4 in.)  </p>
-                    <p id="id-494d9529-e208-4d4a-aacd-10a7659377c4">Height: 42.1 cm (16.6 in.)  </p>
-                    <p id="id-4e8c205e-0102-4632-e174-c54711ee42fd">Depth: 29.9 cm (11.8 in.)  </p>
-                    <p id="id-e99b8661-d5f2-4c00-b914-3f648405bbe2">Occupies one slot in a Brocade DCX Backbone   family chassis</p>
-                </stentry>
-            </strow>
-                <strow id="id-f1e3f0ce-2c2a-4aa4-a4c3-f3bb26f8f4c8">
-                    <stentry id="id-fd83d522-7bea-4d31-ffdc-a3d6d4ef6b64"><p id="id-92a383ef-afa2-44cd-ea00-69dfa667e1a6">System weight</p></stentry>
-                    <stentry id="id-3de9ca7b-23fd-46a6-dceb-267756a33726"><p id="id-7a55e77b-ab9d-4bd7-edf6-af955a430691">4.3 kg (9.4 lb) without SFP/SFP+</p></stentry>
-                </strow>
-            </featuretable>
-            <p id="id-f4195606-7458-466c-a14b-09e7f716c743"><b>Environmental</b></p>
-            <featuretable id="id-6f2bb539-c8da-48ad-a18f-6edc5da69cf2">
-                <strow id="id-ea536903-4455-41e5-a02c-90d626b8ade3">
-                    <stentry id="id-f45d31eb-a662-44b1-8376-7482cfee8a9a"><p id="id-b1a11b77-d601-41ff-e88c-a1986a840ca0">Temperature</p></stentry>
-                    <stentry id="id-45fa1244-6c22-46bf-ac3c-00db8aa1ecea">
-                        <p id="id-d6102bf5-99c1-4d7a-bc87-31b606a16019">Operating: 0°C to 40°C (32°F to 104°F)</p>
-                        <p id="id-4ea7d6bb-765a-48e1-f902-1c9cc8ec55b6">Non-operating: −25°C to 70°C (−13°F to 158°F)</p>
-                    </stentry>
-                </strow>
-                <strow id="id-4eff3b4c-5f2a-4ec9-c335-bc08757e5a4c">
-                    <stentry id="id-56ef7004-4997-4cf5-a9ef-b83c1162407b"><p id="id-b4ee77ae-6248-49e7-cf73-70c97a9635c8">Humidity</p></stentry>
-                    <stentry id="id-1df9b4a7-045d-4fac-a091-11e515edb6dd">
-                        <p id="id-689ce4db-320d-4605-ac5d-19205a025d81">Operating: 10% to 85% non-condensing</p>
-                        <p id="id-f8b45381-f617-4e90-9fe9-26c8afdf3c8e">Non-operating: 10% to 90% non-condensing</p>
-                    </stentry>
-                </strow>
-                <strow id="id-e3d3d167-e91a-447f-f4f7-bcd7906f55dc">
-                    <stentry id="id-10be052c-8adb-49c2-e140-be2aa970ccb7"><p id="id-1950b916-7a6b-4382-9d6d-9aefc4379f8f">Altitude</p>
-                    </stentry>
-                    <stentry id="id-d2207fca-1e3b-49f5-e71c-84e797a1a3ad">
-                        <p id="id-095ab9e4-4136-47f0-d104-f6031ee132d7">Operating: Up to 3,000 m (9,842 ft)</p>
-                        <p id="id-c7aa8e6b-1b0b-4d2f-8220-ab07761456a7">Storage: Up to 12 km (39,370 ft)</p>
-                    </stentry>
-                </strow>
-                <strow id="id-73e55e6b-ff2e-4adb-9df6-3509fd80129a">
-                    <stentry id="id-92526057-15c9-4261-df04-09e296a06be4"><p id="id-fabd78ab-8421-46fa-b83e-159a8a20ff8c">Shock</p></stentry>
-                    <stentry id="id-67d8d7a3-8e57-408f-c632-9352651c0cf7">
-                        <p id="id-a760eede-d030-4fb7-f1db-d4ac8bf8fcde">Operating: 20 g, 6 ms half-sine</p>
-                        <p id="id-3cc16a01-62c3-4c8b-cb0c-23f580d23421">Non-operating: 33 g, 11 ms, half-sine, 3/eg Axis</p>
-                    </stentry>
-                </strow>
-                <strow id="id-8b71f303-7d95-4511-ff58-619999fb840a">
-                    <stentry id="id-1439bf00-ab60-4c87-ff49-08bc3cee0f7d"><p id="id-e8f89ac1-b119-4e50-88f8-c4f9c3332db7">Vibration</p></stentry>
-                    <stentry id="id-823c7b16-bd3b-4a93-d368-b60f72d4efc4">
-                        <p id="id-9306be06-6de3-47f7-e09e-056fcb1588fb">Operating: 0.5 g sine, 0.4 grms random, 5 to  500 Hz  </p>
-                        <p id="id-66acea56-d8dc-45a1-ba6d-354d8345324c">Non-operating: 2.0 g sine, 1.1 grms random,   5 to 500 Hz</p>
-                    </stentry>
-                </strow>
-            </featuretable>
-            <p id="id-d7a020ce-4a89-4f3f-f513-dc8175eab2a8"><b>Power</b></p>
-            <featuretable id="id-6527ddd4-09ed-4938-c851-1f518a720d03">
-                <strow id="id-924d9eba-e94e-4c34-8637-02e1c1e790d0">
-                    <stentry id="id-be5c741a-2deb-4a24-f18f-3207ac6ef065"><p id="id-919d4d5c-f4c8-4a81-b597-586749ee2663">Maximum power</p></stentry>
-                    <stentry id="id-4ae1c3ef-18ae-4bce-e4c0-a012bb43306e"><p id="id-f9aad02b-54c7-4252-c557-9c77d463a0cd">250 watts</p></stentry>
-                </strow>
-            </featuretable>
+            <featurefig><title>Management</title><featuretable id="id-6ab3416c-ed99-4534-8196-9c699749a84b"><strow id="id-9061ccd8-1bd7-4369-97b8-d3ca9ca6a3d6"><stentry id="id-337dc2c4-a908-42e5-f145-12cc21958213"><p id="id-86752b48-9990-41ea-ad9c-43ab962dc7ce">Supportedmanagement software</p></stentry><stentry id="id-97bbd6b0-654a-4051-ff36-fbe9ab9b1677"><p id="id-1b354778-12a9-4f33-ff60-29f7eda2ed38">SSH v2, HTTP/HTTPS, SNMP v1/v3, Telnet; SNMP (FE MIB, FC Management MIB); Brocade Web Tools; Brocade Network Advisor SAN Enterprise or Brocade Network Advisor Professional/Professional Plus; Command Line Interface (CLI); SMI-S</p></stentry></strow><strow id="id-c784af8b-69d9-4a18-b860-6a79428b16e5"><stentry id="id-87b7f81c-a2b6-4254-ca18-92e648e2e44c"><p id="id-88db4e2d-d179-42db-cdd2-a9ba51867616">Security</p></stentry><stentry id="id-a3bffbe0-6d9c-4999-ec37-4d98e48fd9e9"><p id="id-4c8a5a81-4634-44bb-c01b-e022b4c8dacf">DH-CHAP (between switches and end devices),HTTPS, IPsec, IP Filtering, LDAP, OpenLDAP, Port Binding, RADIUS, Role-Based Access Control (RBAC), TACACS+, Secure Copy (SCP), Secure RPC, SSH v2, SSL, Switch Binding, Trusted Switch</p></stentry></strow><strow id="id-f208feda-a230-4421-9461-0bd872baf2a8"><stentry id="id-a5c67f3f-ac49-4d17-93e1-0828a342b707"><p id="id-bb51451d-ff9b-402f-fa86-a778c52ba009">Diagnostics</p></stentry><stentry id="id-6ea4d66e-8232-490b-8ec8-e0956373ba76"><p id="id-14394a08-0a79-4535-bf69-d702532f6f10">POST and embedded online/offline diagnostics,including FCping, Pathinfo (FCtraceroute)</p></stentry></strow></featuretable></featurefig><p id="id-8eae9691-7927-46cf-b73e-b1141af3eda6"><b>Mechanical</b></p>
+            <featurefig>
+                <title>Mechanical</title>
+                <featuretable id="id-65a1af7a-96c6-46c7-b3ed-884bac719f35">
+                    <strow id="id-64534c32-f4b2-4e25-ee20-6e090b235e6a">
+                        <stentry id="id-243c92aa-ee15-4074-a2d6-700eeb78aef7">
+                            <p id="id-86502d58-64bd-4bdc-cf53-8469bca964e8">Size</p>
+                        </stentry>
+                        <stentry id="id-e997b53b-f00c-47fd-bd47-c94c63be7e32">
+                            <p id="id-94d1fc11-32b7-4260-e2aa-89dcd8b1187d">Width: 3.6 cm (1.4 in.) </p>
+                            <p id="id-494d9529-e208-4d4a-aacd-10a7659377c4">Height: 42.1 cm (16.6 in.) </p>
+                            <p id="id-4e8c205e-0102-4632-e174-c54711ee42fd">Depth: 29.9 cm (11.8 in.) </p>
+                            <p id="id-e99b8661-d5f2-4c00-b914-3f648405bbe2">Occupies one slot in a Brocade DCX Backbone family chassis</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-f1e3f0ce-2c2a-4aa4-a4c3-f3bb26f8f4c8">
+                        <stentry id="id-fd83d522-7bea-4d31-ffdc-a3d6d4ef6b64">
+                            <p id="id-92a383ef-afa2-44cd-ea00-69dfa667e1a6">System weight</p>
+                        </stentry>
+                        <stentry id="id-3de9ca7b-23fd-46a6-dceb-267756a33726">
+                            <p id="id-7a55e77b-ab9d-4bd7-edf6-af955a430691">4.3 kg (9.4 lb) without SFP/SFP+</p>
+                        </stentry>
+                    </strow>
+                </featuretable>
+            </featurefig>
+            <featurefig>
+                <title>Environmental</title>
+                <featuretable id="id-6f2bb539-c8da-48ad-a18f-6edc5da69cf2">
+                    <strow id="id-ea536903-4455-41e5-a02c-90d626b8ade3">
+                        <stentry id="id-f45d31eb-a662-44b1-8376-7482cfee8a9a">
+                            <p id="id-b1a11b77-d601-41ff-e88c-a1986a840ca0">Temperature</p>
+                        </stentry>
+                        <stentry id="id-45fa1244-6c22-46bf-ac3c-00db8aa1ecea">
+                            <p id="id-d6102bf5-99c1-4d7a-bc87-31b606a16019">Operating: 0°C to 40°C (32°F to 104°F)</p>
+                            <p id="id-4ea7d6bb-765a-48e1-f902-1c9cc8ec55b6">Non-operating: −25°C to 70°C (−13°F to 158°F)</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-4eff3b4c-5f2a-4ec9-c335-bc08757e5a4c">
+                        <stentry id="id-56ef7004-4997-4cf5-a9ef-b83c1162407b">
+                            <p id="id-b4ee77ae-6248-49e7-cf73-70c97a9635c8">Humidity</p>
+                        </stentry>
+                        <stentry id="id-1df9b4a7-045d-4fac-a091-11e515edb6dd">
+                            <p id="id-689ce4db-320d-4605-ac5d-19205a025d81">Operating: 10% to 85% non-condensing</p>
+                            <p id="id-f8b45381-f617-4e90-9fe9-26c8afdf3c8e">Non-operating: 10% to 90% non-condensing</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-e3d3d167-e91a-447f-f4f7-bcd7906f55dc">
+                        <stentry id="id-10be052c-8adb-49c2-e140-be2aa970ccb7">
+                            <p id="id-1950b916-7a6b-4382-9d6d-9aefc4379f8f">Altitude</p>
+                        </stentry>
+                        <stentry id="id-d2207fca-1e3b-49f5-e71c-84e797a1a3ad">
+                            <p id="id-095ab9e4-4136-47f0-d104-f6031ee132d7">Operating: Up to 3,000 m (9,842 ft)</p>
+                            <p id="id-c7aa8e6b-1b0b-4d2f-8220-ab07761456a7">Storage: Up to 12 km (39,370 ft)</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-73e55e6b-ff2e-4adb-9df6-3509fd80129a">
+                        <stentry id="id-92526057-15c9-4261-df04-09e296a06be4">
+                            <p id="id-fabd78ab-8421-46fa-b83e-159a8a20ff8c">Shock</p>
+                        </stentry>
+                        <stentry id="id-67d8d7a3-8e57-408f-c632-9352651c0cf7">
+                            <p id="id-a760eede-d030-4fb7-f1db-d4ac8bf8fcde">Operating: 20 g, 6 ms half-sine</p>
+                            <p id="id-3cc16a01-62c3-4c8b-cb0c-23f580d23421">Non-operating: 33 g, 11 ms, half-sine, 3/eg Axis</p>
+                        </stentry>
+                    </strow>
+                    <strow id="id-8b71f303-7d95-4511-ff58-619999fb840a">
+                        <stentry id="id-1439bf00-ab60-4c87-ff49-08bc3cee0f7d">
+                            <p id="id-e8f89ac1-b119-4e50-88f8-c4f9c3332db7">Vibration</p>
+                        </stentry>
+                        <stentry id="id-823c7b16-bd3b-4a93-d368-b60f72d4efc4">
+                            <p id="id-9306be06-6de3-47f7-e09e-056fcb1588fb">Operating: 0.5 g sine, 0.4 grms random, 5 to 500 Hz </p>
+                            <p id="id-66acea56-d8dc-45a1-ba6d-354d8345324c">Non-operating: 2.0 g sine, 1.1 grms random, 5 to 500 Hz</p>
+                        </stentry>
+                    </strow>
+                </featuretable>
+            </featurefig>
+            <featurefig>
+                <title>Power</title>
+                <featuretable id="id-6527ddd4-09ed-4938-c851-1f518a720d03">
+                    <strow id="id-924d9eba-e94e-4c34-8637-02e1c1e790d0">
+                        <stentry id="id-be5c741a-2deb-4a24-f18f-3207ac6ef065">
+                            <p id="id-919d4d5c-f4c8-4a81-b597-586749ee2663">Maximum power</p>
+                        </stentry>
+                        <stentry id="id-4ae1c3ef-18ae-4bce-e4c0-a012bb43306e">
+                            <p id="id-f9aad02b-54c7-4252-c557-9c77d463a0cd">250 watts</p>
+                        </stentry>
+                    </strow>
+                </featuretable>
+            </featurefig>
         </specifications>
         <section id="id-69d764aa-45b5-4480-869f-af6cbd3b7989">
             <p id="id-c93d2ed6-78e3-49dd-978c-76bb0f96ec47">For information about supported SAN standards, visit <xref href="http://www.brocade.com/content/brocade/en/possibilities/technology/san-fabric-technology/san-standards.html" format="html" scope="external">www.brocade.com/sanstandards</xref>.</p>
             <p id="id-e7d2e78a-d712-4734-ff5f-94c109c84f1a">For information about hardware regulatory compliance, visit <xref href="http://www.brocade.com/en/possibilities/technology/san-fabric-technology/san-standards/regulatory-compliance.html" format="html" scope="external">www.brocade.com/regulatorycompliance</xref>.</p>
-            <p id="id-dc1fbf35-ae44-478d-af98-3342a00ef629">For information about switch and device interoperability, visit  <xref href="http://www.brocade.com/interoperability." format="html" scope="external">www.brocade.com/interoperability</xref>.</p>
+            <p id="id-dc1fbf35-ae44-478d-af98-3342a00ef629">For information about switch and device interoperability, visit <xref href="http://www.brocade.com/interoperability." format="html" scope="external">www.brocade.com/interoperability</xref>.</p>
         </section>
-        <contactinformation id="id-1038d5ab-9ff0-49c3-86f6-372dea7883a9">
-            <title>Corporate Headquarters</title>
-            <p id="id-477e881f-2eee-4df2-c0f5-e12cad882cbd">San Jose, CA USA</p>
-            <p id="id-7f598f7a-c3c5-4898-a6f0-2b601492e5c9">T: +1-408-333-8000</p><p id="id-84c8b1bf-e426-4fd1-b7fb-46cf70c26a0c">info@brocade.com</p>
-        </contactinformation>
-        <contactinformation id="id-44e47160-63df-4569-e402-2681b9d33da7">
-            <title>European Headquarters</title>
-            <p id="id-dd675eb0-4755-4b3d-9059-6f04a1887ca5">Geneva, Switzerland  </p>
-            <p id="id-ed7a23a4-c80a-449b-f974-2b2e4667c8c0">T: +41-22-799-56-40</p>
-            <p id="id-628a08dd-547b-41f2-c0c8-2db77e7a40ad">emea-info@brocade.com</p>
-        </contactinformation>
-        <contactinformation id="id-eb432c71-f020-4e33-8844-9451c624ebaf">
-            <title>Asia Pacific Headquarters</title>
-            <p id="id-6c25eb23-3412-40e8-8f46-4af0248b0d09">Singapore  </p>
-            <p id="id-63c1b021-63b5-4dc0-8a1a-bed48d79ba6e">T: +65-6538-4700  </p>
-            <p id="id-8e98a8fd-6378-411d-c28c-84a3dca1671c">apac-info@brocade.com</p>
-        </contactinformation>
-        <legalinformation id="id-541986db-13da-4c34-d2ba-d59cc0574066">
+        <contactinformation id="id-732da5f6-a7fe-4104-98a2-cfa9c0f6640b">
+            <contact>
+                <contactcompany id="id-f6aac1bd-6377-4084-bee8-1052aa30d78d">Corporate Headquarters</contactcompany>
+                <contactaddress id="id-3e0027de-b2c4-4d8a-a4eb-f80eb3bd36fe">San Jose, CA USA</contactaddress>
+                <contactnumber id="id-0b9c5300-567f-4416-b945-d71a7e304aa8">T: +1-408-333-8000</contactnumber>
+                <contactemail id="id-7d8dec22-8a9f-4e11-db45-c33a767fe7d6">info@brocade.com</contactemail>
+            </contact>
+            <contact>
+                <contactcompany id="id-c1807a65-c117-494f-a233-bad5a421c720">Europea Headquarters</contactcompany>
+                <contactaddress id="id-4f445809-f096-415c-a778-ceaff46c06d4">Geneva, Switzerland</contactaddress>
+                <contactnumber id="id-025ff32c-a356-43bf-e189-fdddb758d6b8">T: +41-22-799-56-40</contactnumber>
+                <contactemail id="id-28850f66-5d75-4baa-ce44-f8329e6f748c">emea-info@brocade.com</contactemail>
+            </contact>
+            <contact>
+                <contactcompany id="id-26632cc4-2099-4443-984c-604c046f2da6">Asia Pacific Headquarters</contactcompany>
+                <contactaddress id="id-3bd170e9-983d-49d0-913e-b40fdc731da9">Singapore</contactaddress>
+                <contactnumber id="id-e41fdbe5-2971-4dee-86b9-0c530237f208">T: +65-6538-4700</contactnumber>
+                <contactemail id="id-7aa407f1-aec2-4463-d188-cc3d199dbac9">apac-info@brocade.com</contactemail>
+            </contact>
+        </contactinformation><legalinformation id="id-541986db-13da-4c34-d2ba-d59cc0574066">
             <legalpart>
                 <copyright id="id-68afe1a3-2945-4a74-e4ed-e6b9554b4b24">
                     <copyrightyear>2015</copyrightyear>
