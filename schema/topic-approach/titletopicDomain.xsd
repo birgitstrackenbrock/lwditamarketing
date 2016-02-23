@@ -39,6 +39,14 @@
     </xs:sequence>
   </xs:group>
   
+  <xs:group name="productfig2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productfig2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
   <xs:group name="frontmattersection">
     <xs:sequence>
       <xs:choice>
@@ -85,6 +93,23 @@
     <xs:attributeGroup ref="reuse"/>
     <xs:attribute name="class" default="- topic/p titletopic-d/pubdate "/>
   </xs:attributeGroup>
+  
+  <xs:element name="productfig2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:element minOccurs="0" ref="desc"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="productfig2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productfig2-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="- topic/fig titletopic-d/productfig2 "/>
+  </xs:element>
   
   <xs:element name="frontmattersection">
     <xs:complexType>
