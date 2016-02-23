@@ -109,7 +109,7 @@
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
     <xs:attribute name="class" default="- topic/fig titletopic-d/productfig2 "/>
-  </xs:element>
+  </xs:attributeGroup>
   
   <xs:element name="frontmattersection">
     <xs:complexType>
