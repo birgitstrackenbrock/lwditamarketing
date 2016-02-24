@@ -16,10 +16,10 @@
   </xs:annotation>
   
  
-  <xs:group name="benefit2">
+  <xs:group name="benefit2section">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="benefit2"/>
+        <xs:element ref="benefit2section"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
@@ -28,25 +28,20 @@
   <!-- elements -->
   
   
-  <xs:element name="benefit2">
+  <xs:element name="benefit2section">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" ref="title"/>
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
-          <xs:group ref="fig-blocks"/>
-          <xs:element ref="image"/>
-          <xs:element ref="data"/>
-          <xs:element ref="xref"/>
-        </xs:choice>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
       </xs:sequence>
-      <xs:attributeGroup ref="benefit2-attlist"/>
+      <xs:attributeGroup ref="benefit2section-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="benefit2-attlist">
-    <xs:attributeGroup ref="display-atts"/>
+  <xs:attributeGroup name="benefit2section-attlist">
     <xs:attributeGroup ref="localization"/>
-    <xs:attribute name="outputclass"/>
-    <xs:attribute name="class" default="- topic/fig benefit2-d/benefit2 "/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section benefit2-d/benefit2section "/>
   </xs:attributeGroup>
   
   
