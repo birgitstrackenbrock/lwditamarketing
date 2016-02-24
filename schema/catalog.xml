@@ -132,6 +132,18 @@
     <uri name="legal2Domain.xsd" uri="legal2Domain.xsd" />
     <uri name="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
     
+    <system systemId="overview2topic.xsd" uri="overview2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:overview2topic.xsd" uri="overview2topic.xsd" />
+    
+    <uri name="overview2topic.xsd" uri="overview2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:overview2topic.xsd" uri="overview2topic.xsd" />
+    
+    <system systemId="overview2Mod.xsd" uri="overview2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:overview2Mod.xsd" uri="overview2Mod.xsd" />
+    
+    <uri name="overview2Mod.xsd" uri="overview2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:overview2Mod.xsd" uri="overview2Mod.xsd" />
+    
     <system systemId="specification2topic.xsd" uri="specification2topic.xsd" />
     <system systemId="urn:lw:names:dita:xsd:specification2topic.xsd" uri="specification2topic.xsd" />
     
@@ -167,6 +179,18 @@
     
     <uri name="titletopicDomain.xsd" uri="titletopicDomain.xsd" />
     <uri name="urn:lw:names:dita:xsd:titletopicDomain.xsd" uri="titletopicDomain.xsd" />
+    
+    <system systemId="vendor2topic.xsd" uri="vendor2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:vendor2topic.xsd" uri="vendor2topic.xsd" />
+    
+    <uri name="vendor2topic.xsd" uri="vendor2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:vendor2topic.xsd" uri="vendor2topic.xsd" />
+    
+    <system systemId="vendor2Mod.xsd" uri="vendor2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:vendor2Mod.xsd" uri="vendor2Mod.xsd" />
+    
+    <uri name="vendor2Mod.xsd" uri="vendor2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:vendor2Mod.xsd" uri="vendor2Mod.xsd" />
   </group> 
   
   

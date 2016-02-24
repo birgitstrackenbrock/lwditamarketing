@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  
+  <xs:group name="vendor2topic">
+    <xs:sequence>
+      <xs:element ref="vendor2topic"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="vendor2body">
+    <xs:sequence>
+      <xs:element ref="vendor2body"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <!-- ============================================================= -->
+  <!-- ELEMENT DECLARATIONS -->
+  <!-- ============================================================= -->
+  <!-- LONG NAME: Topic -->
+  <xs:element name="vendor2topic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="shortdesc"/>
+        <xs:element minOccurs="0" ref="prolog"/>
+        <xs:element ref="vendor2body"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="vendor2topic-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="vendor2topic-attlist">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute ref="ditaarch:DITAArchVersion" default="1.3"/>
+    <xs:attribute name="domains" default="(hi-d) (topic h5m-d)"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/topic vendor2topic/vendor2topic "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="vendor2body">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="section"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="vendor2body-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="vendor2body-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/body vendor2topic/vendor2body "/>
+  </xs:attributeGroup>
+  
+</xs:schema>
