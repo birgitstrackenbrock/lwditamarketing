@@ -96,6 +96,24 @@
     <uri name="contact2Domain.xsd" uri="contact2Domain.xsd" />
     <uri name="urn:lw:names:dita:xsd:contact2Domain.xsd" uri="contact2Domain.xsd" />
     
+    <system systemId="highlight2topic.xsd" uri="highlight2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:highlight2topic.xsd" uri="highlight2topic.xsd" />
+    
+    <uri name="highlight2topic.xsd" uri="highlight2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:highlight2topic.xsd" uri="highlight2topic.xsd" />
+    
+    <system systemId="highlight2Mod.xsd" uri="highlight2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:highlight2Mod.xsd" uri="highlight2Mod.xsd" />
+    
+    <uri name="highlight2Mod.xsd" uri="highlight2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:highlight2Mod.xsd" uri="highlight2Mod.xsd" />
+    
+    <system systemId="highlight2Domain.xsd" uri="highlight2Domain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:highlight2Domain.xsd" uri="highlight2Domain.xsd" />
+    
+    <uri name="highlight2Domain.xsd" uri="highlight2Domain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:highlight2Domain.xsd" uri="highlight2Domain.xsd" />
+    
     <system systemId="legal2topic.xsd" uri="legal2topic.xsd" />
     <system systemId="urn:lw:names:dita:xsd:legal2topic.xsd" uri="legal2topic.xsd" />
     
