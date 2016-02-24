@@ -78,6 +78,24 @@
     <uri name="benefit2Domain.xsd" uri="benefit2Domain.xsd" />
     <uri name="urn:lw:names:dita:xsd:benefit2Domain.xsd" uri="benefit2Domain.xsd" />
     
+    <system systemId="contact2topic.xsd" uri="contact2topic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:contact2topic.xsd" uri="contact2topic.xsd" />
+    
+    <uri name="contact2topic.xsd" uri="contact2topic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:contact2topic.xsd" uri="contact2topic.xsd" />
+    
+    <system systemId="contact2Mod.xsd" uri="contact2Mod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:contact2Mod.xsd" uri="contact2Mod.xsd" />
+    
+    <uri name="contact2Mod.xsd" uri="contact2Mod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:contact2Mod.xsd" uri="contact2Mod.xsd" />
+    
+    <system systemId="contact2Domain.xsd" uri="contact2Domain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:contact2Domain.xsd" uri="contact2Domain.xsd" />
+    
+    <uri name="contact2Domain.xsd" uri="contact2Domain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:contact2Domain.xsd" uri="contact2Domain.xsd" />
+    
     <system systemId="legal2topic.xsd" uri="legal2topic.xsd" />
     <system systemId="urn:lw:names:dita:xsd:legal2topic.xsd" uri="legal2topic.xsd" />
     

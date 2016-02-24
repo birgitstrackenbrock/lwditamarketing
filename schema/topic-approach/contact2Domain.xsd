@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic contact2-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  
+  <xs:group name="contact2section">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contact2section"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactcompany2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactcompany2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactname2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactname2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactaddress2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactaddress2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactnumber2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactnumber2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactemail2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactemail2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactwebsite2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactwebsite2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="contactadditionalinfo2">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="contactadditionalinfo2"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  
+  <!-- elements -->
+  
+  <xs:element name="contact2section">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="contactcompany2" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="contactname2" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="contactaddress2" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="contactnumber2" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="contactemail2" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="contactwebsite2" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="contactadditionalinfo2" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="contact2section-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contact2section-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section contact2-d/contact2section "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactcompany2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactcompany2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactcompany2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactcompany2 "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactname2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactname2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactname2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactname2 "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactaddress2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactaddress2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactaddress2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactaddress2 "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactnumber2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactnumber2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactnumber2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactnumber2 "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactemail2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactemail2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactemail2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactemail2 "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactwebsite2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactwebsite2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactwebsite2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactwebsite2 "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="contactadditionalinfo2">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="contactadditionalinfo2-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="contactadditionalinfo2-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p contact2-d/contactadditionalinfo2 "/>
+  </xs:attributeGroup>
+  
+  
+</xs:schema>
