@@ -1,0 +1,11 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<overview2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:overview2topic.xsd" id="id-ce20a029-cec1-439a-8cac-14bad497de3d">
+    <title>Industry-Leading SAN Extension for Remote Data Replication and Backup</title>
+    <overview2body>
+        <p id="id-4ebcd297-4e4e-43e4-cfa1-e6a3976dc1a0">IT organizations continue to face unprecedented data growth as more platforms, applications, and users connect to the data center network. In turn, the storage network infrastructure must continue evolving to enable fast, continuous, and cost-effective access to mission-critical data from anywhere in the world.</p>
+        <p id="id-3253eacd-dd9f-4650-99dd-88b0a84afdaf">To address this challenge, the Brocade® FX8-24 Extension Blade, designed specifically for Brocade DCX® 8510 Backbones and Brocade DCX Backbones, helps provide the fastest, most reliable, and most cost-effective network infrastructure for remote data replication and backup. Leveraging advanced 8 Gbps Fibre Channel, 10 Gigabit Ethernet (GbE), and Fibre Channel over IP (FCIP) technology, the Brocade FX8-24 provides a flexible and extensible platform to move more data faster and farther than ever before.</p>
+        <section id="id-b235c767-2877-4d09-88e8-b3d76ad1573f">
+            <p id="id-a5c0e92b-01f4-4d16-cdd2-207b6cada88b">Whether configured for synchronous or asynchronous replication between data centers or centralized backup across multiple sites, the Brocade FX8-24 addresses the most demanding business continuity, compliance, and global data access requirements. Twelve 8 Gbps Fibre Channel ports, ten 1 GbE ports, and up to two optional 10 GbE ports provide unmatched Fibre Channel and FCIP bandwidth, port density, and throughput for maximum application performance over WAN links.</p>
+        </section>
+    </overview2body>
+</overview2topic>

@@ -1,0 +1,26 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<benefit2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:benefit2topic.xsd" id="id-139f84f3-7cab-4c8d-e51d-1cfb9f9630cb">
+    <title>A Scalable, Flexible SAN Extension Platform</title>
+    <benefit2body>
+        <p id="id-a3f0f89d-6747-4a76-babd-c52a83ce8443">The Brocade FX8-24 is an idealfoundation for building or expanding a high-performance SAN extension infrastructure for disaster recovery and data protection solutions (see Figure 1). It leverages cost-effective IP WAN transport to extend open systems and mainframe disk and tape storage applications over distances that would otherwise be impossible, impractical, or too expensive with standard Fibre Channel connections.</p>
+        <fig>
+            <title>Figure 1</title>
+            <desc>The Brocade FX8-24 is a scalable SAN extension platform that extends disasterrecovery and data protection storage solutions across any distance.</desc>
+            <image href="FX8-24-Extension-BladeFig1.png"/>
+        </fig>
+        <p id="id-fe8e0486-9ff6-457e-951a-a90c2583cd6d">Organizations can install up to four Brocade FX8-24 blades in a Brocade DCX 8510-8, Brocade DCX 8510-4, Brocade DCX, or Brocade DCX-4S, providing scalable Fibre Channel and FCIP bandwidth for larger enterprise data centers and multisite environments. Activating the optional 10 GbE ports doubles the aggregate bandwidth to 20 Gbps and enables additional FCIP port configurations (ten 1 GbE ports and one 10 GbE port, or two 10 GbE ports).</p>
+        <p id="id-8f38fb76-7809-41fc-e62b-e531a101a6c5">The Brocade FX8-24 provides flexible deployment options within the Brocade DCX 8510 and Brocade DCX chassis, integrating seamlessly with Fibre Channel and application blades or providing standalone extension services. In addition, a broad range of optional advanced extension, FICON®, and SAN fabric services are available to address the most challenging extension and storage networking requirements. The Brocade FX8-24 is ideal for:</p>
+        <ul id="id-228f63fb-8501-4448-d76d-e78ef6fbd538">
+            <li id="id-76dcad54-9fb6-4156-d4f7-2154d84f35f8">
+                <p id="id-9cab93e2-9c02-443f-b536-963cdf6a3e03">Open systems and mainframedisk and tape extension</p>
+            </li>
+            <li id="id-77b8ebdb-7060-432c-c234-dc7f01461ca7">
+                <p id="id-50980078-ee1c-4112-c505-3fcf7c97e132">Multisite synchronous andasynchronous disk replication</p>
+            </li>
+            <li id="id-9f73b548-3bb2-4d50-e0b5-423555fcb003">
+                <p id="id-cd111cf6-5bc6-4724-f0e4-d5edba1e248e">Centralized SAN backup, recovery,and archiving</p>
+            </li>
+        </ul>
+        <p id="id-2aa976f2-10ab-4c8e-a5db-a07e5b9afd26">Organizations can deploy the Brocade FX8-24 and the Brocade 7840 or the Brocade 7800 Extension Switch in a data center-to-edge architecture as a cost-effective option for connecting primary data centers with remote data centers and offices. Both the Brocade 7840 with up to twenty-four 16 Gbps Fibre Channel ports, sixteen 1/10 Gigabit Ethernet (GbE) ports, and two 40 GbE ports and the Brocade 7800 with up to sixteen 8 Gbps Fibre Channel ports and six GbE ports provide the bandwidth, port density, and throughput required for maximum application performance over WAN connections.</p>
+    </benefit2body>
+</benefit2topic>

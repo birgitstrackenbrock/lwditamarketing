@@ -1,0 +1,16 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<legal2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:legal2topic.xsd" id="id-06c06ced-fbb4-42a6-ec74-e9fc6eab7a75">
+    <title>Legal information</title>
+    <legal2body>
+        <legal2section id="id-62078511-5ea2-4a08-84e3-55ba6c1c72f7">
+            <copyright2 id="id-7c93412c-bf02-4222-c536-21ee9e986a29">
+                <copyrightyear2>2015</copyrightyear2>
+                <copyrightholder2>Brocade Communications Systems, Inc. All Rights Reserved. 06/15 GA-DS-1376-06</copyrightholder2>
+            </copyright2>
+            <p id="id-fcf651bd-b089-4317-9813-382c5d2d1684">ADX, Brocade, Brocade Assurance, the B-wing symbol, DCX, Fabric OS, HyperEdge, ICX, MLX, MyBrocade, OpenScript, The Effortless Network, VCS, VDX, Vplane, and Vyatta are registered trademarks, and Fabric Vision and vADX are trademarks of Brocade Communications Systems, Inc., in the United States and/or in other countries. Other brands, products, or service names mentioned may be trademarks of others.</p>
+        </legal2section>
+        <disclaimer2 id="id-a9f87482-9d9e-43f4-fe8e-97e88aae8370">
+            <p id="id-031fb85e-5c3d-4a03-b842-1e583a70d46c">Notice: This document is for informational purposes only and does not set forth any warranty, expressed or implied, concerning any equipment, equipment features, or service offered or to be offered by Brocade. Brocade reserves the right to make changes to this document at any time, without notice, and assumes no responsibility for its use. This information document describes features that may not be currently available. Contact a Brocade sales office for information on feature and product availability. Export of technical data contained in this document may require an export license from the United States government.</p>
+        </disclaimer2>
+    </legal2body>
+</legal2topic>

@@ -1,0 +1,10 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<titletopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="brocade"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:titletopic.xsd">
+    <title>Brocade FX8-24 Extension Blade</title>
+    <titletopicbody>
+        <productfig2>
+            <image href="FX8-24-Extension-Blade.png"/>
+        </productfig2>
+    </titletopicbody>
+</titletopic>

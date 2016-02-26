@@ -1,0 +1,26 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<contact2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:contact2topic.xsd"
+    id="id-bcb563ec-9c68-4281-b87c-4a1782c62fee">
+    <title>Contacts</title>
+    <contact2body>
+        <contact2section id="id-38f2f7a6-694e-458b-9356-037b61ebca98">
+            <contactcompany2 id="id-8dd35e23-d187-4ead-be21-0fcb35f0d9c8">Corporate Headquarters</contactcompany2>
+            <contactaddress2 id="id-0e0ba962-0b6e-4d2b-860c-f338950f74e5">San Jose, CA USA</contactaddress2>
+            <contactnumber2 id="id-8875c307-98d6-457f-c2e4-b5177192e069">T: +1-408-333-8000</contactnumber2>
+            <contactemail2 id="id-43d51823-5960-4d9b-b6dd-700e949c1adf">info@brocade.com</contactemail2>
+        </contact2section>
+        <contact2section id="id-c53d3b10-2575-4055-d409-7063f9af71a3">
+            <contactcompany2 id="id-a28b1d79-a87b-4fd9-8e7b-03674ae0f9b8">European Headquarters</contactcompany2>
+            <contactaddress2 id="id-25534b8c-5a2d-44c4-8d56-28f1932c7d70">Geneva, Switzerland</contactaddress2>
+            <contactnumber2 id="id-0bff2aac-6f4a-4706-a2f5-052f68bac095">T: +41-22-799-56-40</contactnumber2>
+            <contactemail2 id="id-ab8297f3-50bd-48d6-fa20-a0e38e0bcd00">emea-info@brocade.com</contactemail2>
+        </contact2section>
+        <contact2section id="id-0ad886bd-f50d-485b-aa9f-6844fa7d6e06">
+            <contactcompany2 id="id-102b63cb-e6fc-4f9a-a282-d126e7344405">Asia Pacific Headquarters</contactcompany2>
+            <contactaddress2 id="id-8906106e-1029-46e2-8d5c-7bd6281281e0">Singapore</contactaddress2>
+            <contactnumber2 id="id-15041537-9714-463a-fda9-9bf6d917f19c">T: +65-6538-4700</contactnumber2>
+            <contactemail2 id="id-d1bc0a63-ca34-4a26-c7b1-bac34aa3f636">apac-info@brocade.com</contactemail2>
+        </contact2section>
+    </contact2body>
+</contact2topic>
