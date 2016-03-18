@@ -115,4 +115,22 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
+## Open Questions
+
+* Choice to use a map-topic approach. Would be an approach with nested topics e.g. product sheet topics in which the special topics can appear more desirable? Or an product sheet topic with special sections? 
+
+* Do we also need DTD's and/or RELAX NG schema's?
+
+
+## To do
+
+* Develope DITA OT stylesheets
+
+* Compare/align with case study specialization of IBM for DITA
+
+* Compare with schema.org/product and make mapping between both schema's
+
+* Create more examples > everybody is welcome to do so
+
+
 
