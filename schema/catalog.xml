@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="lwm">
 
-  <group xml:base="general/">
     <system systemId="componentsDomain.xsd" uri="componentsDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:componentsDomain.xsd" uri="componentsDomain.xsd" />
     
@@ -13,20 +12,72 @@
     
     <uri name="featureDomain.xsd" uri="featureDomain.xsd" />
     <uri name="urn:lw:names:dita:xsd:featureDomain.xsd" uri="featureDomain.xsd" />   
-  </group>
   
-  <group xml:base="section-approach/">
+    <system systemId="benefittopic.xsd" uri="benefittopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:benefittopic.xsd" uri="benefittopic.xsd" />
+    
+    <uri name="benefittopic.xsd" uri="benefittopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:benefittopic.xsd" uri="benefittopic.xsd" />
+    
+    <system systemId="benefitMod.xsd" uri="benefitMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:benefitMod.xsd" uri="benefitMod.xsd" />
+    
+    <uri name="benefitMod.xsd" uri="benefitMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:benefitMod.xsd" uri="benefitMod.xsd" />
+    
+    <system systemId="benefitDomain.xsd" uri="benefitDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:benefitDomain.xsd" uri="benefitDomain.xsd" />
+    
+    <uri name="benefitDomain.xsd" uri="benefitDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:benefitDomain.xsd" uri="benefitDomain.xsd" />
+    
+    <system systemId="contacttopic.xsd" uri="contacttopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:contacttopic.xsd" uri="contacttopic.xsd" />
+    
+    <uri name="contacttopic.xsd" uri="contacttopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:contacttopic.xsd" uri="contacttopic.xsd" />
+    
+    <system systemId="contactMod.xsd" uri="contactMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:contactMod.xsd" uri="contactMod.xsd" />
+    
+    <uri name="contactMod.xsd" uri="contactMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:contactMod.xsd" uri="contactMod.xsd" />
+    
     <system systemId="contactDomain.xsd" uri="contactDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:contactDomain.xsd" uri="contactDomain.xsd" />
     
     <uri name="contactDomain.xsd" uri="contactDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:contactDomain.xsd" uri="contactDomain.xsd" />  
+    <uri name="urn:lw:names:dita:xsd:contactDomain.xsd" uri="contactDomain.xsd" />
     
-    <system systemId="infopartDomain.xsd" uri="infopartDomain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
+    <system systemId="highlighttopic.xsd" uri="highlighttopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:highlighttopic.xsd" uri="highlighttopic.xsd" />
     
-    <uri name="infopartDomain.xsd" uri="infopartDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:infopartDomain.xsd" uri="infopartDomain.xsd" />
+    <uri name="highlighttopic.xsd" uri="highlighttopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:highlighttopic.xsd" uri="highlighttopic.xsd" />
+    
+    <system systemId="highlightMod.xsd" uri="highlightMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:highlightMod.xsd" uri="highlightMod.xsd" />
+    
+    <uri name="highlightMod.xsd" uri="highlightMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:highlightMod.xsd" uri="highlightMod.xsd" />
+    
+    <system systemId="highlightDomain.xsd" uri="highlightDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:highlightDomain.xsd" uri="highlightDomain.xsd" />
+    
+    <uri name="highlightDomain.xsd" uri="highlightDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:highlightDomain.xsd" uri="highlightDomain.xsd" />
+    
+    <system systemId="legaltopic.xsd" uri="legaltopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legaltopic.xsd" uri="legaltopic.xsd" />
+    
+    <uri name="legaltopic.xsd" uri="legaltopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legaltopic.xsd" uri="legaltopic.xsd" />
+    
+    <system systemId="legalMod.xsd" uri="legalMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:legalMod.xsd" uri="legalMod.xsd" />
+    
+    <uri name="legalMod.xsd" uri="legalMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:legalMod.xsd" uri="legalMod.xsd" />
     
     <system systemId="legalDomain.xsd" uri="legalDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:legalDomain.xsd" uri="legalDomain.xsd" />
@@ -34,133 +85,35 @@
     <uri name="legalDomain.xsd" uri="legalDomain.xsd" />
     <uri name="urn:lw:names:dita:xsd:legalDomain.xsd" uri="legalDomain.xsd" />
     
-    <system systemId="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+    <system systemId="overviewtopic.xsd" uri="overviewtopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:overviewtopic.xsd" uri="overviewtopic.xsd" />
     
-    <uri name="productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:productsectionsDomain.xsd" uri="productsectionsDomain.xsd" />
+    <uri name="overviewtopic.xsd" uri="overviewtopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:overviewtopic.xsd" uri="overviewtopic.xsd" />
     
-    <system systemId="productspec.xsd" uri="productspec.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:productspec.xsd" uri="productspec.xsd" />
+    <system systemId="overviewMod.xsd" uri="overviewMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:overviewMod.xsd" uri="overviewMod.xsd" />
     
-    <uri name="productspec.xsd" uri="productspec.xsd" />
-    <uri name="urn:lw:names:dita:xsd:productspec.xsd" uri="productspec.xsd" />
+    <uri name="overviewMod.xsd" uri="overviewMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:overviewMod.xsd" uri="overviewMod.xsd" />
     
-    <system systemId="productspecMod.xsd" uri="productspecMod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:productspecMod.xsd" uri="productspecMod.xsd" />
+    <system systemId="specificationtopic.xsd" uri="specificationtopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:specificationtopic.xsd" uri="specificationtopic.xsd" />
     
-    <uri name="productspecMod.xsd" uri="productspecMod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:productspecMod.xsd" uri="productspecMod.xsd" />
+    <uri name="specificationtopic.xsd" uri="specificationtopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:specificationtopic.xsd" uri="specificationtopic.xsd" />
     
-    <system systemId="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
+    <system systemId="specificationMod.xsd" uri="specificationMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:specificationMod.xsd" uri="specificationMod.xsd" />
     
-    <uri name="vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:vendorsectionsDomain.xsd" uri="vendorsectionsDomain.xsd" />  
- </group> 
-  
-  <group xml:base="topic-approach/">
-    <system systemId="benefit2topic.xsd" uri="benefit2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:benefit2topic.xsd" uri="benefit2topic.xsd" />
+    <uri name="specificationMod.xsd" uri="specificationMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:specificationMod.xsd" uri="specificationMod.xsd" />
     
-    <uri name="benefit2topic.xsd" uri="benefit2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:benefit2topic.xsd" uri="benefit2topic.xsd" />
+    <system systemId="specificationDomain.xsd" uri="specificationDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:specificationDomain.xsd" uri="specificationDomain.xsd" />
     
-    <system systemId="benefit2Mod.xsd" uri="benefit2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:benefit2Mod.xsd" uri="benefit2Mod.xsd" />
-    
-    <uri name="benefit2Mod.xsd" uri="benefit2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:benefit2Mod.xsd" uri="benefit2Mod.xsd" />
-    
-    <system systemId="benefit2Domain.xsd" uri="benefit2Domain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:benefit2Domain.xsd" uri="benefit2Domain.xsd" />
-    
-    <uri name="benefit2Domain.xsd" uri="benefit2Domain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:benefit2Domain.xsd" uri="benefit2Domain.xsd" />
-    
-    <system systemId="contact2topic.xsd" uri="contact2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:contact2topic.xsd" uri="contact2topic.xsd" />
-    
-    <uri name="contact2topic.xsd" uri="contact2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:contact2topic.xsd" uri="contact2topic.xsd" />
-    
-    <system systemId="contact2Mod.xsd" uri="contact2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:contact2Mod.xsd" uri="contact2Mod.xsd" />
-    
-    <uri name="contact2Mod.xsd" uri="contact2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:contact2Mod.xsd" uri="contact2Mod.xsd" />
-    
-    <system systemId="contact2Domain.xsd" uri="contact2Domain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:contact2Domain.xsd" uri="contact2Domain.xsd" />
-    
-    <uri name="contact2Domain.xsd" uri="contact2Domain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:contact2Domain.xsd" uri="contact2Domain.xsd" />
-    
-    <system systemId="highlight2topic.xsd" uri="highlight2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:highlight2topic.xsd" uri="highlight2topic.xsd" />
-    
-    <uri name="highlight2topic.xsd" uri="highlight2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:highlight2topic.xsd" uri="highlight2topic.xsd" />
-    
-    <system systemId="highlight2Mod.xsd" uri="highlight2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:highlight2Mod.xsd" uri="highlight2Mod.xsd" />
-    
-    <uri name="highlight2Mod.xsd" uri="highlight2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:highlight2Mod.xsd" uri="highlight2Mod.xsd" />
-    
-    <system systemId="highlight2Domain.xsd" uri="highlight2Domain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:highlight2Domain.xsd" uri="highlight2Domain.xsd" />
-    
-    <uri name="highlight2Domain.xsd" uri="highlight2Domain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:highlight2Domain.xsd" uri="highlight2Domain.xsd" />
-    
-    <system systemId="legal2topic.xsd" uri="legal2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legal2topic.xsd" uri="legal2topic.xsd" />
-    
-    <uri name="legal2topic.xsd" uri="legal2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legal2topic.xsd" uri="legal2topic.xsd" />
-    
-    <system systemId="legal2Mod.xsd" uri="legal2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legal2Mod.xsd" uri="legal2Mod.xsd" />
-    
-    <uri name="legal2Mod.xsd" uri="legal2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legal2Mod.xsd" uri="legal2Mod.xsd" />
-    
-    <system systemId="legal2Domain.xsd" uri="legal2Domain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
-    
-    <uri name="legal2Domain.xsd" uri="legal2Domain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:legal2Domain.xsd" uri="legal2Domain.xsd" />
-    
-    <system systemId="overview2topic.xsd" uri="overview2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:overview2topic.xsd" uri="overview2topic.xsd" />
-    
-    <uri name="overview2topic.xsd" uri="overview2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:overview2topic.xsd" uri="overview2topic.xsd" />
-    
-    <system systemId="overview2Mod.xsd" uri="overview2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:overview2Mod.xsd" uri="overview2Mod.xsd" />
-    
-    <uri name="overview2Mod.xsd" uri="overview2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:overview2Mod.xsd" uri="overview2Mod.xsd" />
-    
-    <system systemId="specification2topic.xsd" uri="specification2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:specification2topic.xsd" uri="specification2topic.xsd" />
-    
-    <uri name="specification2topic.xsd" uri="specification2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:specification2topic.xsd" uri="specification2topic.xsd" />
-    
-    <system systemId="specification2Mod.xsd" uri="specification2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:specification2Mod.xsd" uri="specification2Mod.xsd" />
-    
-    <uri name="specification2Mod.xsd" uri="specification2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:specification2Mod.xsd" uri="specification2Mod.xsd" />
-    
-    <system systemId="specification2Domain.xsd" uri="specification2Domain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:specification2Domain.xsd" uri="specification2Domain.xsd" />
-    
-    <uri name="specification2Domain.xsd" uri="specification2Domain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:specification2Domain.xsd" uri="specification2Domain.xsd" />
+    <uri name="specificationDomain.xsd" uri="specificationDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:specificationDomain.xsd" uri="specificationDomain.xsd" />
     
     <system systemId="titletopic.xsd" uri="titletopic.xsd" />
     <system systemId="urn:lw:names:dita:xsd:titletopic.xsd" uri="titletopic.xsd" />
@@ -180,18 +133,16 @@
     <uri name="titletopicDomain.xsd" uri="titletopicDomain.xsd" />
     <uri name="urn:lw:names:dita:xsd:titletopicDomain.xsd" uri="titletopicDomain.xsd" />
     
-    <system systemId="vendor2topic.xsd" uri="vendor2topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:vendor2topic.xsd" uri="vendor2topic.xsd" />
+    <system systemId="vendortopic.xsd" uri="vendortopic.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:vendortopic.xsd" uri="vendortopic.xsd" />
     
-    <uri name="vendor2topic.xsd" uri="vendor2topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:vendor2topic.xsd" uri="vendor2topic.xsd" />
+    <uri name="vendortopic.xsd" uri="vendortopic.xsd" />
+    <uri name="urn:lw:names:dita:xsd:vendortopic.xsd" uri="vendortopic.xsd" />
     
-    <system systemId="vendor2Mod.xsd" uri="vendor2Mod.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:vendor2Mod.xsd" uri="vendor2Mod.xsd" />
+    <system systemId="vendorMod.xsd" uri="vendorMod.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:vendorMod.xsd" uri="vendorMod.xsd" />
     
-    <uri name="vendor2Mod.xsd" uri="vendor2Mod.xsd" />
-    <uri name="urn:lw:names:dita:xsd:vendor2Mod.xsd" uri="vendor2Mod.xsd" />
-  </group> 
-  
-  
+    <uri name="vendorMod.xsd" uri="vendorMod.xsd" />
+    <uri name="urn:lw:names:dita:xsd:vendorMod.xsd" uri="vendorMod.xsd" />
+
 </catalog>

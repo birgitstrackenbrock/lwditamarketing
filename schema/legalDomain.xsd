@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic legal-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="disclaimer">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="disclaimer"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="legalsection">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="legalsection"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="copyright">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="copyright"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="copyrightyear">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="copyrightyear"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="copyrightholder">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="copyrightholder"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+ 
+  
+  <!-- elements -->
+  <xs:element name="disclaimer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="disclaimer-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="disclaimer-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section legal/disclaimer "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="legalsection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="all-blocks"/>
+          <xs:group ref="copyright"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="legalsection-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="legalsection-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section legal/legalsection "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="copyright">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="copyrightyear" minOccurs="0"/>
+        <xs:group ref="copyrightholder" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="copyright-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="copyright-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p legal-d/copyright "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="copyrightyear">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="copyrightyear-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="copyrightyear-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="variable-content"/>
+    <xs:attribute name="class" default="- topic/ph legal-d/copyrightyear "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="copyrightholder">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="copyrightholder-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="copyrightholder-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="variable-content"/>
+    <xs:attribute name="class" default="- topic/ph legal-d/copyrightholder "/>
+  </xs:attributeGroup>
+  
+  
+</xs:schema>

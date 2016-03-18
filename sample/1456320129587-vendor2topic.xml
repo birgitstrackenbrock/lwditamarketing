@@ -1,8 +1,0 @@
-<?fontoxml-author author-id="anonymous" name="Anonymous"?>
-<vendor2topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:vendor2topic.xsd" id="id-be26dc94-a142-4a8f-cb0d-4bd1f45ab5f1">
-    <title>Integrated Architecture and Management</title>
-    <vendor2body>
-        <p id="id-ca3c27a5-11d4-46b2-8ef3-b6557e1bb5d1">The Brocade FX8-24 utilizes the same Brocade Fabric OS® that supports the entire Brocade SAN product family—from the Brocade 6505 Switch to the Brocade DCX 8510 Backbone with Gen 5 Fibre Channel. This helps ensure seamless interoperability with advanced features such as Brocade Integrated Routing, Brocade ISL Trunking, Brocade Fabric Vision technology, Brocade Adaptive Networking, Brocade Server Application Optimization (SAO), Brocade Advanced Performance Monitoring, Brocade Fabric Watch, and Brocade Extended Fabrics.</p>
-        <p id="id-5baf5c94-2564-449f-d93a-c5bd8c67fe37">In addition, organizations can perform management and administrative tasks through familiar Brocade management tools, including Brocade Network Advisor, Brocade Web Tools, and theCommand Line Interface (CLI). Moreover, optional FICON Control Unit Port (CUP) capabilities enable legacy management applications to seamlessly support Brocade FICON environments.</p>
-    </vendor2body>
-</vendor2topic>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic highlight-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+ 
+  <xs:group name="highlight">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="highlight"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- elements -->
+  
+  
+  <xs:element name="highlight">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="highlight-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="highlight-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p highlight-d/highlight "/>
+  </xs:attributeGroup>
+  
+  
+</xs:schema>

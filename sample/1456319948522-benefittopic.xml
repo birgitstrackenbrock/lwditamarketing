@@ -1,0 +1,29 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<benefittopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:benefittopic.xsd" id="id-00ab69c2-296c-49d0-c30d-0152bf01efc8">
+    <title>Simplified Management and Robust Network Analytics</title>
+    <benefitbody>
+        <p id="id-260b5b52-5995-4126-9b6c-a9e4db2ec7b2">Brocade Fabric VisionTM technologyprovides a breakthrough hardware and software solution that helps simplify monitoring, maximize network availability, and dramatically reduce costs. Featuring innovative monitoring, management, and diagnostic capabilities, Fabric Vision technology enables administrators to avoid problems before they impact operations, helping their organizations meet Service Level Agreements (SLAs). The Brocade FX8-24 Extension Blade supports the following Brocade Fabric Vision technology features:</p>
+        <ul id="id-64e27341-20b7-4862-e6bf-b55bcb2a1753">
+            <li id="id-a55c595b-236a-4198-8036-2240b260994f">
+                <p id="id-fe65be2e-82bf-4c33-fed1-c6c110cfc9f4"><b>Monitoring and Alerting Policy Suite(MAPS):</b> Provides a pre-built, policy-based threshold monitoring and alerting tool that proactively monitors storage extension network health based on a comprehensive set of metrics per circuit or QoS. Administrators can configure multiple fabrics at one time using pre-defined or customized rules and policies for specific ports or switch elements.</p>
+            </li>
+            <li id="id-480341ea-2b0a-475e-983f-d838de9abc1f">
+                <p id="id-43f79a52-d23e-45f2-b005-03a84cdb8448"><b>Fabric Performance Impact (FPI)Monitoring:</b> Leverages pre-defined MAPS policies to automatically detect and alert administrators to different latency severity levels, and identifies slow drain devices that can impact the network. This feature uses advanced monitoring capabilities and intuitive MAPS dashboard reporting to indicate various latency severity levels, pinpointing exactly which devices are causing or areimpacted by a bottlenecked port. This feature also provides automatic mitigation or recovery from the effects of slow drain devices.</p>
+            </li>
+            <li id="id-f9a269e6-dfc1-430e-d232-95d9cb3da397">
+                <p id="id-513f27e4-213b-4ba1-be6d-853d21710112"><b>Dashboards:</b> Provides integrateddashboards that display an overall SAN health view, along with details on out-of-range conditions, to help administrators easily identify trends and quickly pinpoint issues occurring on a switch or in a fabric.</p>
+            </li>
+            <li id="id-b60c2bf6-bc6d-49d1-da4b-e840e88b83fc">
+                <p id="id-27621f1f-d74b-4536-ed8b-12ae83c56ad6"><b>Configuration and Operational Monitoring Policy Automation Services Suite (COMPASS):</b> Simplifies deployment, ensures consistency, and increases operational efficiencies of larger environments with automated switch and fabric configuration services. Administrators can configure a template or adopt an existing configuration as a template and seamlessly deploy the configuration across the fabric. In addition, they can ensure that settings do not drift over time with COMPASS configuration and policy violation monitoring within Brocade Network Advisor dashboards.</p>
+            </li>
+            <li id="id-7c864aa9-9c9d-4030-f29e-04cf90087707">
+                <p id="id-1037ce69-ca43-4e75-c361-3b3023eaab83"><b>Flow Vision:</b> Enables administrators to identify, monitor, and analyze specific application flows in order to simplify troubleshooting, maximize performance, avoid congestion, and optimize resources. Flow Vision includes:</p>
+                <ul id="id-14c5d58b-b24e-4792-8854-1025a999a9bb">
+                    <li id="id-1ca727f3-a7bc-4d28-99a1-532a722663c5">
+                        <p id="id-532ac6b7-a756-4725-a259-9a498072e835"><b>Flow Monitor:</b> Providescomprehensive visibility into flows across a storage extension network, including the ability to automatically learn flows and non-disruptively monitor flow performance. Administrators can monitor all flows from a specific storage device that is writing to or reading from a destination storage device/LUNs or across a storage extension network. Additionally, they can performLUN-level monitoring of specific frame types to identify resource contention or congestion that is impacting application performance.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </benefitbody>
+</benefittopic>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic specification-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  
+  <xs:group name="specificationsection">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="specificationsection"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- elements -->
+  
+  <xs:element name="specificationsection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:group ref="all-blocks"/>
+          <xs:group ref="feature-blocks"/>
+          <xs:group ref="components"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="specificationsection-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="specificationsection-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section specification/specificationsection "/>
+  </xs:attributeGroup>
+   
+</xs:schema>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic titletopic-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="subtile">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="subtitle"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="revision">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="revision"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="pubdate">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="pubdate"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="productfig">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="productfig"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="frontmattersection">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="frontmattersection"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <!-- elements -->
+  
+  <xs:element name="subtitle">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="subtitle-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="subtitle-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/shortdesc titletopic-d/subtitle "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="revision">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="revision-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="revision-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p titletopic-d/revision "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="pubdate">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="pubdate-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="pubdate-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/p titletopic-d/pubdate "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="productfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:element minOccurs="0" ref="desc"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="productfig-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="productfig-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="- topic/fig titletopic-d/productfig "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="frontmattersection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="title"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="frontmattersection-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="frontmattersection-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="- topic/section titletopic-d/frontmattersection "/>
+  </xs:attributeGroup>
+  
+  
+</xs:schema>

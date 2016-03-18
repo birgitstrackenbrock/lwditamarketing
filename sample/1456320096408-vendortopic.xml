@@ -1,0 +1,7 @@
+<?fontoxml-author author-id="anonymous" name="Anonymous"?>
+<vendortopic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:lw:names:dita:xsd:vendortopic.xsd" id="id-73473fb2-143c-455c-996a-9d02034c44c3">
+    <title>Brocade Network Advisor</title>
+    <vendorbody>
+        <p id="id-29c8ae52-b41d-4850-f5c7-898e846b075a">Brocade Network Advisor simplifies Gen 5 Fibre Channel management and helps users proactively diagnose and resolve issues to maximize uptime, increase operational efficiency, and reduce costs. The wizard-driven interface dramatically reduces deployment and configuration times by allowing fabrics, switches, and ports to be managed as groups. Customizable dashboards graphically display performance and health indicators out of the box, including all data captured using Brocade Fabric Vision technology. To accelerate troubleshooting, administrators can use dashboard playback to quickly review past events and identify problems in the fabric. In addition, dashboards and reportscan be configured to show only the most relevant data, enabling administrators to more efficiently prioritize their actions and maintain network performance.</p>
+    </vendorbody>
+</vendortopic>

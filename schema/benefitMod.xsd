@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  
+  <xs:group name="benefittopic">
+    <xs:sequence>
+      <xs:element ref="benefittopic"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="benefitbody">
+    <xs:sequence>
+      <xs:element ref="benefitbody"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <!-- ============================================================= -->
+  <!-- ELEMENT DECLARATIONS -->
+  <!-- ============================================================= -->
+  <!-- LONG NAME: Topic -->
+  <xs:element name="benefittopic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="shortdesc"/>
+        <xs:element minOccurs="0" ref="prolog"/>
+        <xs:element ref="benefitbody"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="benefittopic-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="benefittopic-attlist">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute ref="ditaarch:DITAArchVersion" default="1.3"/>
+    <xs:attribute name="domains" default="(hi-d) (topic h5m-d)"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/topic benefittopic/benefittopic "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="benefitbody">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="all-blocks" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="benefitsection" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="benefitbody-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="benefitbody-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/body benefittopic/benefitbody "/>
+  </xs:attributeGroup>
+  
+</xs:schema>

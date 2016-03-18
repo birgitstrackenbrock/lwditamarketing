@@ -3,42 +3,42 @@
     <topicref
         href="titletopicBrocadeFX8-24ExtensionBlade.xml"
         id="id-0d339836-36cc-4005-f484-96e10b70f016">
-        <topicref href="1456318854170-overview2topic.xml"
+        <topicref href="1456318854170-overviewtopic.xml"
             id="id-cf972e97-f6ac-4ca8-88b9-81e5146d915a">
             <topicref
-                href="1456319111598-highlight2topic.xml"
+                href="1456319111598-highlighttopic.xml"
                 id="id-76d9d6a8-3f1f-4d6c-f7a9-e08326ef3192"/>
             <topicref
-                href="1456318918302-benefit2topic.xml"
+                href="1456318918302-benefittopic.xml"
                 id="id-6a5dff9d-7490-41e8-af68-21021d3fd8bb"/>
             <topicref
-                href="1456319589572-benefit2topic.xml"
+                href="1456319589572-benefittopic.xml"
                 id="id-13aca067-494c-420e-eebc-830a28c3800c"/>
             <topicref
-                href="1456319760067-benefit2topic.xml"
+                href="1456319760067-benefittopic.xml"
                 id="id-a3bc61c0-d536-4809-e42e-eda249876319"/>
             <topicref
-                href="1456319948522-benefit2topic.xml"
+                href="1456319948522-benefittopic.xml"
                 id="id-215e639d-212c-4109-923f-02a51eb13bd2"/>
             <topicref
-                href="1456320096408-vendor2topic.xml"
+                href="1456320096408-vendortopic.xml"
                 id="id-a3bd1d41-0634-41f7-a8d8-bbbeca8690e6"/>
             <topicref
-                href="1456320129587-vendor2topic.xml"
+                href="1456320129587-vendortopic.xml"
                 id="id-ee16913d-a530-4ce3-e93d-7eb9455fa95c"/>
             <topicref
-                href="1456320612424-vendor2topic.xml"
+                href="1456320612424-vendortopic.xml"
                 id="id-689b570f-cae3-41f7-eda8-78241e732458"/>
             <topicref
-                href="1456320649516-vendor2topic.xml"
+                href="1456320649516-vendortopic.xml"
                 id="id-e175816b-a8dd-4aa8-e6a4-2b954910e01b"/>
         </topicref>
         <topicref
-            href="1456320730775-specification2topic.xml"
+            href="1456320730775-specificationtopic.xml"
             id="id-959c287e-2213-45a5-d40b-e3a94bf96af0"/>
-        <topicref href="1456323822310-contact2topic.xml"
+        <topicref href="1456323822310-contacttopic.xml"
             id="id-30068281-1ffc-40f1-d6ec-16334137dab2"/>
-        <topicref href="1456323940343-legal2topic.xml"
+        <topicref href="1456323940343-legaltopic.xml"
             id="id-986f0c1c-86ba-4078-c752-adc53455c079"/>
     </topicref>
 </map>

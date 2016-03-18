@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DOMAINS ATTRIBUTE OVERRIDE -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- EXTENSION POINTS -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  
+  <xs:group name="highlighttopic">
+    <xs:sequence>
+      <xs:element ref="highlighttopic"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="highlightbody">
+    <xs:sequence>
+      <xs:element ref="highlightbody"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <!-- ============================================================= -->
+  <!-- ELEMENT DECLARATIONS -->
+  <!-- ============================================================= -->
+  <!-- LONG NAME: Topic -->
+  <xs:element name="highlighttopic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="shortdesc"/>
+        <xs:element minOccurs="0" ref="prolog"/>
+        <xs:element ref="highlightbody"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="highlighttopic-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="highlighttopic-attlist">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute ref="ditaarch:DITAArchVersion" default="1.3"/>
+    <xs:attribute name="domains" default="(hi-d) (topic h5m-d)"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/topic highlighttopic/highlighttopic "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="highlightbody">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="highlight" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="highlightbody-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="highlightbody-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="class" default="- topic/body highlighttopic/highlightbody "/>
+  </xs:attributeGroup>
+  
+</xs:schema>
