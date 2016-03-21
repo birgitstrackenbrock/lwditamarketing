@@ -12,7 +12,7 @@ Defines a DITA-OT plugin containing LW DITA specializations for marketing materi
 
 ## Author information
 
-The lwditamarketing has been developped by Eva de Haas (Fonto XML), Birgit Strackenbrock (XStructuring) and others.
+The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Strackenbrock (XStructuring) and others.
 
 
 ## Revision history
