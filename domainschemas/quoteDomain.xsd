@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic quote-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="quote-d-fig">
+    <xs:choice>
+      <xs:element ref="quote"/>
+    </xs:choice>
+  </xs:group>
+  
+ 
+  <xs:group name="quote">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="quote"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="source">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="source"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- elements -->
+  
+  <xs:element name="quote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="fig-blocks"/>
+        <xs:group ref="source" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="quote-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="quote-attlist">
+    <xs:attributeGroup ref="display-atts"/>
+    <xs:attributeGroup ref="localization"/>
+    <xs:attribute name="outputclass"/>
+    <xs:attribute name="class" default="+ topic/fig quote-d/quote "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="source">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="source-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="source-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/p quote-d/source "/>
+  </xs:attributeGroup>
+  
+</xs:schema>

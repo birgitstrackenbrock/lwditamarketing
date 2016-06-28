@@ -10,7 +10,13 @@
     <system systemId="marketingDomain.xsd" uri="marketingDomain.xsd" />
     <system systemId="urn:lw:names:dita:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
     
-    <uri name="marketingDomain.xsd" uri="featmarketingDomainureDomain.xsd" />
+    <uri name="marketingDomain.xsd" uri="marketingDomain.xsd" />
     <uri name="urn:lw:names:dita:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
+    
+    <system systemId="quoteDomain.xsd" uri="quoteDomain.xsd" />
+    <system systemId="urn:lw:names:dita:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
+    
+    <uri name="quoteDomain.xsd" uri="quoteDomain.xsd" />
+    <uri name="urn:lw:names:dita:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
 
 </catalog>

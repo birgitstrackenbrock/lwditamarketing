@@ -20,8 +20,9 @@
 <!-- hi-d -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
-  <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:marketingDomain.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:quoteDomain.xsd"/>
 
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
@@ -43,6 +44,13 @@
       <xs:sequence>
         <xs:group ref="ul"/>
         <xs:group ref="marketing-d-ul"/>
+      </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="fig">
+      <xs:sequence>
+        <xs:group ref="fig"/>
+        <xs:group ref="quote-d-fig"/>
       </xs:sequence>
     </xs:group>
     
