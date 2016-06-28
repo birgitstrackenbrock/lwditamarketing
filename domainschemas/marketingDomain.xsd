@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic marketing-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:group name="marketing-d-ul">
+    <xs:choice>
+      <xs:element ref="benefits"/>
+      <xs:element ref="components"/>
+      <xs:element ref="features"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:group name="marketing-d-section">
+    <xs:choice>
+      <xs:element ref="highlights"/>
+    </xs:choice>
+  </xs:group>
+  
+ 
+  <xs:group name="benefits">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="benefits"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="benefititem">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="benefititem"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="benefit">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="benefit"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="components">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="components"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="componentitem">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="componentitem"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="component">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="component"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="features">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="features"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="featureitem">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="featureitem"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="feature">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="feature"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="highlights">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="highlights"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:group name="highlight">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="highlight"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  
+  <!-- elements -->
+  
+  <xs:element name="benefits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="benefititem"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="benefits-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="benefits-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/ul marketing-d/benefits "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="benefititem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="benefit"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="benefititem-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="benefititem-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/li marketing-d/benefititem "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="benefit">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="benefit-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="benefit-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/p marketing-d/benefit "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="components">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="componentitem"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="components-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="components-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/ul marketing-d/components "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="componentitem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="component"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="componentitem-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="componentitem-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/li marketing-d/componentitem "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="component">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="component-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="component-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/p marketing-d/component "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="features">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="featureitem"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="features-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="features-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/ul marketing-d/features "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="featureitem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="feature"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="featureitem-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="featureitem-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/li marketing-d/featureitem "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="feature">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="feature-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="feature-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/p marketing-d/feature "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="highlights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="highlight"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="highlights-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="highlights-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/section marketing-d/highlights "/>
+  </xs:attributeGroup>
+  
+  <xs:element name="highlight">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+      <xs:attributeGroup ref="highlight-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="highlight-attlist">
+    <xs:attributeGroup ref="localization"/>
+    <xs:attributeGroup ref="filters"/>
+    <xs:attributeGroup ref="reuse"/>
+    <xs:attribute name="class" default="+ topic/p marketing-d/highlight "/>
+  </xs:attributeGroup>
+  
+</xs:schema>
