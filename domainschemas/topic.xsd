@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- PUBLIC DOCUMENT TYPE DEFINITION -->
+<!-- TYPICAL INVOCATION -->
+<!---->
+<!--
+  Refer to this file by the following public identifier or an 
+        appropriate system identifier 
+  PUBLIC "-//OASIS//DTD LW DITA Topic//EN"
+        Delivered as file "topic.dtd"
+-->
+<!--
+  The public ID above refers to the latest version of this DTD.
+       To refer to this specific version, you may use this value:
+  PUBLIC "-//OASIS//DTD LW DITA 1.3 Topic//EN"
+-->
+<!-- ============================================================= -->
+<!-- ADD PHRASE ELEMENTS -->
+<!-- ============================================================= -->
+<!-- hi-d -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd"/>
+  <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
+
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+
+  <xs:group name="ph">
+    <xs:choice>
+      <xs:element ref="ph"/>
+      <xs:element ref="b"/>
+      <xs:element ref="i"/>
+      <xs:element ref="u"/>
+      <xs:element ref="sup"/>
+      <xs:element ref="sub"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:redefine schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd">
+    
+    <xs:group name="ul">
+      <xs:sequence>
+        <xs:group ref="ul"/>
+        <xs:group ref="marketing-d-ul"/>
+      </xs:sequence>
+    </xs:group>
+    
+  </xs:redefine>
+  <!-- ============================================================= -->
+  <!-- ADD FILTERING ATTRIBUTES -->
+  <!-- ============================================================= -->
+  <!--  none -->
+  <!--
+     ENTITY % filter-adds 
+    "ADD-ATTRIBUTE-HERE      CDATA                        #IMPLIED"
+  -->
+  <!-- ============================================================= -->
+  <!-- DECLARE USE OF ELEMENT/ATTRIBUTE DOMAINS -->
+  <!-- ============================================================= -->
+  <!-- ============================================================= -->
+  <!-- REMOVE ATTRIBUTE/ELEMENT GROUPS -->
+  <!-- ============================================================= -->
+  <!-- Remove a group by uncommenting its redefinition below -->
+  <!-- ENTITY % filters " " -->
+  <!-- ENTITY % reuse " " -->
+  <!-- ENTITY % variable-content " " -->
+  <!-- ENTITY % variable-links " " -->
+  <!-- ENTITY % localization " " -->
+  <!-- ENTITY % nested-blocks "p" -->
+  <!--
+    For each group removed add a corresponding constraint value to 
+    the excluded-domains entity. The constraint name should be "no-"
+    followed by the name of the entity removed/constrained. 
+    For example, if you removed reuse attributes, add the value 
+    "no-reuse-c" to the excluded-domains entity definition
+  -->
+  <!-- ============================================================= -->
+  <!-- INCLUDE TOPIC AND SECTION MODULES -->
+  <!-- ============================================================= -->
+  <!-- Embed topic module to get generic elements -->
+  <!-- Embed section modules -->
+  <!-- none -->
+  <!-- ============================================================= -->
+  <!-- INCLUDE PHRASE MODULES -->
+  <!-- ============================================================= -->
+</xs:schema>
+<!-- ================== End DITA LW Topic DTD  ====================== -->
