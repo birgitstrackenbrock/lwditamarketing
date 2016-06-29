@@ -26,17 +26,6 @@
 
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
-
-  <xs:group name="ph">
-    <xs:choice>
-      <xs:element ref="ph"/>
-      <xs:element ref="b"/>
-      <xs:element ref="i"/>
-      <xs:element ref="u"/>
-      <xs:element ref="sup"/>
-      <xs:element ref="sub"/>
-    </xs:choice>
-  </xs:group>
   
   <xs:redefine schemaLocation="urn:lw:names:dita:xsd:topicMod.xsd">
     
@@ -55,6 +44,19 @@
     </xs:group>
     
   </xs:redefine>
+
+  <xs:group name="ph">
+    <xs:choice>
+      <xs:element ref="ph"/>
+      <xs:element ref="b"/>
+      <xs:element ref="i"/>
+      <xs:element ref="u"/>
+      <xs:element ref="sup"/>
+      <xs:element ref="sub"/>
+    </xs:choice>
+  </xs:group>
+  
+  
   <!-- ============================================================= -->
   <!-- ADD FILTERING ATTRIBUTES -->
   <!-- ============================================================= -->
