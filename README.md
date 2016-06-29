@@ -6,7 +6,7 @@ Defines a DITA-OT plugin containing LW DITA specializations for marketing materi
 ## Installation
 
 * Checkout this repository in ```{DITA_OT_PATH}/plugins/lwditamarketing```
-* Require plugin="org.oasis.lwdita" extended with schema folder (org.oasis.lwdita-schema.zip)
+* Require plugin="lwditabaseschema"
 * From ```{DITA_OT_PATH}``` run ```ant -f integrator.xml```
 
 
@@ -24,14 +24,14 @@ The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Stracke
 
 * Marketing use case 'product sheet' - different examples
 
-* LW DITA - Generated LW DITA XSD's with Oxygen and add them to ```{DITA_OT_PATH}/plugins/org.oasis.lwdita```
+* LW DITA - Generated LW DITA XSD's with Oxygen, stored in ```{DITA_OT_PATH}/plugins/lwditabaseschema```
 
 * Using XML schema - lwmarketing specialization XSD's
 
 * Topic approach - Definition of different topic types for special information within a product sheet
 
 
-## Schema documentation
+## Schema documentation topic approach
 
 ### Marketing topic types (based on topic/topic)
 
@@ -99,6 +99,10 @@ The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Stracke
 
 * productfig - Special figure which contains a figure of the product (based on topic/fig)
 
+## Schema documentation domain approach
+ 
+ * special lists for benefits, components and features; specialization of ul, allowed everywhere where ul is allowed
+ * special element for quotes; specialization of fig, allowed everywhere where fig is allowed
 
 ## License
 
