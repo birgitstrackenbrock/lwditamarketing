@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:lw:names:dita:marketing:xsd:topic.xsd" id="mt1">
+    <title>Marketing topic</title>
+    <body>
+        <section>
+            <title>Section with benefits</title>
+            <benefits>
+                <benefititem>
+                    <benefit>a</benefit>
+                    <p>about a</p>
+                </benefititem>
+            </benefits>
+        </section>
+    </body>
+</topic>

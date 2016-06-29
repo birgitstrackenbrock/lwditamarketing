@@ -2,21 +2,21 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="lwm">
 
     <system systemId="topic.xsd" uri="topic.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:topic.xsd" uri="topic.xsd" />
+    <system systemId="urn:lw:names:dita:marketing:xsd:topic.xsd" uri="topic.xsd" />
     
     <uri name="topic.xsd" uri="topic.xsd" />
-    <uri name="urn:lw:names:dita:xsd:topic.xsd" uri="topic.xsd" />
+    <uri name="urn:lw:names:dita:marketing:xsd:topic.xsd" uri="topic.xsd" />
     
     <system systemId="marketingDomain.xsd" uri="marketingDomain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
+    <system systemId="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
     
     <uri name="marketingDomain.xsd" uri="marketingDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
+    <uri name="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
     
     <system systemId="quoteDomain.xsd" uri="quoteDomain.xsd" />
-    <system systemId="urn:lw:names:dita:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
+    <system systemId="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
     
     <uri name="quoteDomain.xsd" uri="quoteDomain.xsd" />
-    <uri name="urn:lw:names:dita:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
+    <uri name="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
 
 </catalog>

@@ -24,10 +24,10 @@
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="source">
+  <xs:group name="quotesource">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="source"/>
+        <xs:element ref="quotesource"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
@@ -39,7 +39,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:group minOccurs="0" maxOccurs="unbounded" ref="fig-blocks"/>
-        <xs:group ref="source" minOccurs="0"/>
+        <xs:group ref="quotesource" minOccurs="0"/>
       </xs:sequence>
       <xs:attributeGroup ref="quote-attlist"/>
     </xs:complexType>
@@ -51,17 +51,17 @@
     <xs:attribute name="class" default="+ topic/fig quote-d/quote "/>
   </xs:attributeGroup>
   
-  <xs:element name="source">
+  <xs:element name="quotesource">
     <xs:complexType mixed="true">
       <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-      <xs:attributeGroup ref="source-attlist"/>
+      <xs:attributeGroup ref="quotesource-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="source-attlist">
+  <xs:attributeGroup name="quotesource-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/p quote-d/source "/>
+    <xs:attribute name="class" default="+ topic/p quote-d/quotesource "/>
   </xs:attributeGroup>
   
 </xs:schema>
