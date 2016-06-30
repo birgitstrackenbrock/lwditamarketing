@@ -3,6 +3,9 @@
     xsi:noNamespaceSchemaLocation="urn:lw:names:dita:marketing:xsd:topic.xsd" id="mt1">
     <title>Marketing topic</title>
     <body>
+        <highlights>
+            <highlight>Highlight 1</highlight>
+        </highlights>
         <section>
             <title>Section with benefits</title>
             <benefits>
