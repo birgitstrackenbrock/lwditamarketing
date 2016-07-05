@@ -39,14 +39,8 @@
     <xs:group name="fig">
       <xs:choice>
         <xs:group ref="fig"/>
+        <xs:group ref="marketing-d-fig"/>
         <xs:group ref="quote-d-fig"/>
-      </xs:choice>
-    </xs:group>
-    
-    <xs:group name="section">
-      <xs:choice>
-        <xs:group ref="section"/>
-        <xs:group ref="marketing-d-section"/>
       </xs:choice>
     </xs:group>
     
