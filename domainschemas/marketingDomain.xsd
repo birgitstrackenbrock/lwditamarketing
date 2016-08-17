@@ -11,63 +11,37 @@
   
   <xs:group name="marketing-d-ul">
     <xs:choice>
-      <xs:element ref="benefits"/>
-      <xs:element ref="components"/>
+      <xs:element ref="specifications"/>
       <xs:element ref="features"/>
     </xs:choice>
   </xs:group>
   
   <xs:group name="marketing-d-fig">
     <xs:choice>
-      <xs:element ref="highlights"/>
+      <xs:element ref="keyfeatures"/>
     </xs:choice>
   </xs:group>
   
- 
-  <xs:group name="benefits">
+	<xs:group name="specifications">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="benefits"/>
+      	<xs:element ref="specifications"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="benefititem">
+	<xs:group name="specificationitem">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="benefititem"/>
+      	<xs:element ref="specificationitem"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="benefit">
+	<xs:group name="specification">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="benefit"/>
-      </xs:choice>
-    </xs:sequence>
-  </xs:group>
-  
-  <xs:group name="components">
-    <xs:sequence>
-      <xs:choice>
-        <xs:element ref="components"/>
-      </xs:choice>
-    </xs:sequence>
-  </xs:group>
-  
-  <xs:group name="componentitem">
-    <xs:sequence>
-      <xs:choice>
-        <xs:element ref="componentitem"/>
-      </xs:choice>
-    </xs:sequence>
-  </xs:group>
-  
-  <xs:group name="component">
-    <xs:sequence>
-      <xs:choice>
-        <xs:element ref="component"/>
+      	<xs:element ref="specification"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
@@ -96,111 +70,66 @@
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="highlights">
+	<xs:group name="keyfeatures">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="highlights"/>
+      	<xs:element ref="keyfeatures"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
   
-  <xs:group name="highlight">
+	<xs:group name="keyfeature">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="highlight"/>
+      	<xs:element ref="keyfeature"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
   
   
-  <!-- elements -->
-  
-  <xs:element name="benefits">
+  <!-- elements -->  
+	<xs:element name="specifications">
     <xs:complexType>
       <xs:sequence>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="benefititem"/>
+      	<xs:group minOccurs="0" maxOccurs="unbounded" ref="specificationitem"/>
       </xs:sequence>
-      <xs:attributeGroup ref="benefits-attlist"/>
+    	<xs:attributeGroup ref="specifications-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="benefits-attlist">
+	<xs:attributeGroup name="specifications-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/ul marketing-d/benefits "/>
+		<xs:attribute name="class" default="+ topic/ul marketing-d/specifications "/>
   </xs:attributeGroup>
   
-  <xs:element name="benefititem">
+	<xs:element name="specificationitem">
     <xs:complexType>
       <xs:sequence>
-        <xs:group ref="benefit"/>
+      	<xs:group ref="specification"/>
         <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
       </xs:sequence>
-      <xs:attributeGroup ref="benefititem-attlist"/>
+    	<xs:attributeGroup ref="specificationitem-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="benefititem-attlist">
+	<xs:attributeGroup name="specificationitem-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/li marketing-d/benefititem "/>
+		<xs:attribute name="class" default="+ topic/li marketing-d/specificationitem "/>
   </xs:attributeGroup>
   
-  <xs:element name="benefit">
+	<xs:element name="specification">
     <xs:complexType mixed="true">
       <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-      <xs:attributeGroup ref="benefit-attlist"/>
+    	<xs:attributeGroup ref="specification-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="benefit-attlist">
+	<xs:attributeGroup name="specification-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/p marketing-d/benefit "/>
-  </xs:attributeGroup>
-  
-  <xs:element name="components">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="componentitem"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="components-attlist"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:attributeGroup name="components-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/ul marketing-d/components "/>
-  </xs:attributeGroup>
-  
-  <xs:element name="componentitem">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:group ref="component"/>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="componentitem-attlist"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:attributeGroup name="componentitem-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/li marketing-d/componentitem "/>
-  </xs:attributeGroup>
-  
-  <xs:element name="component">
-    <xs:complexType mixed="true">
-      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-      <xs:attributeGroup ref="component-attlist"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:attributeGroup name="component-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/p marketing-d/component "/>
+		<xs:attribute name="class" default="+ topic/p marketing-d/specification "/>
   </xs:attributeGroup>
   
   <xs:element name="features">
@@ -234,7 +163,7 @@
     <xs:attribute name="class" default="+ topic/li marketing-d/featureitem "/>
   </xs:attributeGroup>
   
-  <xs:element name="feature">
+	<xs:element name="feature">
     <xs:complexType mixed="true">
       <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
       <xs:attributeGroup ref="feature-attlist"/>
@@ -247,32 +176,32 @@
     <xs:attribute name="class" default="+ topic/p marketing-d/feature "/>
   </xs:attributeGroup>
   
-  <xs:element name="highlights">
+	<xs:element name="keyfeatures">
     <xs:complexType>
       <xs:sequence>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="highlight"/>
+      	<xs:group minOccurs="0" maxOccurs="unbounded" ref="keyfeature"/>
       </xs:sequence>
-      <xs:attributeGroup ref="highlights-attlist"/>
+    	<xs:attributeGroup ref="keyfeatures-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="highlights-attlist">
+	<xs:attributeGroup name="keyfeatures-attlist">
     <xs:attributeGroup ref="display-atts"/>
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
-    <xs:attribute name="class" default="+ topic/fig marketing-d/highlights "/>
+		<xs:attribute name="class" default="+ topic/fig marketing-d/keyfeatures "/>
   </xs:attributeGroup>
   
-  <xs:element name="highlight">
+	<xs:element name="keyfeature">
     <xs:complexType mixed="true">
       <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-      <xs:attributeGroup ref="highlight-attlist"/>
+    	<xs:attributeGroup ref="keyfeature-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="highlight-attlist">
+	<xs:attributeGroup name="keyfeature-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/p marketing-d/highlight "/>
+		<xs:attribute name="class" default="+ topic/p marketing-d/keyfeature "/>
   </xs:attributeGroup>
   
 </xs:schema>
