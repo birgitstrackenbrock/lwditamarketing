@@ -100,9 +100,40 @@ The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Stracke
 * productfig - Special figure which contains a figure of the product (based on topic/fig)
 
 ## Schema documentation domain approach
- 
- * special lists for benefits, components and features; specialization of ul, allowed everywhere where ul is allowed
- * special element for quotes; specialization of fig, allowed everywhere where fig is allowed
+
+### Marketing domain
+
+* actionitem - is a call to action element. Use the source element to make a link (based on h5m-d/audio)
+  * label - contains the context of the actionitem (based on h5m-d/fallback)
+* features - a list of features (based on topic/ul)
+  * featureitem - contains the feature itself and possible a description (based on topic/li)
+    * feature - contains the feature name (based on topic/p)
+* keyfeatures - a list of keyfeatures (based on topic/fig)
+  * keyfeature - a short description of this keyfeature or higlight (based on topic/p) 
+* specifications - a list of specifications (based on topic/ul)
+  * specificationitem - contains the specification itself and possible a description (based on topic/li)
+    * specification - contains the specification name (or component name)(based on topic/p)
+
+### Metadata domain
+
+* scope - is added to the prolog and topicmeta in map and contains the following elements: (based on topic/data)
+  * productapplicability (based on topic/data)
+  * lineofbusinessapplicability (based on topic/data)
+  * audience (based on topic/data)
+  * applications (based on topic/data)
+  * context (based on topic/data)
+
+### Quote domain
+
+* longquote - is used to quote on block level from a external document, the source of this external quote is contained by quotesource (based on topic/fig)
+* pullquote - is used to quote on block level from the current document (based on topic/fig)
+* quote - is a inline quote from a external docuement, the source of this external quote is contained by quotesource (based on topic/ph)
+* quotesource - the source of a quote is contained by the following elements, if there is information that can not be contained in the following elements a data element can used (based on topic/data)
+  * name (based on topic/data)
+  * role (based on topic/data)
+  * company (based on topic/data)
+  * publication (based on topic/data)
+  * publicationyear (based on topic/data)
 
 ## License
 
