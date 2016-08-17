@@ -43,6 +43,13 @@
         <xs:group ref="quote-d-fig"/>
       </xs:choice>
     </xs:group>
+  	
+  	<xs:group name="audio">
+  		<xs:choice>
+  			<xs:group ref="audio"/>
+  			<xs:group ref="marketing-d-audio"/>
+  		</xs:choice>
+  	</xs:group>
     
   </xs:redefine>
 

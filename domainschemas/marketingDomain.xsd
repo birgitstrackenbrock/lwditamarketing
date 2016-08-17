@@ -21,30 +21,28 @@
       <xs:element ref="keyfeatures"/>
     </xs:choice>
   </xs:group>
-  
-	<xs:group name="specifications">
-    <xs:sequence>
-      <xs:choice>
-      	<xs:element ref="specifications"/>
-      </xs:choice>
-    </xs:sequence>
-  </xs:group>
-  
-	<xs:group name="specificationitem">
-    <xs:sequence>
-      <xs:choice>
-      	<xs:element ref="specificationitem"/>
-      </xs:choice>
-    </xs:sequence>
-  </xs:group>
-  
-	<xs:group name="specification">
-    <xs:sequence>
-      <xs:choice>
-      	<xs:element ref="specification"/>
-      </xs:choice>
-    </xs:sequence>
-  </xs:group>
+	
+	<xs:group name="marketing-d-audio">
+		<xs:choice>
+			<xs:element ref="actionitem"/>
+		</xs:choice>
+	</xs:group>
+	
+	<xs:group name="actionitem">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="actionitem"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="label">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="label"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
   
   <xs:group name="features">
     <xs:sequence>
@@ -85,52 +83,58 @@
       </xs:choice>
     </xs:sequence>
   </xs:group>
+	
+	<xs:group name="specifications">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="specifications"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="specificationitem">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="specificationitem"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="specification">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="specification"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
   
   
-  <!-- elements -->  
-	<xs:element name="specifications">
-    <xs:complexType>
-      <xs:sequence>
-      	<xs:group minOccurs="0" maxOccurs="unbounded" ref="specificationitem"/>
-      </xs:sequence>
-    	<xs:attributeGroup ref="specifications-attlist"/>
-    </xs:complexType>
-  </xs:element>
-	<xs:attributeGroup name="specifications-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-		<xs:attribute name="class" default="+ topic/ul marketing-d/specifications "/>
-  </xs:attributeGroup>
-  
-	<xs:element name="specificationitem">
-    <xs:complexType>
-      <xs:sequence>
-      	<xs:group ref="specification"/>
-        <xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
-      </xs:sequence>
-    	<xs:attributeGroup ref="specificationitem-attlist"/>
-    </xs:complexType>
-  </xs:element>
-	<xs:attributeGroup name="specificationitem-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-		<xs:attribute name="class" default="+ topic/li marketing-d/specificationitem "/>
-  </xs:attributeGroup>
-  
-	<xs:element name="specification">
-    <xs:complexType mixed="true">
-      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-    	<xs:attributeGroup ref="specification-attlist"/>
-    </xs:complexType>
-  </xs:element>
-	<xs:attributeGroup name="specification-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-		<xs:attribute name="class" default="+ topic/p marketing-d/specification "/>
-  </xs:attributeGroup>
+  <!-- elements -->
+	<xs:element name="actionitem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" ref="label"/>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="source"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="actionitem-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="actionitem-attlist">
+		<xs:attributeGroup ref="filters"/>
+		<xs:attributeGroup ref="reuse"/>
+		<xs:attribute name="class" default="+ topic/object h5m-d/audio marketing-d/actionitem "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="label">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="common-inline"/>
+			<xs:attributeGroup ref="label-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="label-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attribute name="class" default="+ topic/desc h5m-d/fallback marketing-d/label "/>
+	</xs:attributeGroup>
   
   <xs:element name="features">
     <xs:complexType>
@@ -203,5 +207,49 @@
     <xs:attributeGroup ref="reuse"/>
 		<xs:attribute name="class" default="+ topic/p marketing-d/keyfeature "/>
   </xs:attributeGroup>
+	
+	<xs:element name="specifications">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="specificationitem"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="specifications-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="specifications-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="filters"/>
+		<xs:attributeGroup ref="reuse"/>
+		<xs:attribute name="class" default="+ topic/ul marketing-d/specifications "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="specificationitem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="specification"/>
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="list-blocks"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="specificationitem-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="specificationitem-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="filters"/>
+		<xs:attributeGroup ref="reuse"/>
+		<xs:attribute name="class" default="+ topic/li marketing-d/specificationitem "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="specification">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+			<xs:attributeGroup ref="specification-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="specification-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="filters"/>
+		<xs:attributeGroup ref="reuse"/>
+		<xs:attribute name="class" default="+ topic/p marketing-d/specification "/>
+	</xs:attributeGroup>
   
 </xs:schema>
