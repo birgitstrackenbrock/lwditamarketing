@@ -11,18 +11,40 @@
   
   <xs:group name="quote-d-fig">
     <xs:choice>
-      <xs:element ref="quote"/>
+      <xs:element ref="longquote"/>
+    	<xs:element ref="pullquote"/>
     </xs:choice>
   </xs:group>
   
+	<xs:group name="quote-d-ph">
+		<xs:choice>
+			<xs:element ref="quote"/>
+		</xs:choice>
+	</xs:group>
  
-  <xs:group name="quote">
+	<xs:group name="longquote">
     <xs:sequence>
       <xs:choice>
-        <xs:element ref="quote"/>
+      	<xs:element ref="longquote"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
+	
+	<xs:group name="pullquote">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="pullquote"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="quote">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="quote"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
   
   <xs:group name="quotesource">
     <xs:sequence>
@@ -31,37 +53,173 @@
       </xs:choice>
     </xs:sequence>
   </xs:group>
+	
+	<xs:group name="name">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="name"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="role">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="role"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="company">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="company"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="publication">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="publication"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="publicationyear">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="publicationyear"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
   
   
   <!-- elements -->
-  
-  <xs:element name="quote">
+	<xs:element name="longquote">
     <xs:complexType>
       <xs:sequence>
         <xs:group minOccurs="0" maxOccurs="unbounded" ref="fig-blocks"/>
         <xs:group ref="quotesource" minOccurs="0"/>
       </xs:sequence>
-      <xs:attributeGroup ref="quote-attlist"/>
+    	<xs:attributeGroup ref="longquote-attlist"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="quote-attlist">
+	<xs:attributeGroup name="longquote-attlist">
     <xs:attributeGroup ref="display-atts"/>
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
-    <xs:attribute name="class" default="+ topic/fig quote-d/quote "/>
+		<xs:attribute name="class" default="+ topic/fig quote-d/longquote "/>
   </xs:attributeGroup>
+	
+	<xs:element name="pullquote">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="fig-blocks"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="pullquote-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="pullquote-attlist">
+		<xs:attributeGroup ref="display-atts"/>
+		<xs:attributeGroup ref="localization"/>
+		<xs:attribute name="outputclass"/>
+		<xs:attribute name="class" default="+ topic/fig quote-d/pullquote "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="quote">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+				<xs:group ref="quotesource" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="quote-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="quote-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/quote "/>
+	</xs:attributeGroup>
   
-  <xs:element name="quotesource">
-    <xs:complexType mixed="true">
-      <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-      <xs:attributeGroup ref="quotesource-attlist"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:attributeGroup name="quotesource-attlist">
-    <xs:attributeGroup ref="localization"/>
-    <xs:attributeGroup ref="filters"/>
-    <xs:attributeGroup ref="reuse"/>
-    <xs:attribute name="class" default="+ topic/p quote-d/quotesource "/>
-  </xs:attributeGroup>
+	<xs:element name="quotesource">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group minOccurs="0" ref="name"/>
+				<xs:group minOccurs="0" ref="role"/>
+				<xs:group minOccurs="0" ref="company"/>
+				<xs:group minOccurs="0" ref="publication"/>
+				<xs:group minOccurs="0" ref="publicationyear"/>
+				<xs:group minOccurs="0" maxOccurs="unbounded" ref="data"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="quotesource-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="quotesource-attlist">
+		<xs:attribute name="name" fixed="quotesource"/>
+		<xs:attribute name="value"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/data quote-d/quotesource "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="name">
+		<xs:complexType>
+			<xs:attributeGroup ref="name-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="name-attlist">
+		<xs:attribute name="name" fixed="name"/>
+		<xs:attribute name="value"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/data quote-d/name "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="role">
+		<xs:complexType>
+			<xs:attributeGroup ref="role-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="role-attlist">
+		<xs:attribute name="name" fixed="role"/>
+		<xs:attribute name="value"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/data quote-d/role "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="company">
+		<xs:complexType>
+			<xs:attributeGroup ref="company-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="company-attlist">
+		<xs:attribute name="name" fixed="company"/>
+		<xs:attribute name="value"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/data quote-d/company "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="publication">
+		<xs:complexType>
+			<xs:attributeGroup ref="publication-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="publication-attlist">
+		<xs:attribute name="name" fixed="publication"/>
+		<xs:attribute name="value"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/data quote-d/publication "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="publicationyear">
+		<xs:complexType>
+			<xs:attributeGroup ref="publicationyear-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="publicationyear-attlist">
+		<xs:attribute name="name" fixed="publicationyear"/>
+		<xs:attribute name="value"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/data quote-d/publicationyear "/>
+	</xs:attributeGroup>
   
 </xs:schema>

@@ -50,19 +50,20 @@
   			<xs:group ref="marketing-d-audio"/>
   		</xs:choice>
   	</xs:group>
+  	
+  	<xs:group name="ph">
+  		<xs:choice>
+  			<xs:group ref="ph"/>
+  			<xs:group ref="quote-d-ph"/>
+  			<xs:element ref="b"/>
+  			<xs:element ref="i"/>
+  			<xs:element ref="u"/>
+  			<xs:element ref="sup"/>
+  			<xs:element ref="sub"/>
+  		</xs:choice>
+  	</xs:group>
     
   </xs:redefine>
-
-  <xs:group name="ph">
-    <xs:choice>
-      <xs:element ref="ph"/>
-      <xs:element ref="b"/>
-      <xs:element ref="i"/>
-      <xs:element ref="u"/>
-      <xs:element ref="sup"/>
-      <xs:element ref="sub"/>
-    </xs:choice>
-  </xs:group>
   
   
   <!-- ============================================================= -->
