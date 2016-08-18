@@ -103,8 +103,7 @@ The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Stracke
 
 ### Marketing domain
 
-* actionitem - is a call to action element. Use the source element to make a link (based on h5m-d/audio)
-  * label - contains the context of the actionitem (based on h5m-d/fallback)
+* actionitem - is a call to action element. Use the link attribute to link a action (based on topic/p)
 * features - a list of features (based on topic/ul)
   * featureitem - contains the feature itself and possible a description (based on topic/li)
     * feature - contains the feature name (based on topic/p)

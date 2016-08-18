@@ -21,6 +21,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
+	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:linkAttDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd"/>
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd"/>
@@ -45,10 +46,10 @@
       </xs:choice>
     </xs:group>
   	
-  	<xs:group name="audio">
+  	<xs:group name="p">
   		<xs:choice>
-  			<xs:group ref="audio"/>
-  			<xs:group ref="marketing-d-audio"/>
+  			<xs:group ref="p"/>
+  			<xs:group ref="marketing-d-p"/>
   		</xs:choice>
   	</xs:group>
   	
@@ -70,6 +71,11 @@
 				<xs:group ref="scope"/>
   		</xs:sequence>
   	</xs:group>
+  	
+  	<xs:attributeGroup name="p-attlist">
+  		<xs:attributeGroup ref="p-attlist"/>
+  		<xs:attributeGroup ref="linkAtt-d-attribute"/>
+  	</xs:attributeGroup>
     
   </xs:redefine>
   

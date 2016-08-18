@@ -22,7 +22,7 @@
     </xs:choice>
   </xs:group>
 	
-	<xs:group name="marketing-d-audio">
+	<xs:group name="marketing-d-p">
 		<xs:choice>
 			<xs:element ref="actionitem"/>
 		</xs:choice>
@@ -32,14 +32,6 @@
 		<xs:sequence>
 			<xs:choice>
 				<xs:element ref="actionitem"/>
-			</xs:choice>
-		</xs:sequence>
-	</xs:group>
-	
-	<xs:group name="label">
-		<xs:sequence>
-			<xs:choice>
-				<xs:element ref="label"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
@@ -109,31 +101,18 @@
 	</xs:group>
   
   
-  <!-- elements -->
+  <!-- elements -->	
 	<xs:element name="actionitem">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:group minOccurs="0" ref="label"/>
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="source"/>
-			</xs:sequence>
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
 			<xs:attributeGroup ref="actionitem-attlist"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:attributeGroup name="actionitem-attlist">
+		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="filters"/>
 		<xs:attributeGroup ref="reuse"/>
-		<xs:attribute name="class" default="+ topic/object h5m-d/audio marketing-d/actionitem "/>
-	</xs:attributeGroup>
-	
-	<xs:element name="label">
-		<xs:complexType mixed="true">
-			<xs:group minOccurs="0" maxOccurs="unbounded" ref="common-inline"/>
-			<xs:attributeGroup ref="label-attlist"/>
-		</xs:complexType>
-	</xs:element>
-	<xs:attributeGroup name="label-attlist">
-		<xs:attributeGroup ref="localization"/>
-		<xs:attribute name="class" default="+ topic/desc h5m-d/fallback marketing-d/label "/>
+		<xs:attribute name="class" default="+ topic/p marketing-d/actionitem "/>
 	</xs:attributeGroup>
   
   <xs:element name="features">
