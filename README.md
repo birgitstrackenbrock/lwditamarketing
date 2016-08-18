@@ -119,11 +119,11 @@ The following domains are added to the schema. Plus a outputclass attribute doma
 
 The following attributes are added to all elements.
 
-* productapplicability (based on topic/data)
-* lineofbusinessapplicability (based on topic/data)
-* audience (based on topic/data)
-* applications (based on topic/data)
-* context (based on topic/data)
+* productapplicability
+* lineofbusinessapplicability
+* audience
+* applications
+* context
 
 ### Quote domain
 
