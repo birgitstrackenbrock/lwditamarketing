@@ -22,7 +22,6 @@
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:linkAttDomain.xsd"/>
-  <xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd"/>
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataDomain.xsd"/>
   <xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd"/>
 
@@ -71,13 +70,17 @@
 				<xs:group ref="scope"/>
   		</xs:sequence>
   	</xs:group>
-  	
-  	<xs:attributeGroup name="p-attlist">
-  		<xs:attributeGroup ref="p-attlist"/>
-  		<xs:attributeGroup ref="linkAtt-d-attribute"/>
-  	</xs:attributeGroup>
     
   </xs:redefine>
+	
+	<xs:redefine schemaLocation="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd">
+		
+		<xs:attributeGroup name="actionitem-attlist">
+			<xs:attributeGroup ref="actionitem-attlist"/>
+			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+	</xs:redefine>
   
   
   <!-- ============================================================= -->
