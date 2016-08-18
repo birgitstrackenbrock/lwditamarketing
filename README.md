@@ -101,6 +101,8 @@ The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Stracke
 
 ## Schema documentation domain approach
 
+The following domains are added to the schema. Plus a outputclass attribute domain that adds a outputclass attribute to each element.
+
 ### Marketing domain
 
 * actionitem - is a call to action element. Use the link attribute to link a action (based on topic/p)
@@ -113,14 +115,15 @@ The lwditamarketing has been developed by Eva de Haas (FontoXML), Birgit Stracke
   * specificationitem - contains the specification itself and possible a description (based on topic/li)
     * specification - contains the specification name (or component name)(based on topic/p)
 
-### Metadata domain
+### Metadata attribute domain
 
-* scope - is added to the prolog and topicmeta in map and contains the following elements: (based on topic/data)
-  * productapplicability (based on topic/data)
-  * lineofbusinessapplicability (based on topic/data)
-  * audience (based on topic/data)
-  * applications (based on topic/data)
-  * context (based on topic/data)
+The following attributes are added to all elements.
+
+* productapplicability (based on topic/data)
+* lineofbusinessapplicability (based on topic/data)
+* audience (based on topic/data)
+* applications (based on topic/data)
+* context (based on topic/data)
 
 ### Quote domain
 
