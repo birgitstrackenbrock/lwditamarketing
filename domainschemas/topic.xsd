@@ -214,8 +214,8 @@
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="keyfeature-attlist">
-			<xs:attributeGroup ref="keyfeature-attlist"/>
+		<xs:attributeGroup name="highlight-attlist">
+			<xs:attributeGroup ref="highlight-attlist"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		

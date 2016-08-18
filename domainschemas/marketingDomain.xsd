@@ -18,7 +18,7 @@
   
   <xs:group name="marketing-d-fig">
     <xs:choice>
-      <xs:element ref="keyfeatures"/>
+      <xs:element ref="highlights"/>
     </xs:choice>
   </xs:group>
 	
@@ -60,18 +60,18 @@
     </xs:sequence>
   </xs:group>
   
-	<xs:group name="keyfeatures">
+	<xs:group name="highlights">
     <xs:sequence>
       <xs:choice>
-      	<xs:element ref="keyfeatures"/>
+      	<xs:element ref="highlights"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
   
-	<xs:group name="keyfeature">
+	<xs:group name="highlight">
     <xs:sequence>
       <xs:choice>
-      	<xs:element ref="keyfeature"/>
+      	<xs:element ref="highlight"/>
       </xs:choice>
     </xs:sequence>
   </xs:group>
@@ -159,32 +159,32 @@
     <xs:attribute name="class" default="+ topic/p marketing-d/feature "/>
   </xs:attributeGroup>
   
-	<xs:element name="keyfeatures">
+	<xs:element name="highlights">
     <xs:complexType>
       <xs:sequence>
-      	<xs:group minOccurs="0" maxOccurs="unbounded" ref="keyfeature"/>
+      	<xs:group minOccurs="0" maxOccurs="unbounded" ref="highlight"/>
       </xs:sequence>
-    	<xs:attributeGroup ref="keyfeatures-attlist"/>
+    	<xs:attributeGroup ref="highlights-attlist"/>
     </xs:complexType>
   </xs:element>
-	<xs:attributeGroup name="keyfeatures-attlist">
+	<xs:attributeGroup name="highlights-attlist">
     <xs:attributeGroup ref="display-atts"/>
     <xs:attributeGroup ref="localization"/>
     <xs:attribute name="outputclass"/>
-		<xs:attribute name="class" default="+ topic/fig marketing-d/keyfeatures "/>
+		<xs:attribute name="class" default="+ topic/fig marketing-d/highlights "/>
   </xs:attributeGroup>
   
-	<xs:element name="keyfeature">
+	<xs:element name="highlight">
     <xs:complexType mixed="true">
       <xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-    	<xs:attributeGroup ref="keyfeature-attlist"/>
+    	<xs:attributeGroup ref="highlight-attlist"/>
     </xs:complexType>
   </xs:element>
-	<xs:attributeGroup name="keyfeature-attlist">
+	<xs:attributeGroup name="highlight-attlist">
     <xs:attributeGroup ref="localization"/>
     <xs:attributeGroup ref="filters"/>
     <xs:attributeGroup ref="reuse"/>
-		<xs:attribute name="class" default="+ topic/p marketing-d/keyfeature "/>
+		<xs:attribute name="class" default="+ topic/p marketing-d/highlight "/>
   </xs:attributeGroup>
 	
 	<xs:element name="specifications">
