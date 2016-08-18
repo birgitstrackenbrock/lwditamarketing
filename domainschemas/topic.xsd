@@ -22,8 +22,8 @@
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:linkAttDomain.xsd"/>
-	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataDomain.xsd"/>
-  <xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd"/>
+	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataAttDomain.xsd"/>
+	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:outputclassAttDomain.xsd"/>
 
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
@@ -64,12 +64,130 @@
   		</xs:choice>
   	</xs:group>
   	
-  	<xs:group name="prolog.content">
-  		<xs:sequence>
-  			<xs:group ref="prolog.content"/>
-				<xs:group ref="scope"/>
-  		</xs:sequence>
-  	</xs:group>
+  	<xs:attributeGroup name="localization">
+  		<xs:attributeGroup ref="localization"/>
+  		<xs:attributeGroup ref="metadataAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="topic-attlist">
+  		<xs:attributeGroup ref="topic-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="title-attlist">
+  		<xs:attributeGroup ref="title-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="shortdesc-attlist">
+  		<xs:attributeGroup ref="shortdesc-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="body-attlist">
+  		<xs:attributeGroup ref="body-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="section-attlist">
+  		<xs:attributeGroup ref="section-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="p-attlist">
+  		<xs:attributeGroup ref="p-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="ul-attlist">
+  		<xs:attributeGroup ref="ul-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="ol-attlist">
+  		<xs:attributeGroup ref="ol-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="li-attlist">
+  		<xs:attributeGroup ref="li-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="dl-attlist">
+  		<xs:attributeGroup ref="dl-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="dlentry-attlist">
+  		<xs:attributeGroup ref="dlentry-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="dt-attlist">
+  		<xs:attributeGroup ref="dt-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="dd-attlist">
+  		<xs:attributeGroup ref="dd-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="pre-attlist">
+  		<xs:attributeGroup ref="pre-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="simpletable-attlist">
+  		<xs:attributeGroup ref="simpletable-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="sthead-attlist">
+  		<xs:attributeGroup ref="sthead-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="strow-attlist">
+  		<xs:attributeGroup ref="strow-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="stentry-attlist">
+  		<xs:attributeGroup ref="stentry-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="desc-attlist">
+  		<xs:attributeGroup ref="desc-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="ph-attlist">
+  		<xs:attributeGroup ref="ph-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="image-attlist">
+  		<xs:attributeGroup ref="image-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="alt-attlist">
+  		<xs:attributeGroup ref="alt-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="xref-attlist">
+  		<xs:attributeGroup ref="xref-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
+  	
+  	<xs:attributeGroup name="fallback-attlist">
+  		<xs:attributeGroup ref="fallback-attlist"/>
+  		<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+  	</xs:attributeGroup>
     
   </xs:redefine>
 	
@@ -78,6 +196,51 @@
 		<xs:attributeGroup name="actionitem-attlist">
 			<xs:attributeGroup ref="actionitem-attlist"/>
 			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="features-attlist">
+			<xs:attributeGroup ref="features-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="featureitem-attlist">
+			<xs:attributeGroup ref="featureitem-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="feature-attlist">
+			<xs:attributeGroup ref="feature-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="keyfeature-attlist">
+			<xs:attributeGroup ref="keyfeature-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="specifications-attlist">
+			<xs:attributeGroup ref="specifications-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="specificationitem-attlist">
+			<xs:attributeGroup ref="specificationitem-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="specification-attlist">
+			<xs:attributeGroup ref="specification-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+	</xs:redefine>
+	
+	<xs:redefine schemaLocation="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd">
+		
+		<xs:attributeGroup name="quote-attlist">
+			<xs:attributeGroup ref="quote-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
 	</xs:redefine>

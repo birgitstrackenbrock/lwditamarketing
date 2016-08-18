@@ -5,12 +5,16 @@
   
   <xs:annotation>
     <xs:appinfo>
-    	<dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(props link)</dita:domainsModule>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(dir metadata)</dita:domainsModule>
     </xs:appinfo>
   </xs:annotation>
-  
-	<xs:attributeGroup name="linkAtt-d-attribute">
-		<xs:attribute name="link"/>
+	
+	<xs:attributeGroup name="metadataAtt-d-attribute">
+		<xs:attribute name="productapplicability"/>
+		<xs:attribute name="lineofbusinessapplicability"/>
+		<xs:attribute name="audience"/>
+		<xs:attribute name="applications"/>
+		<xs:attribute name="context"/>
 	</xs:attributeGroup>
-  
+			
 </xs:schema>

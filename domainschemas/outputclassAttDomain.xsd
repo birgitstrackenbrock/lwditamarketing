@@ -5,12 +5,12 @@
   
   <xs:annotation>
     <xs:appinfo>
-    	<dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(props link)</dita:domainsModule>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(dir outputclass)</dita:domainsModule>
     </xs:appinfo>
   </xs:annotation>
-  
-	<xs:attributeGroup name="linkAtt-d-attribute">
-		<xs:attribute name="link"/>
+	
+	<xs:attributeGroup name="outputclassAtt-d-attribute">
+		<xs:attribute name="outputclass"/>
 	</xs:attributeGroup>
-  
+			
 </xs:schema>

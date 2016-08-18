@@ -19,11 +19,17 @@
 	<uri name="marketingDomain.xsd" uri="marketingDomain.xsd" />
 	<uri name="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd" uri="marketingDomain.xsd" />
 
-	<system systemId="metadataDomain.xsd" uri="metadataDomain.xsd" />
-	<system systemId="urn:lw:names:dita:marketing:xsd:metadataDomain.xsd" uri="metadataDomain.xsd" />
+	<system systemId="metadataAttDomain.xsd" uri="metadataAttDomain.xsd" />
+	<system systemId="urn:lw:names:dita:marketing:xsd:metadataAttDomain.xsd" uri="metadataAttDomain.xsd" />
 
-	<uri name="metadataDomain.xsd" uri="metadataDomain.xsd" />
-	<uri name="urn:lw:names:dita:marketing:xsd:metadataDomain.xsd" uri="metadataDomain.xsd" />
+	<uri name="metadataAttDomain.xsd" uri="metadataAttDomain.xsd" />
+	<uri name="urn:lw:names:dita:marketing:xsd:metadataAttDomain.xsd" uri="metadataAttDomain.xsd" />
+	
+	<system systemId="outputclassAttDomain.xsd" uri="outputclassAttDomain.xsd" />
+	<system systemId="urn:lw:names:dita:marketing:xsd:outputclassAttDomain.xsd" uri="outputclassAttDomain.xsd" />
+	
+	<uri name="outputclassAttDomain.xsd" uri="outputclassAttDomain.xsd" />
+	<uri name="urn:lw:names:dita:marketing:xsd:outputclassAttDomain.xsd" uri="outputclassAttDomain.xsd" />
 
 	<system systemId="quoteDomain.xsd" uri="quoteDomain.xsd" />
 	<system systemId="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />

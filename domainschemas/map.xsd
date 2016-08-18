@@ -20,18 +20,18 @@
 <!-- hi-d -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
   <xs:include schemaLocation="urn:lw:names:dita:xsd:highlightDomainMod.xsd"/>
-	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataDomain.xsd"/>
+	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataAttDomain.xsd"/>
+	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:outputclassAttDomain.xsd"/>
 	
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
 	
 	<xs:redefine schemaLocation="urn:lw:names:dita:xsd:mapMod.xsd">
-		<xs:group name="topicmeta.content">
-			<xs:sequence>
-				<xs:group ref="topicmeta.content"/>
-				<xs:group ref="scope"/>
-			</xs:sequence>
-		</xs:group>
+		<xs:attributeGroup name="localization">
+			<xs:attributeGroup ref="localization"/>
+			<xs:attributeGroup ref="metadataAtt-d-attribute"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+		</xs:attributeGroup>
 	</xs:redefine>
 	
   <xs:group name="ph">
