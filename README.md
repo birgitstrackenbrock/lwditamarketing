@@ -114,6 +114,9 @@ The following domains are added to the schema. Plus a outputclass attribute doma
 * specifications - a list of specifications (based on topic/ul)
   * specificationitem - contains the specification itself and possible a description (based on topic/li)
     * specification - contains the specification name (or component name)(based on topic/p)
+    
+### Inline marketing domain
+
 * brand - a inline element to tag a brand (based on topic/xref)
 * category - a inline element to tag a category (based on topic/xref)
 * company - a inline element to tag a company (based on topic/xref)
@@ -132,13 +135,13 @@ The following attributes are added to all elements.
 ### Quote domain
 
 * longquote - is used to quote on block level from a external document, the source of this external quote is contained by quotesource (based on topic/fig)
-  * longquotesource - is used to contain the source of the quote. Some parts of the quote can be tagged by following elements and/or some source information can be contained by attributes with the same names as the following elements (based on topic/p)
-    * name (based on topic/ph)
-    * role (based on topic/ph)
-    * company (based on topic/ph)
-    * publication (based on topic/ph)
-    * year (based on topic/ph)
-    * other - is used to contain other source information. With the type attribute you can specify what type of other source information this is (based on topic/ph)
+  * longquotesource - is used to contain the source of the quote. Some parts of the quote can be tagged by following elements and/or some source information can be contained by attributes with corresponding names as the following elements (based on topic/p)
+    * sourcename (based on topic/ph)
+    * sourcerole (based on topic/ph)
+    * sourcecompany (based on topic/ph)
+    * sourcepublication (based on topic/ph)
+    * sourceyear (based on topic/ph)
+    * sourceother - is used to contain other source information. With the type attribute you can specify what type of other source information this is (based on topic/ph)
 * pullquote - is used to quote on block level from the current document (based on topic/fig)
 * quote - is a inline quote from a external docuement, the source of this external quote is contained by quotesource (based on topic/ph)
   * quotesource - the source of a quote is contained by this element. Other information about the source of the quote, can be contained by the attribues: name, role, company, publication, year, other (based on topic/data)

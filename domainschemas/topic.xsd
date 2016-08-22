@@ -58,18 +58,12 @@
   		<xs:choice>
   			<xs:group ref="ph"/>
   			<xs:group ref="quote-d-ph"/>
+  			<xs:group ref="inlinemarketing-d-ph"/>
   			<xs:element ref="b"/>
   			<xs:element ref="i"/>
   			<xs:element ref="u"/>
   			<xs:element ref="sup"/>
   			<xs:element ref="sub"/>
-  		</xs:choice>
-  	</xs:group>
-  	
-  	<xs:group name="xref">
-  		<xs:choice>
-  			<xs:group ref="xref"/>
-  			<xs:group ref="marketing-d-xref"/>
   		</xs:choice>
   	</xs:group>
   	
@@ -200,6 +194,34 @@
     
   </xs:redefine>
 	
+	<xs:redefine schemaLocation="urn:lw:names:dita:marketing:xsd:inlinemarketingDomain.xsd">
+		
+		<xs:attributeGroup name="brand-attlist">
+			<xs:attributeGroup ref="brand-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="category-attlist">
+			<xs:attributeGroup ref="category-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="company-attlist">
+			<xs:attributeGroup ref="company-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="product-attlist">
+			<xs:attributeGroup ref="product-attlist"/>
+			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
+			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+		</xs:attributeGroup>
+		
+	</xs:redefine>
+	
 	<xs:redefine schemaLocation="urn:lw:names:dita:marketing:xsd:marketingDomain.xsd">
 		
 		<xs:attributeGroup name="actionitem-attlist">
@@ -264,33 +286,33 @@
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="name-attlist">
-			<xs:attributeGroup ref="name-attlist"/>
+		<xs:attributeGroup name="sourcename-attlist">
+			<xs:attributeGroup ref="sourcename-attlist"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="role-attlist">
-			<xs:attributeGroup ref="role-attlist"/>
+		<xs:attributeGroup name="sourcerole-attlist">
+			<xs:attributeGroup ref="sourcerole-attlist"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="company-attlist">
-			<xs:attributeGroup ref="company-attlist"/>
+		<xs:attributeGroup name="sourcecompany-attlist">
+			<xs:attributeGroup ref="sourcecompany-attlist"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="publication-attlist">
-			<xs:attributeGroup ref="publication-attlist"/>
+		<xs:attributeGroup name="sourcepublication-attlist">
+			<xs:attributeGroup ref="sourcepublication-attlist"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="year-attlist">
-			<xs:attributeGroup ref="year-attlist"/>
+		<xs:attributeGroup name="sourceyear-attlist">
+			<xs:attributeGroup ref="sourceyear-attlist"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
-		<xs:attributeGroup name="other-attlist">
-			<xs:attributeGroup ref="other-attlist"/>
+		<xs:attributeGroup name="sourceother-attlist">
+			<xs:attributeGroup ref="sourceother-attlist"/>
 			<xs:attributeGroup ref="otherquoteAtt-d-attribute"/>
 			<xs:attributeGroup ref="outputclassAtt-d-attribute"/>
 		</xs:attributeGroup>

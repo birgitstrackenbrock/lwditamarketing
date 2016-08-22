@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic inlinemarketing-d)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+  
+	<xs:group name="inlinemarketing-d-ph">
+		<xs:choice>
+			<xs:element ref="brand"/>
+			<xs:element ref="category"/>
+			<xs:element ref="company"/>
+			<xs:element ref="product"/>
+		</xs:choice>
+	</xs:group>
+	
+	<xs:group name="brand">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="brand"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="category">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="category"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="company">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="company"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="product">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="product"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+  <!-- elements -->		
+	<xs:element name="brand">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+			<xs:attributeGroup ref="brand-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="brand-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/ph inlinemarketing-d/brand "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="category">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+			<xs:attributeGroup ref="category-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="category-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/ph inlinemarketing-d/category "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="company">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+			<xs:attributeGroup ref="company-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="company-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/ph inlinemarketing-d/company "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="product">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
+			<xs:attributeGroup ref="product-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="product-attlist">
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-content"/>
+		<xs:attribute name="class" default="+ topic/ph inlinemarketing-d/product "/>
+	</xs:attributeGroup>
+	
+</xs:schema>

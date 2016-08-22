@@ -7,6 +7,12 @@
 	<uri name="topic.xsd" uri="topic.xsd" />
 	<uri name="urn:lw:names:dita:marketing:xsd:topic.xsd" uri="topic.xsd" />
 	
+	<system systemId="inlinemarketingDomain.xsd" uri="inlinemarketingDomain.xsd" />
+	<system systemId="urn:lw:names:dita:marketing:xsd:inlinemarketingDomain.xsd" uri="inlinemarketingDomain.xsd" />
+	
+	<uri name="inlinemarketingDomain.xsd" uri="inlinemarketingDomain.xsd" />
+	<uri name="urn:lw:names:dita:marketing:xsd:inlinemarketingDomain.xsd" uri="inlinemarketingDomain.xsd" />
+	
 	<system systemId="linkAttDomain.xsd" uri="linkAttDomain.xsd" />
 	<system systemId="urn:lw:names:dita:marketing:xsd:linkAttDomain.xsd" uri="linkAttDomain.xsd" />
 	

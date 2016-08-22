@@ -62,50 +62,50 @@
     </xs:sequence>
   </xs:group>
 	
-	<xs:group name="name">
+	<xs:group name="sourcename">
 		<xs:sequence>
 			<xs:choice>
-				<xs:element ref="name"/>
+				<xs:element ref="sourcename"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
 	
-	<xs:group name="role">
+	<xs:group name="sourcerole">
 		<xs:sequence>
 			<xs:choice>
-				<xs:element ref="role"/>
+				<xs:element ref="sourcerole"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
 	
-	<xs:group name="company">
+	<xs:group name="sourcecompany">
 		<xs:sequence>
 			<xs:choice>
-				<xs:element ref="company"/>
+				<xs:element ref="sourcecompany"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
 	
-	<xs:group name="publication">
+	<xs:group name="sourcepublication">
 		<xs:sequence>
 			<xs:choice>
-				<xs:element ref="publication"/>
+				<xs:element ref="sourcepublication"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
 	
-	<xs:group name="year">
+	<xs:group name="sourceyear">
 		<xs:sequence>
 			<xs:choice>
-				<xs:element ref="year"/>
+				<xs:element ref="sourceyear"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
 	
-	<xs:group name="other">
+	<xs:group name="sourceother">
 		<xs:sequence>
 			<xs:choice>
-				<xs:element ref="other"/>
+				<xs:element ref="sourceother"/>
 			</xs:choice>
 		</xs:sequence>
 	</xs:group>
@@ -133,12 +133,12 @@
 			<xs:sequence>
 				<xs:choice minOccurs="0" maxOccurs="unbounded">
 					<xs:group ref="all-inline"/>
-					<xs:group ref="name"/>
-					<xs:group ref="role"/>
-					<xs:group ref="company"/>
-					<xs:group ref="publication"/>
-					<xs:group ref="year"/>
-					<xs:group ref="other"/>
+					<xs:group ref="sourcename"/>
+					<xs:group ref="sourcerole"/>
+					<xs:group ref="sourcecompany"/>
+					<xs:group ref="sourcepublication"/>
+					<xs:group ref="sourceyear"/>
+					<xs:group ref="sourceother"/>
 				</xs:choice>
 			</xs:sequence>
 			<xs:attributeGroup ref="longquotesource-attlist"/>
@@ -151,76 +151,76 @@
 		<xs:attribute name="class" default="+ topic/p quote-d/longquotesource "/>
 	</xs:attributeGroup>
 	
-	<xs:element name="name">
+	<xs:element name="sourcename">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-			<xs:attributeGroup ref="name-attlist"/>
+			<xs:attributeGroup ref="sourcename-attlist"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:attributeGroup name="name-attlist">
+	<xs:attributeGroup name="sourcename-attlist">
 		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="variable-content"/>
-		<xs:attribute name="class" default="+ topic/ph quote-d/name "/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/sourcename "/>
 	</xs:attributeGroup>
 	
-	<xs:element name="role">
+	<xs:element name="sourcerole">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-			<xs:attributeGroup ref="role-attlist"/>
+			<xs:attributeGroup ref="sourcerole-attlist"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:attributeGroup name="role-attlist">
+	<xs:attributeGroup name="sourcerole-attlist">
 		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="variable-content"/>
-		<xs:attribute name="class" default="+ topic/ph quote-d/role "/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/sourcerole "/>
 	</xs:attributeGroup>
 	
-	<xs:element name="company">
+	<xs:element name="sourcecompany">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-			<xs:attributeGroup ref="company-attlist"/>
+			<xs:attributeGroup ref="sourcecompany-attlist"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:attributeGroup name="company-attlist">
+	<xs:attributeGroup name="sourcecompany-attlist">
 		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="variable-content"/>
-		<xs:attribute name="class" default="+ topic/ph quote-d/company "/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/sourcecompany "/>
 	</xs:attributeGroup>
 	
-	<xs:element name="publication">
+	<xs:element name="sourcepublication">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-			<xs:attributeGroup ref="publication-attlist"/>
+			<xs:attributeGroup ref="sourcepublication-attlist"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:attributeGroup name="publication-attlist">
+	<xs:attributeGroup name="sourcepublication-attlist">
 		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="variable-content"/>
-		<xs:attribute name="class" default="+ topic/ph quote-d/publication "/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/sourcepublication "/>
 	</xs:attributeGroup>
 	
-	<xs:element name="year">
+	<xs:element name="sourceyear">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-			<xs:attributeGroup ref="year-attlist"/>
+			<xs:attributeGroup ref="sourceyear-attlist"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:attributeGroup name="year-attlist">
+	<xs:attributeGroup name="sourceyear-attlist">
 		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="variable-content"/>
-		<xs:attribute name="class" default="+ topic/ph quote-d/year "/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/sourceyear "/>
 	</xs:attributeGroup>
 	
-	<xs:element name="other">
+	<xs:element name="sourceother">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>
-			<xs:attributeGroup ref="other-attlist"/>
+			<xs:attributeGroup ref="sourceother-attlist"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:attributeGroup name="other-attlist">
+	<xs:attributeGroup name="sourceother-attlist">
 		<xs:attributeGroup ref="localization"/>
 		<xs:attributeGroup ref="variable-content"/>
-		<xs:attribute name="class" default="+ topic/ph quote-d/other "/>
+		<xs:attribute name="class" default="+ topic/ph quote-d/sourceother "/>
 	</xs:attributeGroup>
 	
 	<xs:element name="pullquote">
