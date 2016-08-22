@@ -23,6 +23,7 @@
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:metadataAttDomain.xsd"/>
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:outputclassAttDomain.xsd"/>
 	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:linkAttDomain.xsd"/>
+	<xs:include schemaLocation="urn:lw:names:dita:marketing:xsd:conrefAttDomain.xsd"/>
 	
   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
@@ -51,21 +52,25 @@
 		<xs:attributeGroup name="brand-attlist">
 			<xs:attributeGroup ref="brand-attlist"/>
 			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+			<xs:attributeGroup ref="conrefAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
 		<xs:attributeGroup name="category-attlist">
 			<xs:attributeGroup ref="category-attlist"/>
 			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+			<xs:attributeGroup ref="conrefAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
 		<xs:attributeGroup name="company-attlist">
 			<xs:attributeGroup ref="company-attlist"/>
 			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+			<xs:attributeGroup ref="conrefAtt-d-attribute"/>
 		</xs:attributeGroup>
 		
 		<xs:attributeGroup name="product-attlist">
 			<xs:attributeGroup ref="product-attlist"/>
 			<xs:attributeGroup ref="linkAtt-d-attribute"/>
+			<xs:attributeGroup ref="conrefAtt-d-attribute"/>
 		</xs:attributeGroup>
 	</xs:redefine>
   <!-- ============================================================= -->
