@@ -9,6 +9,15 @@
     </xs:appinfo>
   </xs:annotation>
   
+	<xs:group name="marketing-d-xref">
+		<xs:choice>
+			<xs:element ref="brand"/>
+			<xs:element ref="category"/>
+			<xs:element ref="company"/>
+			<xs:element ref="product"/>
+		</xs:choice>
+	</xs:group>
+  
   <xs:group name="marketing-d-ul">
     <xs:choice>
       <xs:element ref="specifications"/>
@@ -26,6 +35,38 @@
 		<xs:choice>
 			<xs:element ref="actionitem"/>
 		</xs:choice>
+	</xs:group>
+	
+	<xs:group name="brand">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="brand"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="category">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="category"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="company">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="company"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="product">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="product"/>
+			</xs:choice>
+		</xs:sequence>
 	</xs:group>
 	
 	<xs:group name="actionitem">
@@ -102,6 +143,98 @@
   
   
   <!-- elements -->	
+	<xs:element name="brand">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="common-inline"/>
+			<xs:attributeGroup ref="brand-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="brand-attlist">
+		<xs:attribute name="href"/>
+		<xs:attribute name="format"/>
+		<xs:attribute name="scope">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="local"/>
+					<xs:enumeration value="peer"/>
+					<xs:enumeration value="external"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-links"/>
+		<xs:attribute name="class" default="- topic/xref marketing-d/brand "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="category">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="common-inline"/>
+			<xs:attributeGroup ref="category-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="category-attlist">
+		<xs:attribute name="href"/>
+		<xs:attribute name="format"/>
+		<xs:attribute name="scope">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="local"/>
+					<xs:enumeration value="peer"/>
+					<xs:enumeration value="external"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-links"/>
+		<xs:attribute name="class" default="- topic/xref marketing-d/category "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="company">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="common-inline"/>
+			<xs:attributeGroup ref="company-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="company-attlist">
+		<xs:attribute name="href"/>
+		<xs:attribute name="format"/>
+		<xs:attribute name="scope">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="local"/>
+					<xs:enumeration value="peer"/>
+					<xs:enumeration value="external"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-links"/>
+		<xs:attribute name="class" default="- topic/xref marketing-d/company "/>
+	</xs:attributeGroup>
+	
+	<xs:element name="product">
+		<xs:complexType mixed="true">
+			<xs:group minOccurs="0" maxOccurs="unbounded" ref="common-inline"/>
+			<xs:attributeGroup ref="product-attlist"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="product-attlist">
+		<xs:attribute name="href"/>
+		<xs:attribute name="format"/>
+		<xs:attribute name="scope">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="local"/>
+					<xs:enumeration value="peer"/>
+					<xs:enumeration value="external"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attributeGroup ref="localization"/>
+		<xs:attributeGroup ref="variable-links"/>
+		<xs:attribute name="class" default="- topic/xref marketing-d/product "/>
+	</xs:attributeGroup>
+	
 	<xs:element name="actionitem">
 		<xs:complexType mixed="true">
 			<xs:group minOccurs="0" maxOccurs="unbounded" ref="all-inline"/>

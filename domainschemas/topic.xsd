@@ -66,6 +66,13 @@
   		</xs:choice>
   	</xs:group>
   	
+  	<xs:group name="xref">
+  		<xs:choice>
+  			<xs:group ref="xref"/>
+  			<xs:group ref="marketing-d-xref"/>
+  		</xs:choice>
+  	</xs:group>
+  	
   	<xs:attributeGroup name="localization">
   		<xs:attributeGroup ref="localization"/>
   		<xs:attributeGroup ref="metadataAtt-d-attribute"/>

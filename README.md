@@ -114,6 +114,10 @@ The following domains are added to the schema. Plus a outputclass attribute doma
 * specifications - a list of specifications (based on topic/ul)
   * specificationitem - contains the specification itself and possible a description (based on topic/li)
     * specification - contains the specification name (or component name)(based on topic/p)
+* brand - a inline element to tag a brand (based on topic/xref)
+* category - a inline element to tag a category (based on topic/xref)
+* company - a inline element to tag a company (based on topic/xref)
+* product - a inline element to tag a product name (based on topic/xref)
 
 ### Metadata attribute domain
 
