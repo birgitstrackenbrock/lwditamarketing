@@ -128,14 +128,16 @@ The following attributes are added to all elements.
 ### Quote domain
 
 * longquote - is used to quote on block level from a external document, the source of this external quote is contained by quotesource (based on topic/fig)
+  * longquotesource - is used to contain the source of the quote. Some parts of the quote can be tagged by following elements and/or some source information can be contained by attributes with the same names as the following elements (based on topic/p)
+    * name (based on topic/ph)
+    * role (based on topic/ph)
+    * company (based on topic/ph)
+    * publication (based on topic/ph)
+    * year (based on topic/ph)
+    * other - is used to contain other source information. With the type attribute you can specify what type of other source information this is (based on topic/ph)
 * pullquote - is used to quote on block level from the current document (based on topic/fig)
 * quote - is a inline quote from a external docuement, the source of this external quote is contained by quotesource (based on topic/ph)
-* quotesource - the source of a quote is contained by the following elements, if there is information that can not be contained in the following elements a data element can used (based on topic/data)
-  * name (based on topic/data)
-  * role (based on topic/data)
-  * company (based on topic/data)
-  * publication (based on topic/data)
-  * publicationyear (based on topic/data)
+  * quotesource - the source of a quote is contained by this element. Other information about the source of the quote, can be contained by the attribues: name, role, company, publication, year, other (based on topic/data)
 
 ## License
 

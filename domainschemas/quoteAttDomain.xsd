@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:lw:names:dita:xsd:ditaarch.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="urn:lw:names:dita:xsd:xml.xsd"/>
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(dir quote)</dita:domainsModule>
+    </xs:appinfo>
+  </xs:annotation>
+	
+	<xs:attributeGroup name="quoteAtt-d-attribute">
+		<xs:attribute name="name"/>
+		<xs:attribute name="role"/>
+		<xs:attribute name="company"/>
+		<xs:attribute name="publication"/>
+		<xs:attribute name="year"/>
+		<xs:attribute name="other"/>
+	</xs:attributeGroup>
+			
+</xs:schema>

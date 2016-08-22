@@ -30,6 +30,18 @@
 	
 	<uri name="outputclassAttDomain.xsd" uri="outputclassAttDomain.xsd" />
 	<uri name="urn:lw:names:dita:marketing:xsd:outputclassAttDomain.xsd" uri="outputclassAttDomain.xsd" />
+	
+	<system systemId="quoteAttDomain.xsd" uri="quoteAttDomain.xsd" />
+	<system systemId="urn:lw:names:dita:marketing:xsd:quoteAttDomain.xsd" uri="quoteAttDomain.xsd" />
+	
+	<uri name="quoteAttDomain.xsd" uri="quoteAttDomain.xsd" />
+	<uri name="urn:lw:names:dita:marketing:xsd:quoteAttDomain.xsd" uri="quoteAttDomain.xsd" />
+	
+	<system systemId="otherquoteAttDomain.xsd" uri="otherquoteAttDomain.xsd" />
+	<system systemId="urn:lw:names:dita:marketing:xsd:otherquoteAttDomain.xsd" uri="otherquoteAttDomain.xsd" />
+	
+	<uri name="otherquoteAttDomain.xsd" uri="otherquoteAttDomain.xsd" />
+	<uri name="urn:lw:names:dita:marketing:xsd:otherquoteAttDomain.xsd" uri="otherquoteAttDomain.xsd" />
 
 	<system systemId="quoteDomain.xsd" uri="quoteDomain.xsd" />
 	<system systemId="urn:lw:names:dita:marketing:xsd:quoteDomain.xsd" uri="quoteDomain.xsd" />
