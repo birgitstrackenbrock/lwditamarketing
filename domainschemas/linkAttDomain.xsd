@@ -10,7 +10,17 @@
   </xs:annotation>
   
 	<xs:attributeGroup name="linkAtt-d-attribute">
-		<xs:attribute name="link"/>
+		<xs:attribute name="href"/>
+		<xs:attribute name="format"/>
+		<xs:attribute name="scope">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="local"/>
+					<xs:enumeration value="peer"/>
+					<xs:enumeration value="external"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
 	</xs:attributeGroup>
   
 </xs:schema>

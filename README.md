@@ -105,7 +105,7 @@ The following domains are added to the schema. Plus a outputclass attribute doma
 
 ### Marketing domain
 
-* actionitem - is a call to action element. Use the link attribute to link a action (based on topic/p)
+* actionitem - is a call to action element. Use the href attribute to link a action (based on topic/p)
 * features - a list of features (based on topic/ul)
   * featureitem - contains the feature itself and possible a description (based on topic/li)
     * feature - contains the feature name (based on topic/p)
