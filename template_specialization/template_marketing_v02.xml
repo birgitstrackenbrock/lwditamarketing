@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<topic id="mk" outputclass="marketingtopic" >
+    <title>Title</title> 
+    <prolog>
+        <specmeta>
+            <ph outputclass="brand"></ph>
+            <ph outputclass="category"></ph>
+            <ph outputclass="product"></ph>
+            <ph outputclass="company"></ph>
+        </specmeta>
+    </prolog>
+    <body outputclass="marketingbody">
+        
+        <dl outputclass="features">
+            <dlentry outputclass="feature" specmodel="sequence">
+                <dt outputclass="featureterm"></dt>
+                <dd outputclass="featuredef"></dd>
+            </dlentry>
+        </dl>
+        
+        <dl outputclass="specifications">
+            <dlentry outputclass="specification" specmodel="sequence">
+                <dt outputclass="specifiedterm"></dt>
+                <dd outputclass="specifieddesc"></dd>
+            </dlentry>
+        </dl>
+
+        <ul outputclass="highlights">
+            <li outputclass="highlight"></li> 
+        </ul>
+        
+        <p outputclass="action">
+            <xref outputclass="actionref"></xref>
+        </p>
+        
+        <fig outputclass="quote">
+            <xref outputclass="quoteref"></xref> 
+        </fig>
+    
+    </body>             
+</topic>

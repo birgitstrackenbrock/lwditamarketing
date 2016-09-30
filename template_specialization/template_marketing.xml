@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- be aware, in lw topic.mod not all atribute we are using for specialization here are defined e.g. outputclass is only allowed with fig, 
+    specrole etc. are missing -->
+<topic id="mk" outputclass="marketingtopic" >
+    <title>Title</title> 
+    <prolog>
+        <specmeta>
+            <ph outputclass="brand" specrole="xx"></ph>
+            <ph outputclass="category" specrole="xx"></ph>
+            <ph outputclass="product" specrole="xx"></ph>
+            <ph outputclass="company" specrole="xx"></ph>
+            <!-- we want to use this ph-specialization within the body/p and not only in the prolog;
+                so do we have do define this elements hier or in the body/p? -->
+            <!-- values for specrole? and their meaning? -->
+            <!-- [19-09] is ok this way for within the body 
+            specrole will not be needed here -->
+        </specmeta>
+    </prolog>
+    <body outputclass="marketingbody">
+        <!-- here we only define the new elements for "all-blocks", thus in body and in section, so do we have to denfine them twice?
+            and we want to keep/use all standard lw elements also 
+        and how can we avoid the our new dl's are allowed in "list-blocks"? can we restrict the places where our dl's are allowed? -->
+        <!-- [19-09] yes, twice, specialized section and reference the definitions -->
+        <dl outputclass="features">
+            <dlentry outputclass="feature" specmodel="sequence">
+                <dt outputclass="featureterm"></dt>
+                <dd outputclass="featuredef"><p>...</p></dd>
+            </dlentry>
+        </dl>
+        <dl outputclass="specifications">
+            <dlentry outputclass="specification" specmodel="sequence">
+                <dt outputclass="specifiedterm"></dt>
+                <dd outputclass="specifieddesc" important="optional"><p>...</p></dd><!-- important="optional" is what we want also in the base for dd -->
+                <!-- [19-09] if there is no definition leave the element empty -->
+            </dlentry>
+        </dl>
+        <ul outputclass="highlights">
+            <li outputclass="highlight"></li> 
+        </ul>
+        <p>
+            <xref outputclass="actionref"></xref>
+            <!-- is this possible? and how do we get this everywhere where xref is allowed? 
+                or are the only inlin-elements which are allowed to specialize ph and data?
+                as fare as we understand the template approach, this xref specialization is not allowed
+                -->
+            <!-- [19-09] if actionref is only allowed in a special context then specialized the context as wel e.g. a special p
+            for inline-elements everywhere use ph or data -->
+        </p>
+    </body>             
+</topic>
+
+<!-- 
+Suggestion: take over a restricted lq from DITA:
+
+<xs:element name="lq">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="all-blocks" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="longquoteref" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="lq-attlist"/>
+	</xs:complexType>
+</xs:element>
+<xs:attributeGroup name="lq-attlist">
+	<xs:attributeGroup ref="localization"/>
+	<xs:attributeGroup ref="filters"/>
+	<xs:attributeGroup ref="reuse"/>
+	<xs:attribute name="class" default="- topic/lq "/>
+</xs:attributeGroup>
+
+<xs:element name="longquoteref">
+	<xs:complexType>
+		<xs:sequence>
+		</xs:sequence>
+		<xs:attributeGroup ref="longquoteref-attlist"/>
+	</xs:complexType>
+</xs:element>
+<xs:attributeGroup name="longquoteref-attlist">
+	<xs:attribute name="href"/>
+	<xs:attribute name="format"/>
+	<xs:attribute name="scope">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:enumeration value="local"/>
+				<xs:enumeration value="peer"/>
+				<xs:enumeration value="external"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attributeGroup ref="localization"/>
+	<xs:attribute name="class" default="- topic/longquoteref "/>
+</xs:attributeGroup>
+-->
+
+<!-- [19-09] create a specialization for a long quote for marketing ??? -->
