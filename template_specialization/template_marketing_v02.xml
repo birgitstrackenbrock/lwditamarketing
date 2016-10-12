@@ -1,42 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<topic id="mk" outputclass="marketingtopic" >
-    <title>Title</title> 
+<topic id="mk02" outputclass="marketingtopic">
+    <title>Title</title>
     <prolog>
         <specmeta>
-            <ph outputclass="brand"></ph>
-            <ph outputclass="category"></ph>
-            <ph outputclass="product"></ph>
-            <ph outputclass="company"></ph>
+            <ph outputclass="brand"/>
+            <ph outputclass="category"/>
+            <ph outputclass="product"/>
+            <ph outputclass="company"/>
         </specmeta>
     </prolog>
     <body outputclass="marketingbody">
-        
-        <dl outputclass="features">
-            <dlentry outputclass="feature" specmodel="sequence">
-                <dt outputclass="featureterm"></dt>
-                <dd outputclass="featuredef"></dd>
-            </dlentry>
-        </dl>
-        
-        <dl outputclass="specifications">
-            <dlentry outputclass="specification" specmodel="sequence">
-                <dt outputclass="specifiedterm"></dt>
-                <dd outputclass="specifieddesc"></dd>
-            </dlentry>
-        </dl>
 
-        <ul outputclass="highlights">
-            <li outputclass="highlight"></li> 
-        </ul>
+        <section>...</section>
+
+        <section outputclass="marketingsection" specmodel="choice">
+            <title>...</title>
+            <dl outputclass="features">
+                <dlentry outputclass="feature" specmodel="sequence">
+                    <dt outputclass="featureterm"/>
+                    <dd outputclass="featuredef"/>
+                </dlentry>
+            </dl>
+            <dl outputclass="specifications">
+                <dlentry outputclass="specification" specmodel="sequence">
+                    <dt outputclass="specifiedterm"/>
+                    <dd outputclass="specifieddesc"/>
+                </dlentry>
+            </dl>
+            <ul outputclass="highlights">
+                <li outputclass="highlight"/>
+            </ul>
+            <p outputclass="action">
+                <xref outputclass="actionref"/>
+            </p>
+            <fig outputclass="quote">
+                <xref outputclass="quoteref"/>
+            </fig>
+            <p>...</p>
+            <fig>...</fig>
+        </section>
+
+        <section outputclass="legalsection" specmodel="choice">
+            <titel>...</titel>
+            <fig outputclass="disclaimer">...</fig>
+            <p outputclass="copyright" specmodel="sequence">
+                <ph outputclass="copyrightyear" important="optional"/>
+                <ph outputclass="copyrightholder" important="optional"/>
+            </p>
+            <fig outputclass="logo"><image/></fig>
+        </section>
         
-        <p outputclass="action">
-            <xref outputclass="actionref"></xref>
-        </p>
-        
-        <fig outputclass="quote">
-            <xref outputclass="quoteref"></xref> 
-        </fig>
-    
-    </body>             
+        <section outputclass="contact" specmodel="sequence">
+            <p outputclass="company" important="optional">...</p>
+            <p outputclass="contactperson" important="optional">...</p>
+            <p outputclass="address" important="optional">...</p>
+            <p outputclass="phonenumber" important="optional">...</p>
+            <p outputclass="email" important="optional">...</p>
+            <p outputclass="website" important="optional">...</p>
+            <p outputclass="addinfo" important="optional">...</p>
+        </section>
+
+    </body>
 </topic>
